@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -97,17 +99,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="/source/index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="/source/catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="/source/form.html">
               Подбор программы
             </a>
           </li>
@@ -115,66 +117,94 @@
       </div>
     </nav>
   </header>
+
   <main>
     <h1 class="page-title">Подбор программы</h1>
     <div class="form">
-    <form action="https://echo.htmlacademy.ru/" method="post">
+      <form action="https://echo.htmlacademy.ru/" method="post">
 
-      <div class="form__questionary">
-        <p class="form__questionary-header">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <label for="name-field">ИМЯ:*</label>
-        <input type="text" name="name" id="name-field" placeholder="Барсик">
+        <div class="form__questionary">
+          <p class="form__questionary-header">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <ul class="form__questionary-input-list">
+            <li>
+              <label for="name-field" class="form__questionary-label">имя:*</label>
+              <input type="text" name="name" id="name-field" placeholder="Барсик" class="form__questionary-input">
+            </li>
+            <li>
+              <label for="weight-field" class="form__questionary-label">Вес:*</label>
+              <input type="text" name="weight" id="weight-field" placeholder="7" class="form__questionary-input">
+            </li>
+            <li>
+              <label for="old-field" class="form__questionary-label">Возраст (лет):</label>
+              <input type="text" name="old" id="old-field" placeholder="7" class="form__questionary-input">
+            </li>
+          </ul>
+        </div>
 
-        <label for="weight-field">Вес</label>
-        <input type="text" name="weight" id="weight-field" placeholder="7">
+        <ul class="form__radio">
+          <li class="form__radio-item">
+            <label for="slimming" class="form__radio-label">Похудение </label>
+              <input type="radio" name="slimming" id="slimming"  checked>
+          </li>
+          <li class="form__radio-item">
+            <label for="pumping" class="form__radio-label">Набор массы</label>
+              <input type="radio" name="pumping" id="pumping">
+          </li>
+          <li class="form__radio-item">
+            <label for="unknown" class="form__radio-label">Не знаю (Нужен ваш совет)</label>
+              <input type="radio" name="unknown" id="unknown">
+          </li>
+        </ul>
 
-        <label for="old-field">Возраст</label>
-        <input type="text" name="old" id="old-field" placeholder="7">
-      </div>
+        <div class="form__feedback">
+          <p class="form__feedback-value form-style">Контактные данные (владельца кота)</p>
+          <ul class="form__feedback-input-list">
+            <li class="form__feedback-input-item">
+              <label for="email-field">E-mail:*</label>
+              <input type="text" name="email-field" id="email-field"
+              placeholder="kuklachev@gmail.com" class="form__feedback-input">
+            </li>
+            <li class="form__feedback-input-item">
+              <label for="phone-field">Телефон:*</label>
+              <input type="text" name="phone-field" id="phone-field"
+              placeholder="8 (960) 900-60-90" class="form__feedback-input">
+            </li>
+          </ul>
+        </div>
 
-      <div class="form__radio">
-        <label>
-          <input type="radio" name="slimming" value="slimming" checked> Похудение </label>
-        <label>
-          <input type="radio" name="pumping" value="pumping">Набор массы</label>
-        <label>
-          <input type="radio" name="unknown" value="unknown">Не знаю (Нужен ваш совет)</label>
-      </div>
+        <div class="form__comments">
+          <p class="form__comments-header form-style">Комментарий</p>
+          <textarea name="comment" id="comment-field" rows="10"
+            class="form__comments-textarea">Расскажите обо всех повАдках кота</textarea>
+        </div>
 
-      <div class="form__feedback">
-        <p class="form__feedback-value">Контактные данные (владельца кота)</p>
-        <label for="email-field">E-mail:*</label>
-        <input type="text" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+        <div class="form__extra">
+          <p class="form-style">Дополнительно</p>
+          <ul class="form__extra-input-list">
+            <li class="form__extra-input-item">
+              <input type="checkbox" name="sweetener" id="sweetener" class="form__extra-input" checked>
+              <label for="sweetener" class="form__extra-label">сахарозаменитель</label>
+            </li>
+            <li class="form__extra-input-item">
+              <input type="checkbox" name="water" id="water" class="form__extra-input">
+              <label for="water" class="form__extra-label">питьевая вода</label>
+            </li>
+            <li class="form__extra-input-item">
+              <input type="checkbox" name="milk" id="milk" class="form__extra-input">
+              <label for="milk" class="form__extra-label">молоко</label>
+            </li>
+            <li class="form__extra-input-item">
+              <input type="checkbox" name="vitamins" id="vitamins" class="form__extra-input">
+              <label for="vitamins" class="form__extra-label">витамины</label>
+            </li>
+          </ul>
+        </div>
+        <button class="form__button mobile-button" type="submit">отправить заявку</button>
 
-        <label for="phone-field">Телефон:*</label>
-        <input type="text" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
-      </div>
 
-      <div class="form__comments">
-        <p class="form__comments-header">Комментарий</p>
-        <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повАдках кота</textarea>
-      </div>
+      </form>
 
-      <div class="form__extra">
-        <p>Дополнительно</p>
-
-        <input type="checkbox" name="sweetener" id="sweetener-field" checked>
-        <label for="sweetener-field">сахарозаменитель</label>
-
-        <input type="checkbox" name="water" id="water-field" >
-        <label for="water-field">питьевая вода</label>
-
-        <input type="checkbox" name="milk" id="milk-field" >
-        <label for="milk-field">молоко</label>
-
-        <input type="checkbox" name="vitamins" id="vitamins-field" >
-        <label for="vitamins-field">витамины</label>
-
-        <button class="form__button" type="submit">отправить заявку</button>
-      </div>
-    </form>
-
-    <p class="">* — Обязательные поля</p>
+      <p class="form__note">* — Обязательные поля</p>
     </div>
     <div class="cooperation">
       <p class="cooperation__invite">приглашаем к сотрудничеству дилеров!</p>
