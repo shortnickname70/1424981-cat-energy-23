@@ -1,4 +1,8 @@
 // Начните писать стили здесь
+.form__feedback {
+margin-bottom: 24px;
+}
+
 .form__feedback-input-list {
 list-style: none;
 padding: 0;
@@ -11,12 +15,18 @@ text-transform: uppercase;
 color: #444444;
 }
 
-
 .form__feedback-input-item {
 margin-bottom: 14px;
+display: flex;
+justify-content: space-between;
 }
 
 .form__feedback-input {
 height: 45px;
-min-width: 204px;
+width: 100%;
+}
+.form__feedback-label {
+  white-space: nowrap;
+  margin-right: 11px;
+  padding-top: 13px;
 }

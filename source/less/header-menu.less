@@ -11,9 +11,28 @@
   text-align: center;
   padding-top: 22px;
   box-sizing: border-box;
+  display: none;
+  cursor: pointer;
 }
 
-.site-list__item a{
+.site-list__item a {
   text-decoration: none;
   color: #000000;
+}
+
+.main-navigation__toggle {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  background-image: url("C:/Users/valter.STANDART/Documents/GitHub/1424981-cat-energy-23/source/img/logo-mobile-header-menu.svg");
+  left: 14px;
+  top: -9px;
+  cursor: pointer;
 }
