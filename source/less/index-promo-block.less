@@ -10,28 +10,55 @@ margin-bottom: 22px;
 
 .promo__descriptions-wrapper {
   background: rgba(104, 183, 56, 0.85);
-  background-image: url("/source/img/img-mobile-cat-tongue.jpg");
+  background-image: url("/img/img-mobile-cat-tongue.jpg");
+  min-height: 302px;
 }
 
 .promo__title {
-  font-family: Oswald;
+  font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: #FFFFFF;
-  padding-left: 35px;
-  padding-right: 35px;
-
+  display: block;
+  padding: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
   }
 
   .promo__slogan {
-font-family: Oswald;
+font-family: "Oswald";
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 14px;
 text-transform: uppercase;
 color: #FFFFFF;
+display: block;
+padding: 0 ;
+padding-left: 61px;
+padding-right: 61px;
+
+}
+
+.promo__lower-half {
+min-height: 178px;
+width: 100%;
+padding: 138px 20px 0px 20px;
+box-sizing: border-box;
+position: relative;
+
+}
+
+.promo__lower-half::after{
+content: "";
+position: absolute;
+background-image: url("/img/img-mobile-index-product-.jpg");
+width: 280px;
+height: 270px;
+left: 20px;
+bottom: 41px;
+
 }

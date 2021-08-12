@@ -1,13 +1,21 @@
 // Начните писать стили здесь
 
+.features {
+padding-left: 20px;
+padding-right: 20px;
+box-sizing: border-box;
+margin-bottom: 22px;
+}
+
 .features__heading {
+display: block;
 font-family: "Oswald";
 font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 40px;
-text-align: center;
 color: #000000;
+margin-bottom: 40px;
 }
 
 .features__list {
@@ -20,8 +28,19 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #444444;
+padding: 0;
+margin: 0;
 }
 
-.features-item:last-child{
-  margin-bottom: 42px;
+.features__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.features-icon {
+  margin-right: 20px;
+}
+
+.features-description  {
+  margin: 0;
 }

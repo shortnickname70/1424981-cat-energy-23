@@ -1,6 +1,11 @@
 // Начните писать стили здесь
 .example {
-  background-color: #EAEAEA;
+background-color: #EAEAEA;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 27px;
+box-sizing: border-box;
+min-height: 705px;
 }
 
 .example__header {
@@ -9,8 +14,8 @@ font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 40px;
-text-align: center;
 color: #000000;
+margin: 0;
 margin-bottom: 33px;
 }
 
@@ -21,6 +26,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #444444;
+
 }
 
 .example--style {
@@ -32,6 +38,9 @@ display: flex;
 justify-content: space-between;
 flex-wrap: nowrap ;
 width: 124px;
+height: 56px;
+position: relative;
+align-items: center;
 }
 
 .example-value {
@@ -55,6 +64,18 @@ display: block;
 align-items: center;
 text-align: center;
 color: #444444;
+position: absolute;
+width: 87px;
+height: 31px;
+left: 16px;
+top: 47px;
+background-color: #EAEAEA;
+}
+
+.example__weight-and-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
 }
 
 .example__expenses {
@@ -66,6 +87,8 @@ line-height: 20px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
+margin: 0;
+margin-bottom: 42px;
 }
 
 .example__slider {

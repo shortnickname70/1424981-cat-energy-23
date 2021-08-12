@@ -1,7 +1,22 @@
 // Начните писать стили здесь
 .pumping {
-  background: #F2F2F2;
-  margin-bottom: 27px;
+background: #F2F2F2;
+margin-bottom: 27px;
+min-height: 266px;
+position: relative;
+padding-top: 30px;
+padding-left: 20px;
+box-sizing: border-box;
+}
+
+.pumping::after{
+content: "";
+position: absolute;
+width: 67px;
+height: 50px;
+background-image: url("/img/img-mobile-cat-walk.png");
+top: 24px;
+left: 13px;
   }
 
   .pumping__header {
@@ -12,7 +27,11 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-left: 71px;
+margin-bottom: 29px;
   }
+
   .pumping__text {
   font-family: "Arial";
   font-style: normal;
@@ -20,6 +39,9 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  max-width: 227px;
+display: block;
+margin-bottom: 42px;
   }
 
   .pumping__link {
@@ -31,4 +53,5 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
   }
