@@ -1,36 +1,54 @@
 // Начните писать стили здесь
 
 .catalog__item {
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
-align-items: flex-start;
-border-bottom: 1px solid #EBEBEB;
-padding-bottom: 25px;
-padding-top: 19px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end ;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 19px 20px 25px 20px;
+
 }
 
 .catalog__item:first-child {
   border-top: 1px solid #EBEBEB;
 }
 
-.catalog__descriptions{
-font-family: "Arial";
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 16px;
-text-align: center;
-color: #444444;
+.catalog__item-link {
+  display: block;
+  margin-left: auto;
 }
 
-.catalog__descriptions--title{
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-align-items: center;
-text-transform: uppercase;
-color: #222222;
+
+.catalog__descriptions {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  margin-right: 64px;
+  margin-left: 28px;
+  margin-bottom: 22px;
+}
+
+.catalog__descriptions--title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #222222;
+  max-width: 76px;
+  display: block;
+  text-align: start;
+  margin-bottom: 14px;
+}
+
+.catalog__text {
+  display: block;
+  margin: 0;
+  text-align: start;
 }
