@@ -55,3 +55,47 @@ margin-bottom: 42px;
   color: #000000;
   text-decoration: none;
   }
+
+  @media (min-width: @tablet-width) {
+    .pumping {
+      background: #F2F2F2;
+      margin-bottom: 20px;
+      min-height: 266px;
+      position: relative;
+      padding-top: 77px;
+      padding-left: 52px;
+      padding-bottom: 57px;
+    }
+    .pumping::after {
+      content: "";
+      position: absolute;
+      width: 268px;
+      height: 200px;
+      background-image: url("../img/img-tablet-cat-walk.png");
+      background-repeat: no-repeat;
+      top: 91px;
+      left: 412px;
+    }
+
+    .pumping__header {
+      margin-bottom: 24px;
+      margin-left: 0;
+      font-size: 36px;
+    line-height: 36px;
+    }
+
+  .pumping__text {
+    max-width: 340px;
+    font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 52px;
+  }
+
+  .pumping__link {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  }

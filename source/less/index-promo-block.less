@@ -11,7 +11,9 @@ margin-bottom: 22px;
 .promo__descriptions-wrapper {
   background: rgba(104, 183, 56, 0.85);
   background-image: url("/img/img-mobile-cat-tongue.jpg");
+  background-repeat:no-repeat ;
   min-height: 302px;
+  margin-bottom: 49px;
 }
 
 .promo__title {
@@ -60,5 +62,53 @@ width: 280px;
 height: 270px;
 left: 20px;
 bottom: 41px;
+
+}
+
+@media (min-width: @tablet-width) {
+.promo__lower-half::after{
+display: none;
+}
+
+.promo__descriptions-wrapper {
+background-image: none;
+background-color:  #FFFFFF;
+min-height: 183px;
+margin-bottom: 20px;
+}
+
+.promo__title {
+font-size: 60px;
+line-height: 60px;
+color: #000000;
+max-width: 414px;
+text-align: start;
+margin-bottom: 41px;
+padding-left: 117px;
+}
+
+.promo__slogan {
+font-size: 20px;
+line-height: 20px;
+text-transform: uppercase;
+color: #000000;
+padding: 0;
+padding-left: 119px;
+}
+
+.promo__lower-half {
+min-height: 610px;
+width: 100%;
+padding: 0;
+box-sizing: border-box;
+position: relative;
+background-image: url("/img/img-tablet-index-product.jpg");
+width: 709px;
+height: 609px;
+background-repeat: no-repeat;
+background-color: transparent;
+margin-left: 30px;
+  }
+
 
 }

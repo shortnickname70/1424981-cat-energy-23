@@ -6,7 +6,7 @@ body { background: white;
 img {
   max-width: 100%;
   height: auto;
-}
+ }
 
 .visually-hidden {
   position: absolute;
@@ -19,4 +19,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  body { background: white;
+    min-width: 768px;
+    max-width: 1439px;
+  }
+
 }

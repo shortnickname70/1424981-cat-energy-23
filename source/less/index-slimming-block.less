@@ -1,62 +1,105 @@
 // Начните писать стили здесь
 .slimming {
-background: #F2F2F2;
-margin-bottom: 20px;
-min-height: 266px;
-position: relative;
-padding-top: 30px;
-padding-left: 20px;
-box-sizing: border-box;
+  background: #F2F2F2;
+  margin-bottom: 20px;
+  min-height: 266px;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
-.slimming::after{
+.slimming::after {
   content: "";
   position: absolute;
   width: 50px;
   height: 53px;
-  background-image: url("/img/img-mobile-cat-sit.png");
+  background-image: url("../img/img-mobile-cat-sit.png");
   top: 21px;
   left: 22px;
-    }
+}
 
 .slimming__header {
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 37px;
-text-transform: uppercase;
-color: #000000;
-margin: 0;
-margin-left: 71px;
-margin-bottom: 29px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-left: 71px;
+  margin-bottom: 29px;
 }
 
 .slimming__text {
-font-family: "Arial";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 18px;
-color: #444444;
-max-width: 227px;
-display: block;
-margin-bottom: 42px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  max-width: 227px;
+  display: block;
+  margin-bottom: 42px;
 }
 
 .slimming__link {
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 16px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
-text-decoration: none;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
 
 }
 
 .arrow-right {
   margin-left: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .slimming {
+    background: #F2F2F2;
+    margin-bottom: 20px;
+    min-height: 266px;
+    position: relative;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 57px;
+  }
+  .slimming::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/img-tablet-cat-sit.png");
+    top: 81px;
+    left: 466px;
+  }
+
+  .slimming__header {
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+  line-height: 36px;
+  }
+
+.slimming__text {
+  max-width: 340px;
+  font-size: 16px;
+line-height: 24px;
+margin-bottom: 52px;
+}
+
+.slimming__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
 }
