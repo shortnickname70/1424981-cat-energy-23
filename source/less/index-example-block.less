@@ -110,33 +110,32 @@ color: #000000;
 
   .example {
     background-color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 27px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 43px;
     box-sizing: border-box;
     min-height: 1081px;
     }
 
     .example__header {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 36px;
     line-height: 40px;
-    color: #000000;
     margin: 0;
     margin-bottom: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
     .example__description {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 16px;
     line-height: 24px;
     color: #444444;
     margin: 0;
     margin-bottom: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     }
 
@@ -154,9 +153,7 @@ color: #000000;
     }
 
     .example-value {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 24px;
     line-height: 24px;
     text-align: center;
@@ -183,10 +180,12 @@ color: #000000;
     }
 
     .example__weight-and-days {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     min-height: 619px;
+    padding-left: 30px;
+    padding-right: 30px;
     }
 
     .example__expenses {
@@ -203,12 +202,14 @@ color: #000000;
     .example__slider {
       display: flex;
       justify-content: space-between;
+      min-height: 619px;
+      background-color: #EAEAEA;
+      position: relative;
+      z-index: 2;
     }
 
     .example__slider--style {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -217,9 +218,78 @@ color: #000000;
     .example__cat-img {
       display: none;
     }
-    .example__slider {
-      min-height: 462px;
-      background-color: #EAEAEA;
+
+    .example__slider::before {
+position: absolute;
+content: "";
+background-image: url("../img/img-tablet-half-cat.jpg");
+width: 708px;
+height: 620px;
+left: 30px;
+bottom: 0;
+
+}
+}
+
+@media (min-width: @desktop-width) {
+
+  .example {
+    display: flex;
+    flex-direction: column;
+   min-height:  600px;
+  }
+  .example__header {
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 146px;
     }
 
+.example__description {
+margin: 0;
+padding-left: 110px;
+padding-right: 110px;
+width: 436px;
+height: 96px;
+margin-bottom: 69px;
+
+}
+
+.example__weight-and-days {
+display: flex;
+flex-wrap: wrap;
+justify-content:flex-start;
+margin: 0;
+padding-left: 110px;
+padding-right: 110px;
+min-height: 152px;
+max-width: 370px;
+}
+
+.example__expenses {
+max-width: 327px;
+}
+
+.example--style {
+
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+  padding-top: 14px;
+  border-radius: 3px;
+  flex-wrap: nowrap ;
+  width: 162px;
+  height: 72px;
+  position: relative;
+  align-items: center;
+  }
+
+  .example__slider{
+    min-height: 50px;
+    justify-content: flex-start;
+    max-width: 570px;
+  }
+
+  .example__slider::before {
+    display: none;
+  }
 }

@@ -1,17 +1,17 @@
 // Начните писать стили здесь
 .promo {
-display: flex;
-align-items: flex-start;
-flex-wrap: wrap;
-justify-content: flex-start;
-box-sizing: border-box;
-margin-bottom: 22px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 22px;
 }
 
 .promo__descriptions-wrapper {
   background: rgba(104, 183, 56, 0.85);
   background-image: url("/img/img-mobile-cat-tongue.jpg");
-  background-repeat:no-repeat ;
+  background-repeat: no-repeat;
   min-height: 302px;
   margin-bottom: 49px;
 }
@@ -28,87 +28,116 @@ margin-bottom: 22px;
   padding: 0;
   padding-top: 27px;
   margin-bottom: 25px;
-  }
+}
 
-  .promo__slogan {
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 14px;
-text-transform: uppercase;
-color: #FFFFFF;
-display: block;
-padding: 0 ;
-padding-left: 61px;
-padding-right: 61px;
+.promo__slogan {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: block;
+  padding: 0;
+  padding-left: 61px;
+  padding-right: 61px;
 
 }
 
 .promo__lower-half {
-min-height: 178px;
-width: 100%;
-padding: 138px 20px 0px 20px;
-box-sizing: border-box;
-position: relative;
+  min-height: 178px;
+  width: 100%;
+  padding: 138px 20px 0px 20px;
+  box-sizing: border-box;
+  position: relative;
 
 }
 
-.promo__lower-half::after{
-content: "";
-position: absolute;
-background-image: url("/img/img-mobile-index-product-.jpg");
-width: 280px;
-height: 270px;
-left: 20px;
-bottom: 41px;
+.promo__lower-half::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/img-mobile-index-product-.jpg");
+  width: 280px;
+  height: 270px;
+  left: 20px;
+  bottom: 41px;
 
 }
 
 @media (min-width: @tablet-width) {
-.promo__lower-half::after{
-display: none;
-}
-
-.promo__descriptions-wrapper {
-background-image: none;
-background-color:  #FFFFFF;
-min-height: 183px;
-margin-bottom: 20px;
-}
-
-.promo__title {
-font-size: 60px;
-line-height: 60px;
-color: #000000;
-max-width: 414px;
-text-align: start;
-margin-bottom: 41px;
-padding-left: 117px;
-}
-
-.promo__slogan {
-font-size: 20px;
-line-height: 20px;
-text-transform: uppercase;
-color: #000000;
-padding: 0;
-padding-left: 119px;
-}
-
-.promo__lower-half {
-min-height: 610px;
-width: 100%;
-padding: 0;
-box-sizing: border-box;
-position: relative;
-background-image: url("/img/img-tablet-index-product.jpg");
-width: 709px;
-height: 609px;
-background-repeat: no-repeat;
-background-color: transparent;
-margin-left: 30px;
+  .promo__lower-half::after {
+    display: none;
   }
+
+  .promo__descriptions-wrapper {
+    background-image: none;
+    background-color: #FFFFFF;
+    min-height: 183px;
+    margin-bottom: 20px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    max-width: 414px;
+    text-align: start;
+    margin-bottom: 41px;
+    padding-left: 117px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 0;
+    padding-left: 119px;
+  }
+
+  .promo__lower-half {
+    min-height: 610px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url("/img/img-tablet-index-product.jpg");
+    min-width: 709px;
+    min-height: 609px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-left: 30px;
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .promo {
+    min-height: 474px;
+    margin-bottom: 82px;
+  }
+
+  .promo__title {
+    padding-left: 190px;
+    padding-top: 0;
+  }
+
+  .promo__slogan {
+    padding: 0;
+    padding-left: 190px;
+  }
+
+  .promo__lower-half {
+    margin: 0;
+    width: 100%;
+    min-height: 293px ;
+    background-image: none;
+    margin-left: 0;
+  }
+
 
 
 }

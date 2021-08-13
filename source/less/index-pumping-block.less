@@ -99,3 +99,19 @@ margin-bottom: 42px;
     line-height: 30px;
   }
   }
+
+  @media (min-width: @tablet-width) {
+    .pumping  {
+  width: 570px;
+  }
+  .pumping::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/img-tablet-cat-sit.png");
+    top: 81px;
+    left: 466px;
+  }
+
+  }

@@ -103,3 +103,23 @@ margin-bottom: 52px;
   line-height: 30px;
 }
 }
+
+@media (min-width: @tablet-width) {
+  .slimming  {
+width: 570px;
+}
+.slimming::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/img-tablet-cat-sit.png");
+  top: 81px;
+  left: 466px;
+}
+.desktop--flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 71px;
+}
+}

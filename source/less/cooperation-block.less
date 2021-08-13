@@ -27,3 +27,66 @@ line-height: 20px;
 color: #444444;
 margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+
+  .cooperation {
+    padding: 62px 71px ;
+    display: flex;
+    background-color: white;
+    min-height: 201px;
+    box-sizing: border-box;
+  }
+  .cooperation__invite {
+    display: block;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #111111;
+    margin: 0;
+    max-width: 171px ;
+    margin-right: 295px;
+    }
+
+    .cooperation__address {
+    display: block;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    margin: 0;
+    max-width: 160px ;
+    text-align: end;
+    }
+
+}
+
+@media (min-width: @desktop-width) {
+  .cooperation {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    left: 110px;
+    top: 2407px;
+    z-index: 5;
+  }
+
+  .cooperation__invite {
+
+    margin: 0;
+    max-width: 163px ;
+    margin-right: 87px;
+    }
+
+    .cooperation__address {
+
+    margin: 0;
+    max-width: 155px ;
+    text-align: start;
+    }
+}
