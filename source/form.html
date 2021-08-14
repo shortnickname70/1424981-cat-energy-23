@@ -117,42 +117,42 @@
       <h1 class="page-title form-title">Подбор программы</h1>
       <div class="form">
         <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__cat-value">
+            <div class="form__questionary">
+              <p class="form__questionary-header">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+              <ul class="form__questionary-input-list">
+                <li class="form__questionary-input-item">
+                  <label for="name-field" class="form__questionary-label">имя:*</label>
+                  <input type="text" name="name" id="name-field" placeholder="Барсик" class="form__questionary-input">
+                </li>
+                <li class="form__questionary-input-item">
+                  <label for="weight-field" class="form__questionary-label">Вес (кг):*</label>
+                  <input type="text" name="weight" id="weight-field" placeholder="7" class="form__questionary-input">
+                </li>
+                <li class="form__questionary-input-item">
+                  <label for="old-field" class="form__questionary-label">Возраст (лет):</label>
+                  <input type="text" name="old" id="old-field" placeholder="7" class="form__questionary-input">
+                </li>
+              </ul>
+            </div>
 
-          <div class="form__questionary">
-            <p class="form__questionary-header">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-            <ul class="form__questionary-input-list">
-              <li class="form__questionary-input-item">
-                <label for="name-field" class="form__questionary-label">имя:*</label>
-                <input type="text" name="name" id="name-field" placeholder="Барсик" class="form__questionary-input">
+            <ul class="form__radio">
+              <li class="form__radio-item">
+                <input type="radio" name="slimming" id="slimming" checked>
+                <label for="slimming" class="form__radio-label">Похудение </label>
               </li>
-              <li class="form__questionary-input-item">
-                <label for="weight-field" class="form__questionary-label">Вес (кг):*</label>
-                <input type="text" name="weight" id="weight-field" placeholder="7" class="form__questionary-input">
+              <li class="form__radio-item">
+                <input type="radio" name="pumping" id="pumping">
+                <label for="pumping" class="form__radio-label">Набор массы</label>
+
               </li>
-              <li class="form__questionary-input-item">
-                <label for="old-field" class="form__questionary-label">Возраст (лет):</label>
-                <input type="text" name="old" id="old-field" placeholder="7" class="form__questionary-input">
+              <li class="form__radio-item">
+                <input type="radio" name="unknown" id="unknown">
+                <label for="unknown" class="form__radio-label">Не знаю (Нужен ваш совет)</label>
+
               </li>
             </ul>
           </div>
-
-          <ul class="form__radio">
-            <li class="form__radio-item">
-              <input type="radio" name="slimming" id="slimming" checked>
-              <label for="slimming" class="form__radio-label">Похудение </label>
-            </li>
-            <li class="form__radio-item">
-              <input type="radio" name="pumping" id="pumping">
-              <label for="pumping" class="form__radio-label">Набор массы</label>
-
-            </li>
-            <li class="form__radio-item">
-              <input type="radio" name="unknown" id="unknown">
-              <label for="unknown" class="form__radio-label">Не знаю (Нужен ваш совет)</label>
-
-            </li>
-          </ul>
-
           <div class="form__feedback">
             <p class="form__feedback-value form-style">Контактные данные (владельца кота)</p>
             <ul class="form__feedback-input-list">

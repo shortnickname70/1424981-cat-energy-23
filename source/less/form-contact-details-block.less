@@ -25,6 +25,8 @@
 .form__feedback-input {
   height: 45px;
   width: 100%;
+  box-sizing: border-box;
+
 }
 
 .form__feedback-label {
@@ -37,24 +39,13 @@
   .form__feedback {
     margin-bottom: 65px;
   }
-  .form__feedback-input-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #444444;
-  }
 
   .form__feedback-input-list {
     font-size: 20px;
     line-height: 30px;
 
   }
+
   .form__feedback-input-item {
     margin-bottom: 20px;
   }
@@ -62,6 +53,8 @@
   .form__feedback-input {
     height: 52px;
     width: 100%;
+    box-sizing: border-box;
+
   }
 
   .form__feedback-label {
@@ -70,4 +63,34 @@
     padding-top: 13px;
   }
 
+}
+
+@media (min-width: @desktop-width) {
+
+  .form__feedback-input-list {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+  }
+
+  .form__feedback-input-item {
+    width: 567px;
+  }
+
+  .form__feedback-label {
+    white-space: nowrap;
+    margin-right: 17px;
+    padding-top: 13px;
+  }
+
+  .form__feedback-input {
+    box-sizing: border-box;
+  }
+
+  .form__comments-textarea {
+    width: 1220px;
+  }
+  .form__extra-input-item {
+    min-width: 305px;
+  }
 }
