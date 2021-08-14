@@ -115,7 +115,7 @@
   </header>
 
   <main class="page__catalog">
-    <h1 class="page-title container">Каталог продукции</h1>
+    <h1 class="page-title ">Каталог продукции</h1>
     <ul class="catalog__list">
       <li class="catalog__item">
         <a href="" class="catalog__item-link">
@@ -124,8 +124,8 @@
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy PRO 500 г</span>
           <p class="catalog__text"> <span>Масса </span><span>500 г</span>  </p>
-          <p class="catalog__text"> Вкус Курица </p>
-          <p class="catalog__text"> Цена 700 Р </p>
+          <p class="catalog__text"><span> Вкус</span> <span>Курица </span></p>
+          <p class="catalog__text"><span> Цена </span><span>700 Р</span> </p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
@@ -136,9 +136,9 @@
         </a>
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy PRO 1000 г</span>
-          <p class="catalog__text"> Масса 1000 г </p>
-          <p class="catalog__text"> Вкус Курица </p>
-          <p class="catalog__text"> Цена 1000 Р </p>
+          <p class="catalog__text"><span> Масса</span> <span>1000 г</span> </p>
+          <p class="catalog__text"> <span>Вкус</span> <span>Курица </span></p>
+          <p class="catalog__text"> <span>Цена</span><span> 1000 Р</span> </p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
@@ -149,9 +149,9 @@
         </a>
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy PRO 500 г</span>
-          <p class="catalog__text"> Масса 500 г </p>
-          <p class="catalog__text"> Вкус Рыба </p>
-          <p class="catalog__text"> Цена 700 Р </p>
+          <p class="catalog__text"> <span>Масса</span> <span>500 г </span></p>
+          <p class="catalog__text"> <span>Вкус</span><span>Рыба </span></p>
+          <p class="catalog__text"> <span>Цена</span> <span>700 Р </span></p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
@@ -162,9 +162,9 @@
         </a>
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy PRO 1000 г</span>
-          <p class="catalog__text"> Масса 1000 г </p>
-          <p class="catalog__text"> Вкус Рыба </p>
-          <p class="catalog__text"> Цена 1000 Р </p>
+          <p class="catalog__text"> <span> Масса</span> <span>1000 г</span> </p>
+          <p class="catalog__text"> <span> Вкус</span> <span>Рыба</span> </p>
+          <p class="catalog__text"> <span> Цена</span> <span> 1000 Р</span> </p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
@@ -175,9 +175,9 @@
         </a>
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy slim 500 г</span>
-          <p class="catalog__text"> Масса 500 г </p>
-          <p class="catalog__text"> Вкус Гречка </p>
-          <p class="catalog__text"> Цена 400 Р </p>
+          <p class="catalog__text"> <span>Масса </span><span>500 г</span> </p>
+          <p class="catalog__text"> <span>Вкус </span><span>Гречка</span> </p>
+          <p class="catalog__text"> <span>Цена </span><span>400 Р </span></p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
@@ -188,9 +188,9 @@
         </a>
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy slim 1000 г</span>
-          <p class="catalog__text"> Масса 1000 г </p>
-          <p class="catalog__text"> Вкус Гречка </p>
-          <p class="catalog__text"> Цена 700 Р </p>
+          <p class="catalog__text"> <span>Масса</span> <span>1000 г</span> </p>
+          <p class="catalog__text"> <span>Вкус </span><span>Гречка</span> </p>
+          <p class="catalog__text"><span> Цена </span><span>700 Р</span> </p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
@@ -201,15 +201,14 @@
         </a>
         <div class="catalog__descriptions">
           <span class="catalog__descriptions--title">Cat Energy slim 500 г</span>
-          <p class="catalog__text"> Масса 500 г </p>
-          <p class="catalog__text"> Вкус Рис </p>
-          <p class="catalog__text"> Цена 500 Р </p>
+          <p class="catalog__text"> <span>Масса</span> <span>500 г </span></p>
+          <p class="catalog__text"> <span>Вкус</span> <span>Рис</span> </p>
+          <p class="catalog__text"> <span>Цена</span> <span>500 Р </span></p>
         </div>
         <button class="catalog__button mobile-button" type="button">Заказать</button>
       </li>
-    </ul>
-    <article class="catalog__view-more">
-      <div class="container">
+      <li class="catalog__item">
+            <article class="catalog__view-more">
         <svg class="catalog__view-more-icon-cross" width="30" height="30" viewBox="0 0 30 30" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2" />
@@ -218,36 +217,41 @@
         <p class="view-more__items">Показать еще 100500 товаров</p>
         <p class="view-more__more-tastes">На самом деле вкусов гораздо больше!</p>
         <button class="view-more__button" type="button">показать все</button>
-      </div>
-    </article>
+        </article>
+
+  </li>
+  </ul>
     <div class="catalog__additional-items">
-      <div class="container">
         <p class="catalog__additional-title">Дополнительные товары </p>
         <ul class="additional-items__list">
           <li class="additional-items__item">
             <p class="additional-items--name"> Сахарозаменитель</p>
             <p class="additional-items--value"> 1 упаковка (100 г)</p>
-            <button class="catalog__button mobile-button" type="button">Заказать</button>
+            <p class="additional-items--price"> 200 Р.</p>
+            <button class="additional__button mobile-button" type="button">Заказать</button>
           </li>
 
           <li class="additional-items__item">
             <p class="additional-items--name"> питьевая вода</p>
             <p class="additional-items--value"> 5 литров</p>
-            <button class="catalog__button mobile-button" type="button">Заказать</button>
+            <p class="additional-items--price"> 50 Р.</p>
+            <button class="additional__button mobile-button" type="button">Заказать</button>
 
           </li>
 
           <li class="additional-items__item">
             <p class="additional-items--name"> молоко</p>
             <p class="additional-items--value"> 1 литр</p>
-            <button class="catalog__button mobile-button" type="button">Заказать</button>
+            <p class="additional-items--price"> 100 Р.</p>
+            <button class="additional__button mobile-button" type="button">Заказать</button>
 
           </li>
 
           <li class="additional-items__item">
             <p class="additional-items--name"> витамины</p>
             <p class="additional-items--value"> 1 упаковка (30 г)</p>
-            <button class="catalog__button mobile-button" type="button">Заказать</button>
+            <p class="additional-items--price"> 300 Р.</p>
+            <button class="additional__button mobile-button" type="button">Заказать</button>
 
           </li>
         </ul>
@@ -276,7 +280,6 @@
           </svg>
           <span class="catalog__gift-text">Закажите все и получите чехол для кота в подарок!</span>
         </article>
-      </div>
     </div>
     <div class="cooperation">
       <p class="cooperation__invite">приглашаем к сотрудничеству дилеров!</p>

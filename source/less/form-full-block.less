@@ -30,6 +30,13 @@ margin-bottom: 10px;
   justify-content: space-between;
 }
 
+.form__questionary-input {
+  width: 100%;
+  Height: 45px;
+  margin-bottom: 14px;
+  padding-left: 15px;
+  }
+
 .form__questionary-label{
 font-family: "Oswald";
 font-style: normal;
@@ -43,12 +50,7 @@ white-space: nowrap;
 padding-top: 13px;
 }
 
-.form__questionary-input {
-width: 100%;
-Height: 45px;
-margin-bottom: 14px;
-padding-left: 15px;
-}
+
 
 .form__radio {
 box-sizing: border-box;
@@ -151,6 +153,111 @@ text-align: center;
 color: #000000;
 margin: 0;
   }
-.form__button {
+.form__button-style {
   margin-bottom: 21px;
+}
+
+@media (min-width: @tablet-width) {
+.form-title {
+  font-size: 60px;
+line-height: 60px;
+}
+.form-style {
+  font-size: 36px;
+  line-height: 36px;
+    }
+
+.form__questionary-header {
+max-width: 323px;
+font-size: 20px;
+line-height: 30px;
+}
+
+.form__questionary-input-list {
+margin-bottom: 72px;
+}
+
+.form__questionary-label{
+
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-right: 12px;
+  white-space: nowrap;
+  padding-top: 13px;
+  }
+  .form__questionary-input {
+    width: 100%;
+    Height: 52px;
+    margin-bottom: 20px;
+    padding-left: 19px;
+    }
+
+.form__radio {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: none;
+  border-bottom: none;
+  min-height: 196px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  margin-bottom: 75px;
+  border:1px solid #E7E7E7 ;
+  }
+  .form__radio-label {
+    font-size: 20px;
+    line-height: 30px;
+
+    }
+.form__feedback-value{
+  margin-bottom: 76px;
+}
+
+.form__comments {
+  margin-bottom: 65px;
+}
+
+.form__comments-header {
+  margin-bottom: 76px;
+}
+
+.form__comments-textarea {
+  width: 631px;
+  height: 174px;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 1px solid #E7E7E7;
+  resize: none;
+  padding: 10px 19px 10px 19px;
+  }
+  .form__extra-input-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 62px;
+    margin-bottom: 17px;
+  }
+  .form__extra-input-item {
+    margin-bottom: 42px;
+    min-width: 314px;
+}
+.form__extra-label {
+  font-size: 20px;
+  line-height: 30px;
+}
+.form__button-style {
+  margin-bottom: 21px;
+   margin-left: 0;
+   margin-top: 0;
+}
 }
