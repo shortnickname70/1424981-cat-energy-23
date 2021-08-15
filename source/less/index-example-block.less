@@ -1,6 +1,11 @@
 // Начните писать стили здесь
 .example {
-  background-color: #EAEAEA;
+background-color: #EAEAEA;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 27px;
+box-sizing: border-box;
+min-height: 705px;
 }
 
 .example__header {
@@ -9,8 +14,8 @@ font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 40px;
-text-align: center;
 color: #000000;
+margin: 0;
 margin-bottom: 33px;
 }
 
@@ -21,17 +26,20 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #444444;
+
 }
 
 .example--style {
 
 border: 1px solid #CDCDCD;
 box-sizing: border-box;
+padding-top: 14px;
 border-radius: 3px;
-display: flex;
-justify-content: space-between;
 flex-wrap: nowrap ;
 width: 124px;
+height: 56px;
+position: relative;
+align-items: center;
 }
 
 .example-value {
@@ -55,6 +63,18 @@ display: block;
 align-items: center;
 text-align: center;
 color: #444444;
+position: absolute;
+width: 87px;
+height: 31px;
+left: 16px;
+top: 47px;
+background-color: #EAEAEA;
+}
+
+.example__weight-and-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
 }
 
 .example__expenses {
@@ -66,6 +86,8 @@ line-height: 20px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
+margin: 0;
+margin-bottom: 42px;
 }
 
 .example__slider {
@@ -81,4 +103,195 @@ font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
 color: #000000;
+}
+
+
+@media (min-width: @tablet-width) {
+
+  .example {
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 43px;
+    box-sizing: border-box;
+    min-height: 1081px;
+    }
+
+    .example__header {
+
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+    .example__description {
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    margin: 0;
+    margin-bottom: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    }
+
+    .example--style {
+
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    padding-top: 14px;
+    border-radius: 3px;
+    flex-wrap: nowrap ;
+    width: 162px;
+    height: 72px;
+    position: relative;
+    align-items: center;
+    }
+
+    .example-value {
+
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    display: block;
+    }
+
+    .example-description {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #444444;
+    position: absolute;
+    width: 114px;
+    height: 50px;
+    left: 24px;
+    top: 47px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 10px;
+    }
+
+    .example__weight-and-days {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 330px;
+    }
+
+    .example__expenses {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    max-width: 175px;
+    text-align: end;
+
+    }
+
+    .example__slider {
+      display: flex;
+      justify-content: space-between;
+      min-height: 462px;
+      background-color: #EAEAEA;
+      position: relative;
+      z-index: 2;
+    }
+
+    .example__slider--style {
+
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    }
+    .example__cat-img {
+      display: none;
+    }
+
+    .example__slider::before {
+position: absolute;
+content: "";
+background-image: url("../img/img-tablet-half-cat.jpg");
+width: 708px;
+height: 620px;
+left: 30px;
+bottom: 0;
+
+}
+}
+
+  @media (min-width: @desktop-width) {
+
+  .example {
+    display: flex;
+    flex-direction: column;
+   min-height:  600px;
+  }
+  .example__header {
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 146px;
+    }
+
+.example__description {
+margin: 0;
+padding-left: 110px;
+padding-right: 110px;
+width: 436px;
+height: 96px;
+margin-bottom: 69px;
+
+}
+
+.example__weight-and-days {
+display: flex;
+flex-wrap: wrap;
+justify-content:flex-start;
+margin: 0;
+padding-left: 110px;
+padding-right: 110px;
+min-height: 152px;
+max-width: 370px;
+}
+
+.example__expenses {
+max-width: 327px;
+}
+
+.example--style {
+
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+  padding-top: 14px;
+  border-radius: 3px;
+  flex-wrap: nowrap ;
+  width: 162px;
+  height: 72px;
+  position: relative;
+  align-items: center;
+  }
+
+  .example__slider{
+    min-height: 50px;
+    justify-content: flex-start;
+    max-width: 570px;
+  }
+
+  .example__slider::before {
+    display: none;
+  }
 }

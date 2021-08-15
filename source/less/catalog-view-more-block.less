@@ -2,16 +2,15 @@
 
 
 .catalog__view-more {
-  display:flex ;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   position: relative;
   min-height: 208px;
   box-sizing: border-box;
   padding-top: 78px;
+  border-bottom: 1px solid #EBEBEB;
+
 }
 .catalog__view-more-icon-cross {
 position: absolute;
@@ -20,6 +19,7 @@ top: 25px;
 }
 
 .view-more__items {
+  display: block;
 font-family: "Oswald";
 font-style: normal;
 font-weight: normal;
@@ -29,6 +29,7 @@ text-align: center;
 text-transform: uppercase;
 color: #111111;
 margin: 0;
+margin-bottom: 9px;
 }
 
 .view-more__more-tastes {
@@ -40,6 +41,8 @@ line-height: 16px;
 text-align: center;
 color: #444444;
 margin: 0;
+display: block;
+margin-bottom: 21px;
 }
 
 .view-more__button {
@@ -58,3 +61,11 @@ color: #444444;
 border: none;
 }
 
+@media (min-width: @desktop-width) {
+  .view-more__button{
+  width: 169px;
+}
+.catalog__view-more {
+  border: none;
+}
+}

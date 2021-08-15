@@ -1,7 +1,14 @@
 // Начните писать стили здесь
 .additional-items__item {
-margin-bottom: 31px;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 19px;
+  padding-top: 12px;
 }
+.additional-items__item:first-child {
+  border-top: 1px solid #EBEBEB;
+
+}
+
 
 .additional-items--name {
 font-family: "Oswald";
@@ -13,6 +20,7 @@ text-transform: uppercase;
 color: #222222;
 margin: 0;
 margin-bottom: 13px;
+padding: 0;
 }
 
 .additional-items--value {
@@ -24,5 +32,70 @@ line-height: 14px;
 color: #444444;
 margin: 0;
 margin-bottom: 15px;
+padding: 0;
+
+}
+.additional-items--price {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+text-align: right;
+color: #444444;
+margin: 0;
+padding: 0;
+
+}
+
+@media (min-width: @tablet-width) {
+  .additional-items__item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 38px 28px 38px ;
+
+  }
+.additional__button {
+  width: 632px;
+  height: 40px;
+  margin: 0;
+  line-height: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.additional-items--name {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0;
+  }
+
+  .additional-items--value {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  }
+  .additional-items--price {
+    font-size: 16px;
+    line-height: 20px;
+    }
+
+}
+
+@media (min-width: @tablet-width) {
+
+  .additional-items__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    min-height: 72px;
+
+  }
+  .additional__button {
+    width: 244px;
+    margin: 0;
+  }
 
 }

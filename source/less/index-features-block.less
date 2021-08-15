@@ -1,27 +1,102 @@
 // Начните писать стили здесь
 
+.features {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+}
+
 .features__heading {
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 40px;
-text-align: center;
-color: #000000;
+  display: block;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 40px;
 }
 
 .features__list {
-display: flex;
-flex-wrap: wrap;
-list-style: none;
-font-family: Arial;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 18px;
-color: #444444;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  padding: 0;
+  margin: 0;
 }
 
-.features-item:last-child{
-  margin-bottom: 42px;
+.features__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.features-icon {
+  margin-right: 20px;
+}
+
+.features-description {
+  margin: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+
+  .features {
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 0;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 354px 354px;
+    grid-template-rows: 280px 280px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+  }
+
+    .features__heading {
+      font-size: 60px;
+line-height: 60px;
+margin-bottom:72px ;
+    }
+
+
+  .features__item {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .features-icon {
+    height: 80px;
+    width: 80px;
+    margin-right: 0;
+    margin-bottom: 31px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .features__list {
+    display: grid;
+    grid-template-columns: 305px 305px 305px 305px;
+    grid-template-rows: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+  }
+
 }
