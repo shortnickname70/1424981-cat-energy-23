@@ -7,6 +7,11 @@ box-sizing: border-box;
 min-height: 705px;
 }
 
+.example__upper-slider {
+  margin: 0 auto;
+    padding: 0;
+    width: 280px;
+}
 .example__header {
 font-family: "Oswald";
 font-style: normal;
@@ -73,7 +78,7 @@ background-color: #EAEAEA;
 .example__weight-and-days {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
 }
 
 .example__expenses {
@@ -87,6 +92,8 @@ text-transform: uppercase;
 color: #000000;
 margin: 0;
 margin-bottom: 42px;
+margin-top: 34px;
+margin-left: 46px;
 }
 
 .example__slider {
@@ -114,6 +121,12 @@ color: #000000;
     padding-top: 43px;
     box-sizing: border-box;
     min-height: 1081px;
+    }
+
+    .example__upper-slider {
+      margin: 0 auto;
+        padding: 0;
+        width: 708px;
     }
 
     .example__header {
@@ -183,6 +196,7 @@ color: #000000;
     justify-content: space-between;
     margin: 0;
     min-height: 330px;
+    flex-wrap: nowrap;
     }
 
     .example__expenses {
@@ -235,8 +249,14 @@ bottom: 0;
 
   .example {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
    min-height:  600px;
+  }
+
+  .example__upper-slider {
+    margin: 0 auto;
+      padding: 0;
+      max-width: 500px;
   }
   .example__header {
     margin: 0;
