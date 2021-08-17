@@ -1,8 +1,7 @@
 // Начните писать стили здесь
 .cooperation {
-padding: 28px 20px ;
+padding: 28px 0px ;
 display: flex;
-background-color: #F2F2F2;
 
 }
 .cooperation__invite {
@@ -19,7 +18,7 @@ margin: 0;
 
 .cooperation__address {
 display: block;
-font-family: Arial;
+font-family: "Arial";
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -31,37 +30,36 @@ margin: 0;
 @media (min-width: @tablet-width) {
 
   .cooperation {
-    padding: 62px 71px ;
+    padding: 76px 66px;
     display: flex;
-    background-color: #F2F2F2;
+    background-color: white;
     min-height: 201px;
     box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    min-width: 570px;
+    min-height: 201px;
+    justify-content: space-between;
+    top: 3700px;
+
   }
   .cooperation__invite {
     display: block;
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 21px;
-    text-transform: uppercase;
-    color: #111111;
     margin: 0;
     max-width: 171px ;
-    margin-right: 295px;
+    height: min-content;
     }
 
     .cooperation__address {
     display: block;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #444444;
-    margin: 0;
     max-width: 160px ;
     text-align: end;
+    height: min-content;
+
     }
 .cooperation-white-background {
   background-color: white;
