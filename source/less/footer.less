@@ -1,0 +1,57 @@
+// Начните писать стили здесь
+.footer-wrapper {
+  width: 100% ;
+  background-color: #F2F2F2;
+}
+.footer {
+  box-sizing: border-box;
+}
+
+.footer__logo {
+  margin: 39px 76px 32px 76px;
+}
+
+.footer__copyright {
+display: flex;
+justify-content: space-between;
+padding-top: 28px;
+padding-bottom: 22px;
+}
+
+.footer__copyright-name {
+font-family: "Arial";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 150px;
+    align-items: center;
+
+  }
+  .footer__logo {
+    margin: 0;
+    margin-right: 156px;
+  }
+  .footer__copyright-name {
+    margin-right: 22px;
+  }
+  }
+
+  @media (min-width: @desktop-width) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      min-height: 150px;
+      align-items: center;
+      padding: 0 110px;
+      width: 100%;
+
+    }
+  }

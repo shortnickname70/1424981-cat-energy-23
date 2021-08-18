@@ -1,0 +1,64 @@
+// Начните писать стили здесь
+.site-list__item {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  list-style: none;
+  text-align: center;
+  padding-top: 22px;
+  box-sizing: border-box;
+  display: none;
+  cursor: pointer;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-navigation__toggle {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  background-image: url("/img/logo-mobile-header-menu.svg");
+  left: 14px;
+  top: -9px;
+  cursor: pointer;
+}
+
+
+@media (min-width: @tablet-width) {
+
+.site-list__item {
+display: block;
+font-size: 18px;
+line-height: 24px;
+}
+
+.site-list{
+display: flex;
+justify-content: space-around;
+}
+
+.main-navigation__toggle {
+  display: none;
+}
+
+}
+
+
+@media (min-width: @desktop-width) {
+
+
+}
