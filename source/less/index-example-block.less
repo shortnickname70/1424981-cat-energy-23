@@ -1,13 +1,17 @@
 // Начните писать стили здесь
 .example {
 background-color: #EAEAEA;
-padding-left: 20px;
-padding-right: 20px;
+
 padding-top: 27px;
 box-sizing: border-box;
 min-height: 705px;
 }
 
+.example__upper-slider {
+  margin: 0 auto;
+    padding: 0;
+    width: 280px;
+}
 .example__header {
 font-family: "Oswald";
 font-style: normal;
@@ -74,7 +78,7 @@ background-color: #EAEAEA;
 .example__weight-and-days {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
 }
 
 .example__expenses {
@@ -88,6 +92,8 @@ text-transform: uppercase;
 color: #000000;
 margin: 0;
 margin-bottom: 42px;
+margin-top: 34px;
+margin-left: 46px;
 }
 
 .example__slider {
@@ -117,14 +123,19 @@ color: #000000;
     min-height: 1081px;
     }
 
+    .example__upper-slider {
+      margin: 0 auto;
+        padding: 0;
+        width: 708px;
+    }
+
     .example__header {
 
     font-size: 36px;
     line-height: 40px;
     margin: 0;
     margin-bottom: 33px;
-    padding-left: 30px;
-    padding-right: 30px;
+
     }
 
     .example__description {
@@ -134,8 +145,7 @@ color: #000000;
     color: #444444;
     margin: 0;
     margin-bottom: 54px;
-    padding-left: 30px;
-    padding-right: 30px;
+
 
     }
 
@@ -185,9 +195,8 @@ color: #000000;
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
     min-height: 330px;
+    flex-wrap: nowrap;
     }
 
     .example__expenses {
@@ -200,7 +209,10 @@ color: #000000;
     text-align: end;
 
     }
-
+.example__slider-wrapper {
+  width: 100%;
+  background-color: #EAEAEA;
+}
     .example__slider {
       display: flex;
       justify-content: space-between;
@@ -224,7 +236,7 @@ color: #000000;
     .example__slider::before {
 position: absolute;
 content: "";
-background-image: url("../img/img-tablet-half-cat.jpg");
+background-image: url("../img/img-tablet-half-cat.png");
 width: 708px;
 height: 620px;
 left: 30px;
@@ -237,20 +249,22 @@ bottom: 0;
 
   .example {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
    min-height:  600px;
+  }
+
+  .example__upper-slider {
+    margin: 0 auto;
+      padding: 0;
+      max-width: 500px;
   }
   .example__header {
     margin: 0;
-    padding-left: 110px;
-    padding-right: 110px;
     margin-bottom: 146px;
     }
 
 .example__description {
 margin: 0;
-padding-left: 110px;
-padding-right: 110px;
 width: 436px;
 height: 96px;
 margin-bottom: 69px;
@@ -262,8 +276,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content:flex-start;
 margin: 0;
-padding-left: 110px;
-padding-right: 110px;
 min-height: 152px;
 max-width: 370px;
 }
