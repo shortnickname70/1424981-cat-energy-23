@@ -72,6 +72,7 @@
     padding-bottom: 57px;
     width: 100%;
   }
+
   .slimming::after {
     content: "";
     position: absolute;
@@ -86,39 +87,59 @@
     margin-bottom: 24px;
     margin-left: 0;
     font-size: 36px;
-  line-height: 36px;
+    line-height: 36px;
   }
 
-.slimming__text {
-  max-width: 340px;
-  font-size: 16px;
-line-height: 24px;
-margin-bottom: 52px;
-}
+  .slimming__text {
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
 
-.slimming__link {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-}
+  .slimming__link {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
 
 }
 
 @media (min-width: @desktop-width) {
-  .slimming  {
-width: 570px;
-}
-.slimming::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 106px;
-  background-image: url("../img/img-desktop-cat-sit.png");
-  top: 81px;
-  left: 400px;
+  .slimming {
+    width: 570px;
+    background: #F2F2F2;
+    margin: 0;
+    min-height: 266px;
+    position: relative;
+    padding: 77px 51px 59px 52px;
+    height: 374px;
+
+  }
+
+  .slimming::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 106px;
+    background-image: url("../img/img-desktop-cat-sit.png");
+    top: 47px;
+    left: 52px;
+  }
+  .slimming__header {
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 73px;
 }
 
+  .slimming__text {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 27px;
+  }
 }
