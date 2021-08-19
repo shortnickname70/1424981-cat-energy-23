@@ -2,6 +2,7 @@
 
 .main-nav__list {
   position: absolute;
+  display: none;
 left: 0;
 top: 64px;
 margin: 0;
@@ -52,6 +53,38 @@ border: none;
   top: -3px;
   cursor: pointer;
 }
+
+.main-navigation--opened {
+  .main-nav__list {
+    display: block;
+  }
+
+  .main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    width: 24px;
+    height: 2px;
+    left: -1px;
+    top: -3px;
+    background-color: #000000;
+    cursor: pointer;
+  }
+
+  .main-navigation__toggle::after {
+    content: "";
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    left: -1px;
+    top: -3px;
+    cursor: pointer;
+  }
+}
+
+
 
 .main-navigation__toggle::after {
   content: "";

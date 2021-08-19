@@ -20,8 +20,11 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0;
-  margin-bottom: 33px;
+  width: 280px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 33px;
+
 }
 
 .example__description {
@@ -139,6 +142,7 @@
   left: 6px;
   bottom: 4px;
   border-radius: 6px;
+
 }
 
 @media (min-width: @tablet-width) {
@@ -280,7 +284,7 @@
     background-image: url("../img/img-tablet-half-cat.png");
     width: 708px;
     height: 620px;
-    left: 30px;
+    left: calc(50% - 354px);
     bottom: 33px;
 
   }
@@ -325,7 +329,7 @@
   .example {
     display: flex;
     flex-direction: row;
-    min-height: 600px;
+    min-height: 0;
     flex-wrap: wrap;
     padding-top: 0;
     min-width: 1220px;
@@ -336,7 +340,7 @@
   .example__upper-slider {
     margin: 0;
     padding: 0;
-    max-width: 500px;
+    width: 440px;
   }
 
   .example__header {
