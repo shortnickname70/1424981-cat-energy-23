@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   border-bottom: 1px solid #EBEBEB;
-  padding: 19px 20px 25px 20px;
+  padding-top: 19px;
+  padding-bottom: 25px ;
   box-sizing: border-box;
 
 }
@@ -13,6 +14,10 @@
 .catalog__item:first-child {
   border-top: 1px solid #EBEBEB;
 }
+
+.catalog__item:last-child {
+  padding-top: 0;
+  padding-bottom: 0 ;}
 
 .catalog__item-link {
   display: block;
@@ -77,8 +82,11 @@
     margin-right: 60px;
   }
 
+  .catalog__item:nth-child(7) {
+    margin-bottom: 0px;  }
   .catalog__item:last-child {
     background-color: white;
+    margin-bottom: 0px;
   }
 
   .catalog__descriptions {
@@ -96,14 +104,11 @@
 
     font-size: 20px;
     line-height: 24px;
-    align-items: center;
-    text-transform: uppercase;
-    color: #222222;
     max-width: 156px;
-    display: block;
     text-align: center;
     margin-bottom: 21px;
     margin-top: 161px;
+    margin-left: 40px;
   }
 
   .catalog__text {
