@@ -21,9 +21,9 @@
   line-height: 40px;
   color: #000000;
   width: 280px;
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 33px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 33px;
 
 }
 
@@ -329,24 +329,37 @@
   .example {
     display: flex;
     flex-direction: row;
-    min-height: 0;
+    min-height: 667px;
     flex-wrap: wrap;
     padding-top: 0;
     min-width: 1220px;
     padding: 0;
     margin: 0 auto;
+    background: #F2F2F2;
   }
 
-  .example__upper-slider {
-    margin: 0;
+  .example__content {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1220px;
+    margin: 0 auto;
     padding: 0;
-    width: 440px;
   }
 
   .example__header {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
     margin-bottom: 0;
     width: 100%;
+    background-color: #FFFFFF;
+  }
+
+  .example__upper-slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 440px;
   }
 
   .example__description {
@@ -393,6 +406,8 @@
     min-height: 50px;
     justify-content: flex-start;
     max-width: 570px;
+    background-color: #F2F2F2;
+    padding: 0;
   }
 
   .example__slider::before {
