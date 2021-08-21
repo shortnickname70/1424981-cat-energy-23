@@ -20,21 +20,41 @@
   margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
+
+}
+
+.input-email-style {
   position: relative;
 }
 
-.form__feedback-input-item::before {
+.input-email-style::before {
   position: absolute;
   content: "";
-
   background: url("../img/icon-mobile-form-email.svg");
   width: 18px;
   height: 13px;
-  right: 0;
-  top: 0;
+  right: 16px;
+  top: 16px;
   z-index: 5;
 
 }
+
+.input-phone-style {
+  position: relative;
+}
+
+.input-phone-style::before {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-mobile-form-phone.svg");
+  width: 20px;
+  height: 21px;
+  right: 13px;
+  top: 13px;
+  z-index: 5;
+
+}
+
 
 .form__feedback-input {
   height: 45px;
