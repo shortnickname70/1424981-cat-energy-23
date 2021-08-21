@@ -1,9 +1,21 @@
 // Начните писать стили здесь
 .cooperation {
-padding: 28px 0px ;
-display: flex;
-
+padding:  0px ;
+background-color: #FFFFFF;
 }
+.cooperation--background{
+  background-color: #F2F2F2;
+}
+.cooperation__wrapper-background {
+  background-color: #F2F2F2;
+}
+
+.cooperation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0px;
+}
+
 .cooperation__invite {
 display: block;
 font-family: "Oswald";
@@ -30,19 +42,23 @@ margin: 0;
 @media (min-width: @tablet-width) {
 
   .cooperation {
-    padding: 76px 66px;
-    display: flex;
     background-color: white;
-    min-height: 201px;
     box-sizing: border-box;
-    position: absolute;
-    z-index: 2;
-    min-width: 570px;
-    min-height: 201px;
-    justify-content: space-between;
-    top: 3700px;
 
   }
+
+  .cooperation--background{
+    background-color: #F2F2F2;
+  }
+  .cooperation__wrapper-background {
+    background-color: #F2F2F2;
+  }
+
+  .cooperation__wrapper {
+    padding: 62px 72px 58px 71px ;
+  }
+
+
   .cooperation__invite {
     display: block;
     font-size: 20px;
@@ -61,19 +77,30 @@ margin: 0;
     height: min-content;
 
     }
-.cooperation-white-background {
-  background-color: white;
-}
+    .cooperation--spb {
+      margin-top: 20px;
+      display: block;
+  }
+
+
 }
 
 @media (min-width: @desktop-width) {
   .cooperation {
+    position: relative;
+  }
+  .cooperation__wrapper-background {
+    background-color: #F2F2F2;
+  }
+  .cooperation__wrapper {
     position: absolute;
     width: 570px;
     height: 201px;
     left: 110px;
-    top: 2168px;
+    top: 95px;
     z-index: 5;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
   }
 
   .cooperation__invite {

@@ -4,7 +4,6 @@
 .catalog__view-more {
 
   margin: 0;
-  margin-bottom: 25px;
   position: relative;
   min-height: 208px;
   box-sizing: border-box;
@@ -12,60 +11,193 @@
   border-bottom: 1px solid #EBEBEB;
 
 }
+
+.catalog__view-more::before {
+  position: absolute;
+  content: "";
+  left: 124px;
+  top: 39px;
+  width: 30px;
+  height: 2px;
+  background-color: #D3D3D3;
+}
+
+.catalog__view-more::after {
+  position: absolute;
+  content: "";
+  left: 139px;
+  top: 25px;
+  width: 2px;
+  height: 30px;
+  background-color: #D3D3D3;
+}
+
+
 .catalog__view-more-icon-cross {
-position: absolute;
-left: 145px;
-top: 25px;
+  position: absolute;
+  left: 145px;
+  top: 25px;
 }
 
 .view-more__items {
   display: block;
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-color: #111111;
-margin: 0;
-margin-bottom: 9px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 9px;
 }
 
 .view-more__more-tastes {
-font-family: "Arial";
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 16px;
-text-align: center;
-color: #444444;
-margin: 0;
-display: block;
-margin-bottom: 21px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  margin: 0;
+  display: block;
+  margin-bottom: 21px;
 }
 
 .view-more__button {
-background: #F2F2F2;
-width: 279px;
-height: 40px;
-font-family: "Oswald";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-color: #444444;
-border: none;
-}
-
-@media (min-width: @desktop-width) {
-  .view-more__button{
-  width: 169px;
-}
-.catalog__view-more {
+  background: #F2F2F2;
+  width: 279px;
+  height: 40px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
   border: none;
 }
+
+
+@media (min-width: @tablet-width) {
+
+  .catalog__view-more {
+    width: 324px;
+    height: 430px;
+    border: 1px solid #EBEBEB;
+    padding-top: 0;
+  }
+
+  .catalog__view-more::before {
+    position: absolute;
+    content: "";
+    left: 132px;
+    top: 80px;
+    width: 60px;
+    height: 2px;
+    background-color: #D3D3D3;
+  }
+
+  .catalog__view-more::after {
+    position: absolute;
+    content: "";
+    left: 160px;
+    top: 52px;
+    width: 2px;
+    height: 60px;
+    background-color: #D3D3D3;
+  }
+
+  .view-more__items {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111111;
+    margin-top: 161px;
+    margin-bottom: 23px;
+    max-width: 134px;
+    margin-left: 95px;
+  }
+
+  .view-more__more-tastes {
+
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+    max-width: 167px;
+    margin-left: 78px;
+    margin-bottom: 87px;
+
+  }
+
+  .view-more__button {
+    background: #F2F2F2;
+    width: 248px;
+    height: 40px;
+    line-height: 0px;
+    margin-left: 39px;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: @desktop-width) {
+
+  .catalog__view-more::before {
+    position: absolute;
+    content: "";
+    left: 92.5px;
+    top: 80px;
+    width: 60px;
+    height: 2px;
+    background-color: #D3D3D3;
+  }
+
+  .catalog__view-more::after {
+    position: absolute;
+    content: "";
+    left: 121.5px;
+    top: 52px;
+    width: 2px;
+    height: 60px;
+    background-color: #D3D3D3;
+  }
+
+  .view-more__items {
+    max-width: 134px;
+    margin-top: 161px;
+    margin-bottom: 23px;
+    margin-left: 56px;
+  }
+
+  .view-more__more-tastes {
+    margin: 0;
+    max-width: 167px;
+    margin-left: 39px;
+    margin-bottom: 87px;
+  }
+
+  .view-more__button {
+    width: 169px;
+  }
+
+  .catalog__view-more {
+    border: none;
+  }
 }
