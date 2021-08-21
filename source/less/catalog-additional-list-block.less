@@ -1,7 +1,7 @@
 // Начните писать стили здесь
 
 .catalog__additional-items {
-margin-top:25px ;
+  margin-top: 25px;
 }
 
 .catalog__additional-title {
@@ -27,13 +27,14 @@ margin-top:25px ;
 
 @media (min-width: @tablet-width) {
 
-.catalog__additional-title--wrapper {
-  border-top: 2px solid #68B738;
-  width: 100%;
-}
+  .catalog__additional-title--wrapper {
+    border-top: 2px solid #68B738;
+    width: 100%;
+  }
 
   .catalog__additional-title {
-
+    width: 411px;
+    box-sizing: border-box;
     font-size: 36px;
     line-height: 36px;
     color: #000000;
@@ -41,24 +42,23 @@ margin-top:25px ;
     margin-bottom: 79px;
     z-index: 2;
     top: -27px;
+    left: 30px;
     background-color: white;
     margin-left: 0;
-    width: 411px;
-    left: 30px;
     padding-left: 36px;
-    box-sizing: border-box;
-}
+
+  }
 
 
 
   .catalog__additional-items {
-  margin-top: 0;
+    margin-top: 0;
 
   }
 
   .additional-items__list {
     border: 1px solid #CDCDCD;
-
+    margin-bottom: 69px;
   }
 }
 
@@ -67,10 +67,11 @@ margin-top:25px ;
   .catalog__additional-items {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 110px;
-    padding-right: 110px;
-  }
 
+  }
+.additional-items--wrapper {
+  display: flex;
+}
   .additional-items__list {
     border: none;
     max-width: 895px;
@@ -84,6 +85,6 @@ margin-top:25px ;
     position: relative;
     margin: 0;
     margin-bottom: 81px;
-    min-width: 1000px;
+    min-width: 0;
   }
 }

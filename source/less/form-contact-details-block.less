@@ -20,14 +20,38 @@
   margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.form__feedback-input-item::before {
+  position: absolute;
+  content: "";
+
+  background: url("../img/icon-mobile-form-email.svg");
+  width: 18px;
+  height: 13px;
+  right: 0;
+  top: 0;
+  z-index: 5;
+
 }
 
 .form__feedback-input {
   height: 45px;
   width: 100%;
   box-sizing: border-box;
+  padding: 14px 47px 15px 15px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
 
 }
+
 
 .form__feedback-label {
   white-space: nowrap;
