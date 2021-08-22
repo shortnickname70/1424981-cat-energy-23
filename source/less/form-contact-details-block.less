@@ -20,14 +20,58 @@
   margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
+
 }
+
+.input-email-style {
+  position: relative;
+}
+
+.input-email-style::before {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-mobile-form-email.svg");
+  width: 18px;
+  height: 13px;
+  right: 16px;
+  top: 16px;
+  z-index: 5;
+
+}
+
+.input-phone-style {
+  position: relative;
+}
+
+.input-phone-style::before {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-mobile-form-phone.svg");
+  width: 20px;
+  height: 21px;
+  right: 13px;
+  top: 13px;
+  z-index: 5;
+
+}
+
 
 .form__feedback-input {
   height: 45px;
   width: 100%;
   box-sizing: border-box;
+  padding: 14px 47px 15px 15px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
 
 }
+
 
 .form__feedback-label {
   white-space: nowrap;
