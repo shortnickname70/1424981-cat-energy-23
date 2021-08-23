@@ -14,6 +14,11 @@
   background-repeat: no-repeat;
   min-height: 302px;
   margin-bottom: 49px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/img-mobile-cat-tongue-@2x.png");
+    background-size: 640px auto;
+  }
 }
 
 .promo__title {
@@ -63,6 +68,11 @@
   left: 20px;
   bottom: 41px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/img-mobile-index-product-@2x.png");
+    background-size: 560px auto;
+  }
+
 }
 
 @media (min-width: @tablet-width) {
@@ -105,7 +115,13 @@
     min-height: 609px;
     background-repeat: no-repeat;
     background-color: transparent;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-tablet-index-product-@2x.png");
+      background-size: 1418px auto;
+    }
   }
+
   .promo__lower-half::after {
     display: none;
   }

@@ -104,6 +104,7 @@
 
 .example__cat-img {
   margin-bottom: 27px;
+
 }
 
 .example__slider {
@@ -287,6 +288,10 @@
     left: calc(50% - 354px);
     bottom: 33px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-tablet-half-cat-@2x.png");
+      background-size: 1416px auto;
+    }
   }
 
   .slider-bar {
@@ -345,10 +350,12 @@
     margin: 0 auto;
 
   }
+
   .example__header-wrapper {
     width: 100%;
     background: white;
   }
+
   .example__header {
     margin-bottom: 0;
     margin: 0 auto;
@@ -381,9 +388,10 @@
     min-height: 152px;
     max-width: 370px;
   }
-.example-description {
-background-color: #F2F2F2;
-}
+
+  .example-description {
+    background-color: #F2F2F2;
+  }
 
   .example__expenses {
     max-width: 327px;
@@ -426,7 +434,13 @@ background-color: #F2F2F2;
     left: calc(50% - 345px);
     bottom: 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-desktop-half-cat-@2x.png");
+      background-size: 1416px auto;
+    }
+
   }
+
   .slider-bar {
     margin-left: 24px;
     margin-right: 19px;

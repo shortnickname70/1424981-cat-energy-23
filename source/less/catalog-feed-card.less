@@ -1,27 +1,32 @@
 // Начните писать стили здесь
+.catalog__list--item {
+  border: 1px solid #EBEBEB;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 25px;
+}
 
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  border-bottom: 1px solid #EBEBEB;
-  padding-top: 19px;
-  padding-bottom: 25px ;
   box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
 
 }
 
-.catalog__item:first-child {
-  border-top: 1px solid #EBEBEB;
-}
+
 
 .catalog__item:last-child {
   padding-top: 0;
-  padding-bottom: 0 ;}
+  padding-bottom: 0;
+}
 
 .catalog__item-link {
   display: block;
   margin-left: auto;
+  height: auto;
 }
 
 
@@ -61,6 +66,17 @@
 
 @media (min-width: @tablet-width) {
 
+  .catalog__list--item {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 324px;
+    height: 430px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    margin-bottom: 141px;
+  }
+
   .catalog__item a {
     display: none;
   }
@@ -69,23 +85,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 1px solid #EBEBEB;
     padding: 0;
-    width: 324px;
-    height: 430px;
     background-color: #F2F2F2;
-    margin-bottom: 141px;
-
+    margin: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
   }
 
-  .catalog__item:nth-child(odd) {
-    margin-right: 60px;
-  }
 
   .catalog__item:nth-child(7) {
-    margin-bottom: 0px;  }
+    margin-bottom: 0px;
+  }
+
   .catalog__item:last-child {
-    background-color: white;
+
     margin-bottom: 0px;
   }
 
@@ -128,16 +142,26 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .catalog__list--item {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+   width: 245px;
+    height: 431px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    margin-bottom: 143px;
+  }
+
   .catalog__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-bottom: 1px solid #EBEBEB;
     padding: 0;
-    width: 245px;
-    height: 431px;
     background-color: #F2F2F2;
-    margin-bottom: 141px;
+    margin-bottom: 0;
   }
 
   .catalog__item:nth-child(odd) {
@@ -163,6 +187,7 @@
     justify-content: space-between;
     border-bottom: 1px solid #CDCDCD;
   }
+
   .catalog__descriptions--title {
 
     line-height: 21px;
@@ -172,14 +197,15 @@
     margin-top: 161px;
     margin-left: 0;
   }
+
   .catalog__button {
 
-   width: 168px;
-   height: 40px;
-   font-size: 16px;
-line-height: 20px;
-font-weight: normal;
-padding: 0;
+    width: 168px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 0;
 
   }
 }
