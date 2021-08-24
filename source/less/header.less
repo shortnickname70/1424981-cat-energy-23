@@ -5,9 +5,33 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #D9D9D9;
-  margin-bottom: 27px;
   box-sizing: border-box;
   position: relative;
+}
+
+.page-header--desktop-background {
+  position: relative;
+}
+
+.page-header--desktop-background::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/img-mobile-cat-tongue.jpg");
+  right: calc(50% - 160px);
+  top: 65px;
+  width: 320px;
+  height: 302px;
+}
+
+.page-header--desktop-background::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(104, 183, 56, 0.85);
+  right: calc(50% - 160px);
+  top: 65px;
+  width: 320px;
+  height: 302px;
+  z-index: 4;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,7 +44,13 @@
     min-height: 115px;
     box-sizing: border-box;
   }
+  .page-header--desktop-background::after {
+   display: none;
+  }
 
+  .page-header--desktop-background::before {
+    display: none;
+  }
   .page-header__logo-cat {
     display: none;
   }
@@ -49,6 +79,7 @@
     box-sizing: border-box;
 
   }
+
   .page-header__logo-text {
     min-width: 202px;
     Height: 59px;
@@ -56,4 +87,32 @@
     background-repeat: no-repeat;
     margin-right: 538px;
   }
+
+  .page-header--desktop-background {
+    position: relative;
+  }
+
+  .page-header--desktop-background::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url("../img/img-desktop-cat-tongue.png");
+    right: 0;
+    top: 0;
+    width: 720px;
+    height: 694px;
+  }
+
+  .page-header--desktop-background::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: rgba(104, 183, 56, 0.85);
+    right: 0;
+    top: 0;
+    width: 720px;
+    height: 694px;
+    z-index: 4;
+  }
+
 }

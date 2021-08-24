@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -63,16 +63,47 @@
     box-sizing: border-box;
   }
 
-    .features__heading {
-      font-size: 60px;
-line-height: 60px;
-margin-bottom:72px ;
-    }
+  .features__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 
 
   .features__item {
     display: block;
     margin-bottom: 0;
+  }
+
+  .features__item:nth-child(1) {
+  background-image: url("../img/img-tablet-number1.png");
+  background-size: 82px 226px;
+    background-repeat: no-repeat;
+    background-position: 118px 0;
+  }
+  .features__item:nth-child(2) {
+    background-image: url("../img/img-tablet-number2.png");
+    background-size: 107px 226px;
+      background-repeat: no-repeat;
+      background-position: 118px 0;
+    }
+
+    .features__item:nth-child(3) {
+      background-image: url("../img/img-tablet-number3.png");
+      background-size: 107px 226px;
+        background-repeat: no-repeat;
+        background-position: 118px 0;
+      }
+      .features__item:nth-child(4) {
+        background-image: url("../img/img-tablet-number4.png");
+        background-size: 123px 226px;
+          background-repeat: no-repeat;
+          background-position: 118px 0;
+        }
+
+
+  .features-description {
+    max-width: 245px;
   }
 
   .features-icon {
@@ -100,13 +131,13 @@ margin-bottom:72px ;
   .features__heading {
 
     margin-bottom: 32px;
-}
+  }
 
-.features__item {
-  display: block;
-  margin-bottom: 0;
-  box-sizing: border-box;
-  padding-top: 40px;
-  padding-bottom: 57px;
-}
+  .features__item {
+    display: block;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
 }

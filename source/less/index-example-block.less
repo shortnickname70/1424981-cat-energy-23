@@ -63,7 +63,8 @@
   display: block;
 }
 
-.example-description {
+.example__days-description,
+.example__weight-description{
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -74,9 +75,9 @@
   text-align: center;
   color: #444444;
   position: absolute;
-  width: 87px;
+  width: 82px;
   height: 31px;
-  left: 16px;
+  left: 19px;
   top: 47px;
   background-color: #EAEAEA;
 }
@@ -208,8 +209,9 @@
     display: block;
   }
 
-  .example-description {
-    font-family: Arial;
+  .example__days-description,
+  .example__weight-description {
+    font-family: "Arial";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -222,12 +224,15 @@
     width: 114px;
     height: 50px;
     left: 24px;
-    top: 47px;
+    top: 53px;
     background-color: white;
     box-sizing: border-box;
     padding-top: 10px;
   }
-
+.example-description-time{
+width: 142px;
+left: 10px;
+}
   .example__weight-and-days {
     display: flex;
     justify-content: space-between;
@@ -389,7 +394,8 @@
     max-width: 370px;
   }
 
-  .example-description {
+  .example__days-description,
+  .example__weight-description {
     background-color: #F2F2F2;
   }
 
