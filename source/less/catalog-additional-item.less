@@ -1,5 +1,7 @@
 // Начните писать стили здесь
 .additional-items__item {
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid #EBEBEB;
   padding-bottom: 19px;
   padding-top: 12px;
@@ -22,23 +24,26 @@
   margin: 0;
   margin-bottom: 13px;
   padding: 0;
+  min-width: 100%;
 }
 
 .additional-items--value {
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
   margin: 0;
-  margin-bottom: 15px;
   padding: 0;
-
+  min-width: 126px;
+  display: block;
+  margin-right: 115px;
+  margin-bottom: 15px;
 }
 
 .additional-items--price {
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -47,6 +52,8 @@
   color: #444444;
   margin: 0;
   padding: 0;
+  min-width: 39px;
+  display: block;
 
 }
 

@@ -7,10 +7,12 @@
   border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   position: relative;
+  margin-bottom: 27px;
 }
 
 .page-header--desktop-background {
   position: relative;
+  margin-bottom: 0;
 }
 
 .page-header--desktop-background::after {
@@ -21,6 +23,11 @@
   top: 65px;
   width: 320px;
   height: 302px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/img-mobile-cat-tongue-@2x.png");
+    background-size: 320px auto;
+  }
+
 }
 
 .page-header--desktop-background::before {
@@ -118,6 +125,10 @@
     top: 0;
     width: 720px;
     height: 694px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/img-desktop-cat-tongue-@2x.png");
+      background-size: 720px auto;
+    }
   }
 
   .page-header--desktop-background::before {

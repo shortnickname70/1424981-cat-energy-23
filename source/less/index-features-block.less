@@ -76,30 +76,57 @@
   }
 
   .features__item:nth-child(1) {
-  background-image: url("../img/img-tablet-number1.png");
-  background-size: 82px 226px;
+    background-image: url("../img/img-tablet-number1.png");
+    background-size: 82px 226px;
     background-repeat: no-repeat;
     background-position: 118px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/img-tablet-number1-@2x.png");
+      background-size: 82px 226px;
+      background-repeat: no-repeat;
+    }
+
   }
+
   .features__item:nth-child(2) {
     background-image: url("../img/img-tablet-number2.png");
     background-size: 107px 226px;
-      background-repeat: no-repeat;
-      background-position: 118px 0;
-    }
+    background-repeat: no-repeat;
+    background-position: 118px 0;
 
-    .features__item:nth-child(3) {
-      background-image: url("../img/img-tablet-number3.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/img-tablet-number2-@2x.png");
       background-size: 107px 226px;
-        background-repeat: no-repeat;
-        background-position: 118px 0;
-      }
-      .features__item:nth-child(4) {
-        background-image: url("../img/img-tablet-number4.png");
-        background-size: 123px 226px;
-          background-repeat: no-repeat;
-          background-position: 118px 0;
-        }
+      background-repeat: no-repeat;
+    }
+  }
+
+  .features__item:nth-child(3) {
+    background-image: url("../img/img-tablet-number3.png");
+    background-size: 107px 226px;
+    background-repeat: no-repeat;
+    background-position: 118px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/img-tablet-number3-@2x.png");
+      background-size: 107px 226px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .features__item:nth-child(4) {
+    background-image: url("../img/img-tablet-number4.png");
+    background-size: 123px 226px;
+    background-repeat: no-repeat;
+    background-position: 118px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/img-tablet-number4-@2x.png");
+      background-size: 123px 226px;
+      background-repeat: no-repeat;
+    }
+  }
 
 
   .features-description {
