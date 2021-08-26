@@ -1,8 +1,9 @@
 // Начните писать стили здесь
 .footer-wrapper {
-  width: 100% ;
+  width: 100%;
   background-color: #F2F2F2;
 }
+
 .footer {
   box-sizing: border-box;
 }
@@ -12,20 +13,15 @@
 }
 
 .footer__copyright {
-display: flex;
-justify-content: space-between;
-padding-top: 28px;
-padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../img/logo-mobile-htmlacademy-svg.svg");
+  width: 281px;
+  min-height: 78px;
+  background-repeat: no-repeat;
+  background-position: 0px 22px;
 }
 
-.footer__copyright-name {
-font-family: "Arial";
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 18px;
-color: #444444;
-}
 
 @media (min-width: @tablet-width) {
   .footer {
@@ -35,23 +31,31 @@ color: #444444;
     align-items: center;
 
   }
+
   .footer__logo {
     margin: 0;
     margin-right: 156px;
   }
-  .footer__copyright-name {
-    margin-right: 22px;
-  }
-  }
 
-  @media (min-width: @desktop-width) {
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      min-height: 150px;
-      align-items: center;
-      padding: 0 110px;
-      width: 100%;
 
-    }
+  .footer__copyright {
+
+    background-image: url("../img/logo-tablet-htmlacademy-svg.svg");
+    width: 163px;
+    min-height: 34px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    align-items: center;
+    padding: 0 110px;
+    width: 100%;
+
+  }
+}

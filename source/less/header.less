@@ -76,22 +76,22 @@
 }
 
 @media (min-width: @desktop-width) {
-  body {
-    position: relative;
-  }
+  // body {
+  //   position: relative;
+  // }
 
-  .test {
-    height: 694px;
-    width: 100%;
-    background-color: red;
-    background: linear-gradient(to right white 49.9%, rgba(104, 183, 56, 0.85) 50%);
-    position: absolute;
-    top: 0;
-    left: 0;
+  // .test {
+  //   height: 694px;
+  //   width: 100%;
+  //   background-color: red;
+  //   background: linear-gradient(to right white 49.9%, rgba(104, 183, 56, 0.85) 50%);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
 
-    background-image: url(../img/img-desktop-cat-tongue.png);
+  //   background-image: url(../img/img-desktop-cat-tongue.png);
 
-  }
+  // }
 
   .page-header {
     display: flex;
@@ -121,7 +121,7 @@
     position: absolute;
     content: "";
     background-image: url("../img/img-desktop-cat-tongue.png");
-    right: 0;
+    left: calc(1440px - 720px);
     top: 0;
     width: 720px;
     height: 694px;
@@ -136,7 +136,7 @@
     position: absolute;
     content: "";
     background-color: rgba(104, 183, 56, 0.85);
-    right: 0;
+    left: calc(1440px - 720px);
     top: 0;
     width: 720px;
     height: 694px;

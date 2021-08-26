@@ -1,25 +1,25 @@
 // Начните писать стили здесь
 .pumping {
-background: #F2F2F2;
-margin-bottom: 27px;
-min-height: 266px;
-position: relative;
-padding-top: 30px;
-padding-left: 20px;
-box-sizing: border-box;
+  background: #F2F2F2;
+  margin-bottom: 27px;
+  min-height: 266px;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
-.pumping::after{
-content: "";
-position: absolute;
-width: 67px;
-height: 50px;
-background-image: url("/img/img-mobile-cat-walk.png");
-top: 24px;
-left: 13px;
-  }
+.pumping::after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  background-image: url("/img/img-mobile-cat-walk-svg.svg");
+  top: 24px;
+  left: 13px;
+}
 
-  .pumping__header {
+.pumping__header {
   font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
@@ -29,10 +29,10 @@ left: 13px;
   color: #000000;
   margin: 0;
   margin-left: 71px;
-margin-bottom: 29px;
-  }
+  margin-bottom: 29px;
+}
 
-  .pumping__text {
+.pumping__text {
   font-family: "Arial";
   font-style: normal;
   font-weight: normal;
@@ -40,11 +40,11 @@ margin-bottom: 29px;
   line-height: 18px;
   color: #444444;
   max-width: 227px;
-display: block;
-margin-bottom: 42px;
-  }
+  display: block;
+  margin-bottom: 42px;
+}
 
-  .pumping__link {
+.pumping__link {
   font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
@@ -54,42 +54,43 @@ margin-bottom: 42px;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .pumping {
+    background: #F2F2F2;
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 266px;
+    position: relative;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 57px;
   }
 
-  @media (min-width: @tablet-width) {
-    .pumping {
-      background: #F2F2F2;
-      width: 100%;
-      margin-bottom: 20px;
-      min-height: 266px;
-      position: relative;
-      padding-top: 77px;
-      padding-left: 52px;
-      padding-bottom: 57px;
-    }
-    .pumping::after {
-      content: "";
-      position: absolute;
-      width: 268px;
-      height: 200px;
-      background-image: url("../img/img-tablet-cat-walk.png");
-      background-repeat: no-repeat;
-      top: 91px;
-      left: 412px;
-    }
+  .pumping::after {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 91px;
+    left: 412px;
+  }
 
-    .pumping__header {
-      margin-bottom: 24px;
-      margin-left: 0;
-      font-size: 36px;
+  .pumping__header {
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
     line-height: 36px;
-    }
+  }
 
   .pumping__text {
     max-width: 340px;
     font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 52px;
+    line-height: 24px;
+    margin-bottom: 52px;
   }
 
   .pumping__link {
@@ -99,9 +100,9 @@ margin-bottom: 42px;
     font-size: 20px;
     line-height: 30px;
   }
-  }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
 
   .pumping {
     width: 570px;
@@ -113,12 +114,13 @@ margin-bottom: 42px;
     height: 374px;
 
   }
+
   .pumping::after {
     content: "";
     position: absolute;
     width: 134px;
     height: 100px;
-    background-image: url("../img/img-desktop-cat-walk.png");
+
     top: 47px;
     left: 32px;
   }
@@ -129,7 +131,7 @@ margin-bottom: 42px;
     margin-left: 0;
     text-align: center;
     margin-bottom: 73px;
-}
+  }
 
   .pumping__text {
     max-width: 570px;
