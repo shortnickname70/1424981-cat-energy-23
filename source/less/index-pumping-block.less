@@ -3,23 +3,11 @@
   background: #F2F2F2;
   margin-bottom: 27px;
   min-height: 266px;
-  position: relative;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-left: 20px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-}
-
-.pumping::after {
-  content: "";
-  position: absolute;
-  width: 67px;
-  height: 50px;
-  background-image: url("/img/img-mobile-cat-walk-svg.svg");
-  top: 24px;
-  left: 13px;
-  display: none;
 }
 
 .pumping__header {
@@ -34,6 +22,17 @@
   margin-bottom: 29px;
 }
 
+.pumping__icon {
+  display: block;
+  background-image: url("../img/img-mobile-cat-walk-svg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67px;
+  height: 50px;
+  margin-left: -5px;
+  margin-right: 11px;
+}
+
 .pumping__text {
   font-family: "Arial";
   font-style: normal;
@@ -43,7 +42,10 @@
   color: #444444;
   max-width: 227px;
   display: block;
-  margin-bottom: 42px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 19px;
 }
 
 .pumping__link {
@@ -56,30 +58,28 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .pumping {
+    display: block;
     background: #F2F2F2;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     min-height: 266px;
-    position: relative;
     padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 57px;
   }
-
-  .pumping::after {
-    content: "";
-    position: absolute;
-    width: 268px;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 91px;
-    left: 412px;
-  }
+  .pumping__icon {
+  display: block;
+  background-image: url("../img/img-mobile-cat-walk-svg.svg");
+  width: 268px;
+  height: 200px;
+  margin-right: 28px;
+  float: right;
+}
 
   .pumping__header {
     margin-bottom: 24px;
@@ -93,6 +93,8 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 52px;
+    border: none;
+    padding-bottom: 0;
   }
 
   .pumping__link {
@@ -111,27 +113,24 @@
     background: #F2F2F2;
     margin: 0;
     min-height: 266px;
-    position: relative;
     padding: 77px 51px 59px 52px;
     height: 374px;
 
   }
-
-  .pumping::after {
-    content: "";
-    position: absolute;
+  .pumping__icon {
+    display: block;
+    background-image: url("../img/img-mobile-cat-walk-svg.svg");
     width: 134px;
     height: 100px;
-
-    top: 47px;
-    left: 32px;
+    margin-right: 47px;
+    float: left;
+    margin-top: -30px;
   }
-
 
   .pumping__header {
     margin-bottom: 0;
     margin-left: 0;
-    text-align: center;
+    text-align: start;
     margin-bottom: 73px;
   }
 
