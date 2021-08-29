@@ -81,7 +81,7 @@
 }
 
 .form__radio-item {
-  margin-bottom: 12px;
+
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -106,8 +106,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
-  margin-left: 15px;
-  margin-top: 6px;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  z-index: 5;
 }
 
 .form__radio-check-field {
@@ -116,7 +118,8 @@
   height: 30px;
   border-radius: 50%;
   box-sizing: border-box;
-
+  position: absolute;
+z-index: 2;
 }
 
 .form__radio-check-field-checked {
@@ -194,7 +197,7 @@
 }
 
 
-.form__extra-input:checked ~ .chekbox-on-icon {
+.form__extra-input:checked ~ .checkbox-on-icon {
   visibility: visible;
 }
 
@@ -207,9 +210,10 @@
   align-items: center;
   text-transform: uppercase;
   color: #000000;
-  margin-left: 16px;
+  padding-left: 44px;
+  z-index: 3;
   padding-top: 6px;
-
+  padding-bottom: 15px;
 }
 
 .form__extra-check-field {
@@ -218,13 +222,15 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  position: absolute;
 
 }
-.chekbox-on-icon {
+.checkbox-on-icon {
   position: absolute;
   top: 8px;
   left: 8px;
   visibility: hidden;
+  z-index: ;
 }
 
 .form__note {

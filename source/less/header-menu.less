@@ -103,9 +103,16 @@
   .main-navigation {
     width: 100%;
   }
+  .main-navigation--opened {
+    .main-nav__list {
+      display: flex;
+    }
+  }
 
   .main-nav__list {
     position: static;
+    display: flex;
+    justify-content: space-between;
   }
 
   .site-list__item {
@@ -116,10 +123,9 @@
     border: none;
   }
 
-  .site-list {
-    display: flex;
-    justify-content: space-between;
-  }
+  // .site-list {
+
+  // }
 
   .main-navigation__toggle {
     display: none;
