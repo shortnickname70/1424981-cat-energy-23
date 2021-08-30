@@ -8,17 +8,37 @@
   margin-bottom: 22px;
 }
 
-.promo__descriptions-wrapper {
-  background: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
+.promo__background-color {
   min-height: 302px;
+  width: 100%;
+  background: rgba(104, 183, 56, 0.85);
+  z-index: 4;
+  position: absolute;
+}
 
+.promo__background-cat {
+  min-height: 302px;
+  width: 320px;
+  background-image: url("../img/img-mobile-cat-tongue.jpg");
+  background-repeat: no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.promo__descriptions-wrapper {
+  min-height: 302px;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
 
 }
+
 .promo__descriptions {
   z-index: 10;
   position: relative;
 }
+
 .promo__title {
   font-family: "Oswald";
   font-style: normal;
@@ -63,10 +83,12 @@
   background-image: url("/img/img-mobile-index-product.png");
   width: 280px;
   height: 270px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 41px;
-z-index: 10;
-background-repeat: no-repeat;
+  z-index: 10;
+  background-repeat: no-repeat;
+
   @media (min-resolution: 2dppx) {
     background-image: url("/img/img-mobile-index-product-@2x.png");
     background-size: 280px auto;
@@ -83,6 +105,12 @@ background-repeat: no-repeat;
     background-color: #FFFFFF;
     min-height: 183px;
     margin-bottom: 20px;
+    width: 708px;
+  }
+
+  .promo__background-color,
+  .promo__background-cat {
+    display: none;
   }
 
   .promo__title {
@@ -102,20 +130,31 @@ background-repeat: no-repeat;
     color: #000000;
     padding: 0;
     padding-left: 87px;
+
   }
 
   .promo__lower-half {
     min-height: 610px;
-    width: 100%;
+    position: relative;
     padding: 0;
     box-sizing: border-box;
     position: relative;
+    // background-image: url("../img/img-tablet-index-product.png");
+    min-width: 609px;
+
+  }
+
+  .promo__lower-half::before {
+    content: "";
+    position: absolute;
     background-image: url("../img/img-tablet-index-product.png");
-    min-width: 709px;
-    min-height: 609px;
+    width: 708px;
+    height: 609px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
     background-repeat: no-repeat;
-    background-color: transparent;
-    background-repeat: no-repeat;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-tablet-index-product-@2x.png");
       background-size: 708px auto;
@@ -141,6 +180,30 @@ background-repeat: no-repeat;
     padding-top: 0;
   }
 
+  .promo__background-color {
+    display: block;
+    width: 50%;
+    height: 694px;
+    background: rgba(104, 183, 56, 0.85);
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .promo__background-cat {
+    display: block;
+    background-image: url("../img/img-desktop-cat-tongue.png");
+
+    width: 50%;
+    height: 694px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: none;
+  }
+
   .promo__slogan {
     padding: 0;
     padding-left: 80px;
@@ -149,16 +212,22 @@ background-repeat: no-repeat;
   .promo__lower-half {
     margin: 0;
     width: 100%;
-    min-height: 293px ;
+    min-height: 293px;
     background-image: none;
     margin-left: 0;
   }
+
   .promo__descriptions-wrapper {
     position: relative;
     background-color: transparent;
+    width: 1220px;
   }
 
-  .promo__descriptions-wrapper::after{
+  .promo__lower-half::before {
+    display: none;
+  }
+
+  .promo__descriptions-wrapper::after {
     content: "";
     position: absolute;
     background-image: url("../img/img-desktop-index-product.png");
@@ -168,6 +237,7 @@ background-repeat: no-repeat;
     top: -90px;
     z-index: 6;
     background-repeat: no-repeat;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-desktop-index-product-@2x.png");
       background-size: 552px auto;

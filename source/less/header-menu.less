@@ -3,11 +3,11 @@
 .main-nav__list {
   position: absolute;
   display: none;
-  left: 0;
+  left: -20px;
   top: 64px;
   margin: 0;
   padding: 0;
-  width: 100%;
+  min-width: 320px;
 }
 
 .site-list__item {
@@ -67,7 +67,7 @@
     width: 24px;
     height: 2px;
     left: -1px;
-    top: -3px;
+    top: 3px;
     background-color: #000000;
     cursor: pointer;
   }
@@ -80,12 +80,10 @@
     height: 2px;
     background-color: #000000;
     left: -1px;
-    top: -3px;
+    top: 3px;
     cursor: pointer;
   }
 }
-
-
 
 .main-navigation__toggle::after {
   content: "";

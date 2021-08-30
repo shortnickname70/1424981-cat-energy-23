@@ -20,8 +20,8 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header--desktop-background">
-    <a class="page-header__logo-cat">
+  <header class="page-header page-header--desktop-background container">
+    <a class="page-header__logo-cat" href="index.html">
       <svg width="34" height="38">
         <use xlink:href="img/sprite.svg#icon-cat-header"></use>
       </svg>
@@ -57,17 +57,26 @@
   </header>
   <!-- <div class="test"></div> -->
   <main>
-    <div class="promo container">
+
+    <div class="promo ">
+      <div class="promo__background-color">
+      </div>
+      <div class="promo__background-cat">
+      </div>
       <div class="promo__descriptions-wrapper">
+
         <div class="promo__descriptions">
           <span class="promo__title">Функциональное питание для котов</span>
           <span class="promo__slogan">Занялся собой? Займись котом!</span>
         </div>
       </div>
       <div class="promo__lower-half">
-        <button class="main-navigation__button mobile-button" type="button">Подобрать программу</button>
+        <div class="container">
+          <button class="main-navigation__button mobile-button" type="button">Подобрать программу</button>
+        </div>
       </div>
     </div>
+
     <div class="container slim-pump">
       <div class="slimming">
         <a class="slimming__icon" href="catalog.html">
@@ -199,7 +208,11 @@
         </div>
       </div>
       <div class="location__wrapper">
-        <img src="img/img-mobile-map.jpg" width="320" height="362" alt="Карта">
+
+        <iframe class="map" allowfullscreen
+          title="Офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630297740808!5m2!1sru!2sru;z=10;iwloc=near&amp"
+          style="border:0;"></iframe>
       </div>
     </div>
   </main>
@@ -207,10 +220,11 @@
   <div class="footer-wrapper">
     <footer class="footer container">
       <!-- <div class="container"> -->
-      <svg class="footer__logo" width="128" height="24">
-        <use xlink:href="img/sprite.svg#icon-footer-text"></use>
-      </svg>
-
+      <a href="index.html">
+        <svg class="footer__logo" width="128" height="24">
+          <use xlink:href="img/sprite.svg#icon-footer-text"></use>
+        </svg>
+      </a>
       <div class="footer__socials">
         <ul class="socials__list">
 
@@ -234,7 +248,7 @@
         </ul>
       </div>
 
-      <a href="https://htmlacademy.ru/study" class="footer__copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
       </a>
   </div>
   <!-- </div> -->
