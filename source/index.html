@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+ <link rel="preload" href="js/menu-management.js" as="script">
+ <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link href="source/css/style.css" rel="stylesheet">
   <link rel="icon" href="../source/img/favicons/favicon-16-ico.ico">
   <link rel="icon" href="../source/img/favicons/favicon-152-ico.ico">
@@ -71,10 +71,15 @@
         </div>
       </div>
       <div class="promo__lower-half">
-        <div class="container">
-          <button class="main-navigation__button mobile-button" type="button">Подобрать программу</button>
-        </div>
+        <!-- <div class="container">
+          <button class="main-navigation__button mobile-button" type="button"></button>
+        </div> -->
+        <div class="promo-button">
+        <a href="form.html" class="main-navigation__button ">
+          Подобрать программу
+        </a>
       </div>
+    </div>
     </div>
 
     <div class="container slim-pump">
