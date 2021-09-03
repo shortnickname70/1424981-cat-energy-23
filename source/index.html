@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preload" href="css/style.min.css" as="style">
- <link rel="preload" href="js/menu-management.js" as="script">
- <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="js/menu-management.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="source/css/style.css" rel="stylesheet">
   <link rel="icon" href="../source/img/favicons/favicon-16-ico.ico">
@@ -32,7 +32,7 @@
       </svg>
     </a>
 
-    <nav class="main-navigation">
+    <nav class="page-header__main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -55,7 +55,7 @@
       </div>
     </nav>
   </header>
-  <!-- <div class="test"></div> -->
+
   <main>
 
     <div class="promo ">
@@ -71,19 +71,16 @@
         </div>
       </div>
       <div class="promo__lower-half">
-        <!-- <div class="container">
-          <button class="main-navigation__button mobile-button" type="button"></button>
-        </div> -->
-        <div class="promo-button">
-        <a href="form.html" class="main-navigation__button ">
-          Подобрать программу
-        </a>
+        <div class="promo__button">
+          <a href="form.html" class="promo__button-link button-color">
+            Подобрать программу
+          </a>
+        </div>
       </div>
     </div>
-    </div>
 
-    <div class="container slim-pump">
-      <div class="slimming">
+    <div class="slimming-pumping container">
+      <div class="slimming ">
         <a class="slimming__icon" href="catalog.html">
         </a>
 
@@ -92,9 +89,10 @@
           деревьям? Пора на
           диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a href="catalog.html" class="slimming__link slim-pump-link"> Каталог slim
-          <svg class="arrow-right" width="24" height="12">
+          <div class="arrow-right"> </div>
+          <!-- <svg class="arrow-right" width="24" height="12">
             <use xlink:href="img/sprite.svg#icon-arrow"></use>
-          </svg>
+          </svg> -->
         </a>
       </div>
 
@@ -107,75 +105,73 @@
           Серия Cat Energy Pro поможет вашему коту нарастить
           необходимые мышцы!</p>
         <a href="catalog.html" class="pumping__link slim-pump-link"> Каталог pro
-          <svg class="arrow-right" width="24" height="12">
+          <div class="arrow-right"> </div>
+          <!-- <svg class="arrow-right" width="24" height="12">
             <use xlink:href="img/sprite.svg#icon-arrow"></use>
-          </svg>
+          </svg>-->
         </a>
 
       </div>
     </div>
-    <div class="features ">
-      <div class=" container">
+    <div class="features">
+      <div class="container">
         <span class="features__heading"> Как это работает?</span>
         <ul class="features__list ">
           <li class="features__item">
-            <div class="features-icon icon-leaves">
+            <div class="features__icon ">
               <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-leaves"></use>
               </svg>
             </div>
-            <p class="features-description "> Функциональное питание содержит только полезные питательные вещества.
+            <p class="features__description "> Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
 
           <li class="features__item">
-            <div class="features-icon icon-powder">
+            <div class="features__icon ">
               <svg width="29" height="31">
                 <use xlink:href="img/sprite.svg#icon-powder"></use>
               </svg>
             </div>
-            <p class="features-description ">Выпускается&nbsp;в&nbsp;виде&nbsp;порошка,<br>который нужно лишь залить
+            <p class="features__description ">Выпускается&nbsp;в&nbsp;виде&nbsp;порошка,<br>который нужно лишь залить
               кипятком и готово.
             </p>
           </li>
 
           <li class="features__item">
-            <div class="features-icon icon-pork-knife">
+            <div class="features__icon ">
               <svg width="25" height="30">
                 <use xlink:href="img/sprite.svg#icon-pork-knife"></use>
               </svg>
 
             </div>
-            <p class="features-description ">Замените один-два приема обычной еды на наше функциональное питание.
+            <p class="features__description ">Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
 
           <li class="features__item">
-            <div class="features-icon icon-clock">
+            <div class="features__icon">
               <svg width="32" height="33">
                 <use xlink:href="img/sprite.svg#icon-clock"></use>
               </svg>
 
             </div>
-            <p class="features-description ">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
+            <p class="features__description ">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
           </li>
         </ul>
       </div>
     </div>
-    <div class="example ">
+    <div class="example">
 
-      <div class="example__header-wrapper">
-        <p class="example__header"> Живой пример </p>
+      <div class="example__header">
+        <p class="example__header-title"> Живой пример </p>
       </div>
       <div class="example__content">
-        <div class="example__upper-slider">
+        <div class="example__content__upper-slider">
           <p class="example__description"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-            Energy
-            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-            по
-            16
-            часов в день.
+            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            спит по 16 часов в день.
           </p>
           <div class="example__weight-and-days">
             <div class="example__weight example--style">
@@ -190,16 +186,15 @@
 
             <p class="example__expenses"> Затраты на питание: 15 000 РУБ. </p>
           </div>
-          <!-- </div> -->
           <img class="example__cat-img" src="img/img-mobile-cat-before.png" width="311" height="232"
             srcset="img/img-mobile-cat-before.png 1x, img/img-mobile-cat-before-@2x.png 2x" alt="Упитанный кот">
         </div>
-        <div class="example__slider-wrapper">
+        <div class="example__content__lower-slider">
           <div class="example__slider">
-            <p class="example__slider--style">было</p>
-            <div class="example__slider--style slider-bar">
+            <a href="" class="example__slider__value">было</a>
+            <div class="slider-bar">
             </div>
-            <p class="example__slider--style">стало</p>
+            <a href="" class="example__slider__value">стало</a>
           </div>
         </div>
       </div>
@@ -216,7 +211,7 @@
 
         <iframe class="map" allowfullscreen
           title="Офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630297740808!5m2!1sru!2sru;z=10;iwloc=near&amp"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630297740808!5m2!1sru!2sru"
           style="border:0;"></iframe>
       </div>
     </div>
@@ -224,7 +219,6 @@
 
   <div class="footer-wrapper">
     <footer class="footer container">
-      <!-- <div class="container"> -->
       <a href="index.html">
         <svg class="footer__logo" width="128" height="24">
           <use xlink:href="img/sprite.svg#icon-footer-text"></use>
@@ -255,8 +249,6 @@
 
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
       </a>
-  </div>
-  <!-- </div> -->
   </footer>
   </div>
   <script src="js/menu-management.min.js"></script>

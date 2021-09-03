@@ -7,13 +7,13 @@
   min-height: 705px;
 }
 
-.example__upper-slider {
+.example__content__upper-slider {
   margin: 0 auto;
   padding: 0;
   width: 280px;
 }
 
-.example__header {
+.example__header-title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
@@ -64,7 +64,7 @@
 }
 
 .example__days-description,
-.example__weight-description{
+.example__weight-description {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -111,11 +111,14 @@
 .example__slider {
   display: flex;
   justify-content: space-between;
- margin: 0 auto;
- width: 280px;
+  margin: 0 auto;
+  width: 280px;
+  padding-left: 28px;
+  padding-right: 28px;
+  box-sizing: border-box;
 }
 
-.example__slider--style {
+.example__slider__value {
   font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
@@ -133,6 +136,8 @@
   border-radius: 6px;
   height: 14px;
   position: relative;
+  box-sizing: border-box;
+  top: 3px;
 }
 
 .slider-bar::after {
@@ -143,7 +148,7 @@
   position: absolute;
   content: "";
   left: 6px;
-  bottom: 4px;
+  bottom: 3px;
   border-radius: 6px;
 
 }
@@ -160,13 +165,13 @@
 
   }
 
-  .example__upper-slider {
+  .example__content__upper-slider {
     margin: 0 auto;
     padding: 0;
     width: 708px;
   }
 
-  .example__header {
+  .example__header-title {
     width: 708px;
     margin: 0 auto;
     padding: 0;
@@ -230,10 +235,12 @@
     box-sizing: border-box;
     padding-top: 10px;
   }
-.example-description-time{
-width: 142px;
-left: 10px;
-}
+
+  .example-description-time {
+    width: 142px;
+    left: 10px;
+  }
+
   .example__weight-and-days {
     display: flex;
     justify-content: space-between;
@@ -253,7 +260,7 @@ left: 10px;
 
   }
 
-  .example__slider-wrapper {
+  .example__content__lower-slider {
     width: 100%;
     background-color: #EAEAEA;
   }
@@ -267,11 +274,11 @@ left: 10px;
     z-index: 2;
     align-items: flex-end;
     box-sizing: border-box;
-width: 708px;
+    width: 708px;
     padding: 0px 69px 70px 67px;
   }
 
-  .example__slider--style {
+  .example__slider__value {
     display: block;
     margin: 0;
     font-size: 20px;
@@ -306,6 +313,7 @@ width: 708px;
     border-radius: 6px;
     height: 6px;
     position: relative;
+    top: -11px;
   }
 
   .slider-bar::before {
@@ -357,12 +365,12 @@ width: 708px;
 
   }
 
-  .example__header-wrapper {
+  .example__header {
     width: 100%;
     background: white;
   }
 
-  .example__header {
+  .example__header-title {
     margin-bottom: 0;
     margin: 0 auto;
     padding: 0;
@@ -370,7 +378,7 @@ width: 708px;
     background-color: #FFFFFF;
   }
 
-  .example__upper-slider {
+  .example__content__upper-slider {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -417,7 +425,7 @@ width: 708px;
     align-items: center;
   }
 
-  .example__slider-wrapper {
+  .example__content__lower-slider {
     display: flex;
     width: min-content;
 

@@ -60,12 +60,20 @@
   color: #000000;
   text-decoration: none;
   margin-bottom: 22px;
+  display: flex;
 
 }
 
-.arrow-right {
-  margin-left: 17px;
+.slimming__link:hover {
+  color: rgba(0, 0, 0, 0.5);
+ }
+
+.slimming__link:hover .arrow-right{
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
 }
+
 
 @media (min-width: @tablet-width) {
   .slimming {

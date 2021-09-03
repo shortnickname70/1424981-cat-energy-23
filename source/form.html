@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="preload" href="css/style.min.css" as="style">
-   <link rel="preload" href="js/menu-management.js" as="script">
-   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link href="source/css/style.css" rel="stylesheet">
-    <link rel="icon" href="../source/img/favicons/favicon-16-ico.ico">
-    <link rel="icon" href="../source/img/favicons/favicon-152-ico.ico">
-    <link rel="icon" href="../favicon-32.ico">
-    <link rel="icon" href="../source/img/favicons/favicon-32-svg.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="../source/img/favicons/favicon-180-png-apple.png">
-    <link rel="manifest" href="../manifest.webmanifest">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/menu-management.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="source/css/style.css" rel="stylesheet">
+  <link rel="icon" href="../source/img/favicons/favicon-16-ico.ico">
+  <link rel="icon" href="../source/img/favicons/favicon-152-ico.ico">
+  <link rel="icon" href="../favicon-32.ico">
+  <link rel="icon" href="../source/img/favicons/favicon-32-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../source/img/favicons/favicon-180-png-apple.png">
+  <link rel="manifest" href="../manifest.webmanifest">
+</head>
 
 <body class="page__body">
 
@@ -32,22 +32,22 @@
       </svg>
     </a>
 
-    <nav class="main-navigation">
+    <nav class="page-header__main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a  href="index.html">
+            <a href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a  href="catalog.html">
+            <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a  href="form.html">
+            <a href="form.html" >
               Подбор программы
             </a>
           </li>
@@ -56,16 +56,15 @@
     </nav>
   </header>
 
-  <main>
+  <main class="page__form">
 
-    <h1 class="page-title form-title">
+    <h1 class="page__form-title page-title">
       <div class="container-form"> Подбор программы
       </div>
     </h1>
-    <!-- <div class="container-form"> -->
-      <div class="form ">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <div class="container-form">
+    <div class="form">
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="container-form">
           <div class="form__cat-value">
             <div class="form__questionary">
               <p class="form__questionary-header">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -117,14 +116,14 @@
 
             </ul>
           </div>
-          </div>
+        </div>
 
 
-          <div class="form__feedback">
-            <div class="divide-wrapper">
+        <div class="form__feedback">
+          <div class="divide-wrapper">
             <p class="form-style form__feedback-value divide-wrapper-feedback">Контактные данные (владельца кота)</p>
           </div>
-            <div class="container-form">
+          <div class="container-form">
             <ul class="form__feedback-input-list">
               <li class="form__feedback-input-item input-email-style">
                 <label for="email-field" class="form__feedback-label ">E-mail:*</label>
@@ -140,18 +139,17 @@
           </div>
         </div>
 
-          <div class="form__comments">
-            <div class="divide-wrapper">
+        <div class="form__comments">
+          <div class="divide-wrapper">
             <p class="form-style form__comments-header divide-wrapper-comments">Комментарий</p>
           </div>
-             <div class="container-form">
-            <textarea name="comment" id="comment-field" rows="10"
-              class="form__comments-textarea textarea-width">Расскажите обо всех повАдках кота
+          <div class="container-form">
+            <textarea name="comment" id="comment-field" rows="10" class="form__comments-textarea textarea-width">Расскажите обо всех повАдках кота
             </textarea>
           </div>
         </div>
-          <div class="form__extra">
-            <div class="divide-wrapper">
+        <div class="form__extra">
+          <div class="divide-wrapper">
             <p class="form-style divide-wrapper-extra">Дополнительно</p>
           </div>
           <div class="container-form">
@@ -162,12 +160,8 @@
                 <label for="sweetener" class="form__extra-label">сахарозаменитель</label>
                 <div class="form__extra-check-field">
                 </div>
-
-                <div  class="checkbox-on-icon">
+                <div class="checkbox-on-icon">
                 </div>
-                <!-- <svg width="19" height="15" class="checkbox-on-icon">
-                  <use xlink:href="img/sprite.svg#icon-checkbox"></use>
-                </svg> -->
               </li>
 
               <li class="form__extra-input-item">
@@ -175,11 +169,8 @@
                 <label for="water" class="form__extra-label">питьевая вода</label>
                 <div class="form__extra-check-field">
                 </div>
-                <div  class="checkbox-on-icon">
+                <div class="checkbox-on-icon">
                 </div>
-                <!-- <svg width="19" height="15" class="checkbox-on-icon">
-                  <use xlink:href="img/sprite.svg#icon-checkbox"></use>
-                </svg> -->
               </li>
 
               <li class="form__extra-input-item">
@@ -187,11 +178,8 @@
                 <label for="milk" class="form__extra-label">молоко</label>
                 <div class="form__extra-check-field">
                 </div>
-                <div  class="checkbox-on-icon">
+                <div class="checkbox-on-icon">
                 </div>
-                <!-- <svg width="19" height="15" class="checkbox-on-icon">
-                  <use xlink:href="img/sprite.svg#icon-checkbox"></use>
-                </svg> -->
               </li>
 
               <li class="form__extra-input-item">
@@ -199,27 +187,24 @@
                 <label for="vitamins" class="form__extra-label">витамины</label>
                 <div class="form__extra-check-field">
                 </div>
-                <div  class="checkbox-on-icon">
+                <div class="checkbox-on-icon">
                 </div>
-                <!-- <svg width="19" height="15" class="checkbox-on-icon">
-                  <use xlink:href="img/sprite.svg#icon-checkbox"></use>
-                </svg> -->
               </li>
 
             </ul>
           </div>
 
-         </div>
-         <div class="container-form">
+        </div>
+        <div class="container-form">
           <div class="form__button">
-            <button class="form__button-style mobile-button" type="submit">отправить заявку</button>
+            <button class="form__button-style button button-color" type="submit">отправить заявку</button>
             <p class="form__note">* — Обязательные поля</p>
           </div>
         </div>
-        </form>
+      </form>
 
-      </div>
-    <!-- </div> -->
+    </div>
+
     <div class="cooperation cooperation--background">
       <div class="container">
         <div class="cooperation__wrapper cooperation__wrapper-background">
@@ -238,7 +223,6 @@
   </main>
   <div class="footer-wrapper">
     <footer class="footer container">
-      <!-- <div class="container"> -->
       <a href="index.html">
         <svg class="footer__logo" width="128" height="24">
           <use xlink:href="img/sprite.svg#icon-footer-text"></use>
@@ -270,7 +254,6 @@
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
       </a>
 
-      <!-- </div> -->
     </footer>
   </div>
   <script src="js/menu-management.min.js"></script>
