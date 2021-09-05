@@ -1,12 +1,11 @@
 // Начните писать стили здесь
 .footer__socials {
-border-top: 1px solid #D9D9D9;
-border-bottom: 1px solid #D9D9D9;
-min-height: 65px;
-box-sizing: border-box;
-padding-top: 24px;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  min-height: 65px;
+  box-sizing: border-box;
+  padding-top: 24px;
 }
-
 
 .socials__list {
   list-style: none;
@@ -14,26 +13,66 @@ padding-top: 24px;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-left:73px ;
-  padding-right:82px ;
+  margin-left: 73px;
+  padding-right: 82px;
+}
+.socials__link {
+  color:#666666 ;
+}
+
+.socials__link:hover {
+  color: #68B738;
+}
+
+.socials__link:focus {
+  color: #68B738;
+  opacity: 0.5;
+
 }
 
 @media (min-width: @tablet-width) {
   .footer__socials {
-    min-width: 122px;
+    min-width: 129px;
     border-top: none;
-border-bottom: none;
-margin-right: 138px;
+    border-bottom: none;
+    margin-right: 131px;
   }
 
+  .socials__item {
+    width: min-content;
+    height: min-content;
+  }
+
+  .socials__item:last-child {
+    width: 28px;
+    height: 33px;
+  }
+
+  .socials-vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .socials-insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .socials-fb {
+    width: 28px;
+    height: 33px;
+    margin-top: -6px;
+  }
+
+
   .socials__list {
-    min-width: 122px;
+    min-width: 129px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    margin-left:0 ;
-    padding-right:0 ;
+    margin-left: 0;
+    padding-right: 0;
   }
 }

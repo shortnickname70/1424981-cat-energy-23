@@ -127,6 +127,21 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+
+.example__slider__value:hover{
+  border-bottom: 1px solid #000000;
+
+}
+
+.example__slider__value:active{
+  border-bottom: none;
+
 }
 
 .slider-bar {
@@ -150,6 +165,7 @@
   left: 6px;
   bottom: 3px;
   border-radius: 6px;
+
 
 }
 
@@ -286,6 +302,8 @@
     text-transform: uppercase;
     color: #000000;
     height: min-content;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+
   }
 
   .example__cat-img {
@@ -300,6 +318,7 @@
     height: 620px;
     left: calc(50% - 354px);
     bottom: 33px;
+    z-index: 2;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-tablet-half-cat-@2x.png");
@@ -315,8 +334,10 @@
     position: relative;
     top: -11px;
   }
-
-  .slider-bar::before {
+  .slider-bar::after {
+    display: none;
+  }
+  .slider-toggle {
     background: #FFFFFF;
     border: 1px solid #CDCDCD;
     box-sizing: border-box;
@@ -327,18 +348,31 @@
     left: 205px;
     bottom: -13px;
     border-radius: 34px;
+    z-index: 3;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.16));
+    cursor: pointer;
   }
 
-  .slider-bar::after {
+  .slider-toggle:hover {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  .slider-toggle:active {
+    border: 1px solid #68B738;
+  }
+
+  .slider-toggle-mini {
+    cursor: pointer;
     background: #68B738;
     box-sizing: border-box;
     width: 8px;
     height: 8px;
     position: absolute;
     content: "";
-    left: 218px;
-    bottom: -1px;
+    left: 12px;
+    bottom: 11px;
     border-radius: 8px;
+    z-index: 3;
   }
 
 }

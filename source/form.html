@@ -71,15 +71,15 @@
               <ul class="form__questionary-input-list">
                 <li class="form__questionary-input-item">
                   <label for="name-field" class="form__questionary-label">имя:*</label>
-                  <input type="text" name="name" id="name-field" placeholder="Барсик" class="form__questionary-input">
+                  <input type="text" minlength="2" name="name" id="name-field" placeholder="Барсик" class="form__questionary-input">
                 </li>
                 <li class="form__questionary-input-item">
                   <label for="weight-field" class="form__questionary-label">Вес (кг):*</label>
-                  <input type="text" name="weight" id="weight-field" placeholder="7" class="form__questionary-input">
+                  <input type="number" name="weight" id="weight-field" placeholder="7" class="form__questionary-input">
                 </li>
                 <li class="form__questionary-input-item">
                   <label for="old-field" class="form__questionary-label">Возраст (лет):</label>
-                  <input type="text" name="old" id="old-field" placeholder="7" class="form__questionary-input">
+                  <input type="number" name="old" id="old-field" placeholder="7" class="form__questionary-input">
                 </li>
               </ul>
             </div>
@@ -89,7 +89,7 @@
 
               <li class="form__radio-item">
                 <input type="radio" class="form__radio-input" name="radio" id="slimming" checked>
-                <label for="slimming" class="form__radio-label">Похудение </label>
+                <label for="slimming" class="form__radio-label" tabindex="2">Похудение </label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -97,8 +97,8 @@
               </li>
 
               <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio" id="pumping">
-                <label for="pumping" class="form__radio-label">Набор массы</label>
+                <input type="radio" class="form__radio-input" name="radio" id="pumping" disabled checked>
+                <label for="pumping" class="form__radio-label" tabindex="2" >Набор массы</label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -107,7 +107,7 @@
 
               <li class="form__radio-item">
                 <input type="radio" class="form__radio-input" name="radio" id="unknown">
-                <label for="unknown" class="form__radio-label">Не знаю (Нужен ваш совет)</label>
+                <label for="unknown" class="form__radio-label" tabindex="2">Не знаю (Нужен ваш совет)</label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -127,13 +127,13 @@
             <ul class="form__feedback-input-list">
               <li class="form__feedback-input-item input-email-style">
                 <label for="email-field" class="form__feedback-label ">E-mail:*</label>
-                <input type="text" name="email-field" id="email-field" placeholder="kuklachev@gmail.com"
-                  class="form__feedback-input ">
+                <input type="email" name="email-field" id="email-field" placeholder="kuklachev@gmail.com"
+                  class="form__feedback-input" >
               </li>
               <li class="form__feedback-input-item input-phone-style">
                 <label for="phone-field" class="form__feedback-label ">Телефон:*</label>
-                <input type="text" name="phone-field" id="phone-field" placeholder="8 (960) 900-60-90"
-                  class="form__feedback-input ">
+                <input type="tel" name="phone-field" id="phone-field" placeholder="8 (960) 900-60-90"
+                pattern="[0-9]{11}" class="form__feedback-input ">
               </li>
             </ul>
           </div>
@@ -157,7 +157,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="sweetener" id="sweetener" class="form__extra-input" checked>
-                <label for="sweetener" class="form__extra-label">сахарозаменитель</label>
+                <label for="sweetener" class="form__extra-label" tabindex="2">сахарозаменитель</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -166,7 +166,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="water" id="water" class="form__extra-input">
-                <label for="water" class="form__extra-label">питьевая вода</label>
+                <label for="water" class="form__extra-label" tabindex="2">питьевая вода</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -175,7 +175,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="milk" id="milk" class="form__extra-input">
-                <label for="milk" class="form__extra-label">молоко</label>
+                <label for="milk" class="form__extra-label" tabindex="2">молоко</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -183,8 +183,8 @@
               </li>
 
               <li class="form__extra-input-item">
-                <input type="checkbox" name="vitamins" id="vitamins" class="form__extra-input">
-                <label for="vitamins" class="form__extra-label">витамины</label>
+                <input type="checkbox" name="vitamins" id="vitamins" class="form__extra-input" disabled checked>
+                <label for="vitamins" class="form__extra-label" tabindex="2">витамины</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -233,21 +233,27 @@
         <ul class="socials__list">
 
           <li class="socials__item">
+            <a href="vkontakte.ru">
             <svg class="socials-vk" width="23" height="16">
               <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
             </svg>
+          </a>
           </li>
 
           <li class="socials__item">
+            <a href="instagram.com">
             <svg class="socials-insta" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
             </svg>
+          </a>
           </li>
 
           <li class="socials__item">
+            <a href="facebook.com">
             <svg class="socials-fb" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
             </svg>
+            </a>
           </li>
         </ul>
       </div>

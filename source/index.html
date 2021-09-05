@@ -189,12 +189,17 @@
           <img class="example__cat-img" src="img/img-mobile-cat-before.png" width="311" height="232"
             srcset="img/img-mobile-cat-before.png 1x, img/img-mobile-cat-before-@2x.png 2x" alt="Упитанный кот">
         </div>
-        <div class="example__content__lower-slider">
+        <div class="example__content__lower-slider" tabindex="10">
           <div class="example__slider">
-            <a href="" class="example__slider__value">было</a>
-            <div class="slider-bar">
+            <div class="example__slider__value" tabindex="10">было</div>
+            <div class="slider-bar" tabindex="10">
+               <div class="slider-toggle">
+                <div class="slider-toggle-mini">
+                  </div>
+               </div>
             </div>
-            <a href="" class="example__slider__value">стало</a>
+
+            <div class="example__slider__value" tabindex="10">стало</div>
           </div>
         </div>
       </div>
@@ -219,7 +224,7 @@
 
   <div class="footer-wrapper">
     <footer class="footer container">
-      <a href="index.html">
+      <a href="index.html" class="footer__logo-link">
         <svg class="footer__logo" width="128" height="24">
           <use xlink:href="img/sprite.svg#icon-footer-text"></use>
         </svg>
@@ -228,21 +233,27 @@
         <ul class="socials__list">
 
           <li class="socials__item">
+            <a class="socials__link" href="vkontakte.ru">
             <svg class="socials-vk" width="23" height="16">
               <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
             </svg>
+          </a>
           </li>
 
           <li class="socials__item">
+            <a class="socials__link" href="instagram.com">
             <svg class="socials-insta" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
             </svg>
+          </a>
           </li>
 
           <li class="socials__item">
+            <a class="socials__link" href="facebook.com">
             <svg class="socials-fb" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
             </svg>
+            </a>
           </li>
         </ul>
       </div>

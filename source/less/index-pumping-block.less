@@ -62,16 +62,22 @@
   display: flex;
 }
 
-.pumping__link:hover {
- color: rgba(0, 0, 0, 0.5);
-}
-
 .pumping__link:hover .arrow-right{
   width: 32px;
   height: 12px;
   background-image: url("../img/icon-arrow-hover.svg");
 }
 
+.pumping__link:focus .arrow-right{
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
+ opacity: 0.5;
+}
+
+.pumping__link:focus {
+  color: rgba(107, 49, 49, 0.5);
+ }
 
 @media (min-width: @tablet-width) {
   .pumping {

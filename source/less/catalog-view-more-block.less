@@ -1,5 +1,8 @@
 // Начните писать стили здесь
 
+.catalog__item--view-more {
+  justify-content: center;
+}
 
 .catalog__view-more {
 
@@ -14,7 +17,7 @@
 .catalog__view-more::before {
   position: absolute;
   content: "";
-  left: 124px;
+  left: 145px;
   top: 39px;
   width: 30px;
   height: 2px;
@@ -24,7 +27,7 @@
 .catalog__view-more::after {
   position: absolute;
   content: "";
-  left: 139px;
+  left: 159px;
   top: 25px;
   width: 2px;
   height: 30px;
@@ -66,6 +69,8 @@
 }
 
 .view-more__button {
+  display: block;
+  box-sizing: border-box;
   background: #F2F2F2;
   width: 279px;
   height: 40px;
@@ -79,6 +84,16 @@
   text-transform: uppercase;
   color: #444444;
   border: none;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.view-more__button:hover{
+  background: #EBEBEB;
+}
+
+.view-more__button:focus{
+  background: #EBEBEB;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 
@@ -88,7 +103,7 @@
     width: 324px;
     height: 430px;
     border: 1px solid #EBEBEB;
-    padding-top: 0;
+    padding-top: 161px;
     background-color: #ffffff;
   }
 
@@ -118,10 +133,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #111111;
-    margin-top: 161px;
-    margin-bottom: 23px;
     max-width: 134px;
+    margin: 0;
     margin-left: 95px;
+    margin-bottom: 23px;
   }
 
   .view-more__more-tastes {
@@ -132,15 +147,14 @@
     margin: 0;
     max-width: 167px;
     margin-left: 78px;
-    margin-bottom: 87px;
+    margin-bottom: 95px;
 
   }
 
   .view-more__button {
     background: #F2F2F2;
-    width: 248px;
+    width: 249px;
     height: 40px;
-    line-height: 0px;
     margin-left: 39px;
 
   }
@@ -149,15 +163,15 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media (min-width: @desktop-width) {
+
+  .catalog__view-more {
+    border: none;
+    width: 245px;
+    height: 431px;
+    border: 1px solid #CDCDCD;
+
+  }
 
   .catalog__view-more::before {
     position: absolute;
@@ -181,9 +195,8 @@
 
   .view-more__items {
     max-width: 134px;
-    margin-top: 161px;
     margin-bottom: 23px;
-    margin-left: 56px;
+    margin-left: 55px;
   }
 
   .view-more__more-tastes {
@@ -197,7 +210,4 @@
     width: 169px;
   }
 
-  .catalog__view-more {
-    border: none;
-  }
 }

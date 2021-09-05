@@ -64,15 +64,22 @@
 
 }
 
-.slimming__link:hover {
-  color: rgba(0, 0, 0, 0.5);
- }
-
 .slimming__link:hover .arrow-right{
   width: 32px;
   height: 12px;
   background-image: url("../img/icon-arrow-hover.svg");
 }
+
+.slimming__link:focus .arrow-right{
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
+ opacity: 0.5;
+}
+
+.slimming__link:focus {
+  color: rgba(107, 49, 49, 0.5);
+ }
 
 
 @media (min-width: @tablet-width) {
