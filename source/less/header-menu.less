@@ -1,4 +1,57 @@
 // Начните писать стили здесь
+// .navigation__toggle-checkbox--hidden {
+//   display: none;
+// }
+
+// .navigation__toggle-checkbox {
+//   position: absolute;
+//   width: 24px;
+//   height: 16px;
+//   right: 0;
+//   bottom: 18px;
+//   margin: 0;
+// }
+
+// .navigation__toggle-label {
+//   position: absolute;
+//   width: 24px;
+//   height: 16px;
+//   right: 0;
+//   bottom: 18px;
+// }
+
+// .navigation__toggle-checkbox:checked~.main-nav__wrapper .main-nav__list {
+//   display: flex;
+//   flex-direction: column;
+//   position: static;
+
+// }
+
+//   .navigation__toggle-label::before {
+//     content: "";
+//     position: absolute;
+//     transform: rotate(45deg);
+//     width: 24px;
+//     height: 2px;
+//     left: -1px;
+//     top: 3px;
+//     background-color: #000000;
+//     cursor: pointer;
+//   }
+
+//   .navigation__toggle-label::after {
+//     content: "";
+//     position: absolute;
+//     transform: rotate(-45deg);
+//     width: 24px;
+//     height: 2px;
+//     background-color: #000000;
+//     left: -1px;
+//     top: 3px;
+//     cursor: pointer;
+//   }
+// }
+
 
 .main-nav__list {
   position: absolute;
@@ -34,14 +87,15 @@
 }
 
 .site-list__item a:hover {
-  color:rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
+
 .site-list__item a:focus {
-  color:rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .site-list__item a:active {
-  color:rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid #68B738;
 }
 
@@ -53,7 +107,12 @@
   width: 24px;
   height: 18px;
   border: none;
+  // display: none;
 }
+
+// .main-navigation__toggle--show {
+//   display: inline;
+// }
 
 .main-navigation__toggle::before {
   content: "";
@@ -113,6 +172,7 @@
   .page-header__main-navigation {
     width: 100%;
   }
+
   .main-navigation--opened {
     .main-nav__list {
       display: flex;
