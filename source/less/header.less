@@ -1,14 +1,23 @@
 // Начните писать стили здесь
 .page-header {
-  padding: 10px 0 14px 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   position: relative;
   margin-bottom: 27px;
+}
+
+.page-header__logos {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  align-items: center;
+  display: flex;
   width: 280px;
+  margin: 0 auto;
+
 }
 
 // .navigation__toggle-checkbox:checked .page-header{
@@ -17,34 +26,47 @@
 //   position: relative;
 // }
 
-.page-header--desktop-background {
+.page-header--background {
   position: relative;
   margin-bottom: 0;
 }
 
+.page-header__logo-cat {
+  margin-right: 57px;
+}
+
+.page-header__logo-text {
+  margin-top: 7px;
+}
+
 .page-header__logo-cat svg:hover {
-opacity:0.75 ;
+  opacity: 0.75;
 }
 
 .page-header__logo-cat svg:focus {
-  opacity:0.5 ;
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
+    flex-wrap: nowrap;
     border-bottom: none;
     justify-content: space-between;
     min-height: 115px;
     box-sizing: border-box;
-  }
-  .page-header--desktop-background::after {
-   display: none;
+    width: 708px;
+    margin: 0 auto;
   }
 
-  .page-header--desktop-background::before {
+  .page-header--background::after {
     display: none;
   }
+
+  .page-header--background::before {
+    display: none;
+  }
+
   .page-header__logo-cat {
     display: none;
   }
@@ -61,10 +83,11 @@ opacity:0.75 ;
     margin-right: 94px;
   }
 
-  .page-header__logo-text:hover{
+  .page-header__logo-text:hover {
     opacity: 0.75;
   }
-  .page-header__logo-text:focus{
+
+  .page-header__logo-text:focus {
     opacity: 0.5;
   }
 
@@ -76,10 +99,15 @@ opacity:0.75 ;
     display: flex;
     border-bottom: none;
     justify-content: flex-start;
-
+    width: 1220px;
     min-height: 220px;
     box-sizing: border-box;
 
+  }
+
+  .page-header__logos {
+    width: unset;
+    margin: 0;
   }
 
   .page-header__logo-text {
@@ -90,7 +118,7 @@ opacity:0.75 ;
     margin-right: 538px;
   }
 
-  .page-header--desktop-background {
+  .page-header--background {
     position: relative;
   }
 }

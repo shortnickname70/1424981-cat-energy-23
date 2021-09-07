@@ -1,61 +1,7 @@
 // Начните писать стили здесь
-// .navigation__toggle-checkbox--hidden {
-//   display: none;
-// }
-
-// .navigation__toggle-checkbox {
-//   position: absolute;
-//   width: 24px;
-//   height: 16px;
-//   right: 0;
-//   bottom: 18px;
-//   margin: 0;
-// }
-
-// .navigation__toggle-label {
-//   position: absolute;
-//   width: 24px;
-//   height: 16px;
-//   right: 0;
-//   bottom: 18px;
-// }
-
-// .navigation__toggle-checkbox:checked~.main-nav__wrapper .main-nav__list {
-//   display: flex;
-//   flex-direction: column;
-//   position: static;
-
-// }
-
-//   .navigation__toggle-label::before {
-//     content: "";
-//     position: absolute;
-//     transform: rotate(45deg);
-//     width: 24px;
-//     height: 2px;
-//     left: -1px;
-//     top: 3px;
-//     background-color: #000000;
-//     cursor: pointer;
-//   }
-
-//   .navigation__toggle-label::after {
-//     content: "";
-//     position: absolute;
-//     transform: rotate(-45deg);
-//     width: 24px;
-//     height: 2px;
-//     background-color: #000000;
-//     left: -1px;
-//     top: 3px;
-//     cursor: pointer;
-//   }
-// }
-
 
 .main-nav__list {
-  position: absolute;
-  display: none;
+
   left: -20px;
   top: 64px;
   margin: 0;
@@ -78,7 +24,8 @@
   box-sizing: border-box;
   cursor: pointer;
   background-color: white;
-  border: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .site-list__item a {
@@ -86,6 +33,12 @@
   color: #000000;
 }
 
+.nav-link--border-bottom,
+.nav-link--border-bottom-form,
+.nav-link--border-bottom-catalog {
+  border-bottom: 2px solid #68B738;
+
+}
 .site-list__item a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
@@ -99,37 +52,100 @@
   border-bottom: 2px solid #68B738;
 }
 
-.main-navigation__toggle {
+.page-header__main-navigation {
+  width: 100%;
   position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: -41px;
+  right: 20px;
   cursor: pointer;
   padding: 0;
   background-color: transparent;
   width: 24px;
   height: 18px;
   border: none;
-  // display: none;
 }
 
-// .main-navigation__toggle--show {
-//   display: inline;
-// }
 
 .main-navigation__toggle::before {
   content: "";
   position: absolute;
+  transform: rotate(45deg);
   width: 24px;
-  height: 18px;
-  background-image: url("/img/logo-mobile-header-menu.svg");
+  height: 2px;
   left: -1px;
-  top: -3px;
+  top: 3px;
+  background-color: #000000;
   cursor: pointer;
 }
 
-.main-navigation--opened {
+.main-navigation__toggle::after {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  left: -1px;
+  top: 3px;
+  cursor: pointer;
+}
+
+// JS включен
+.main-navigation--closed {
   .main-nav__list {
-    display: block;
-    z-index: 11;
+    display: none;
   }
+
+  .main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    background-image: url("/img/logo-mobile-header-menu.svg");
+    left: -1px;
+    top: -3px;
+    cursor: pointer;
+  }
+
+  .main-navigation__toggle::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    background-image: url("/img/logo-mobile-header-menu.svg");
+    left: -1px;
+    top: -3px;
+    cursor: pointer;
+  }
+
+}
+.main-navigation--opened {
+
+  .main-nav__list {
+    position: absolute;
+    display: none;
+    left: -20px;
+    top: 64px;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+  }
+
+  .main-navigation__toggle {
+    position: absolute;
+  top: -41px;
+  right: 20px;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  height: 18px;
+  border: none;
+}
 
   .main-navigation__toggle::before {
     content: "";
@@ -154,19 +170,112 @@
     top: 3px;
     cursor: pointer;
   }
+
+
 }
 
-.main-navigation__toggle::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 18px;
-  background-image: url("/img/logo-mobile-header-menu.svg");
-  left: -1px;
-  top: -3px;
-  cursor: pointer;
-}
 
+
+
+
+
+
+// // JS включен
+// .js--on {
+
+// .main-nav__list {
+//   position: absolute;
+//   display: none;
+//   left: -20px;
+//   top: 64px;
+//   margin: 0;
+//   padding: 0;
+//   min-width: 320px;
+// }
+
+// .site-list__item {
+//   font-family: "Oswald";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 20px;
+//   line-height: 20px;
+//   text-transform: uppercase;
+//   color: #000000;
+//   list-style: none;
+//   text-align: center;
+//   padding-top: 22px;
+//   padding-bottom: 24px;
+//   box-sizing: border-box;
+//   cursor: pointer;
+//   background-color: white;
+//   border: 1px solid #E6E6E6;
+// }
+
+// .main-navigation__toggle {
+//   position: relative;
+//   cursor: pointer;
+//   padding: 0;
+//   background-color: transparent;
+//   width: 24px;
+//   height: 18px;
+//   border: none;
+// }
+
+// .main-navigation__toggle::before {
+//   content: "";
+//   position: absolute;
+//   width: 24px;
+//   height: 18px;
+//   background-image: url("/img/logo-mobile-header-menu.svg");
+//   left: -1px;
+//   top: -3px;
+//   cursor: pointer;
+// }
+
+// .main-navigation__toggle::after {
+//   content: "";
+//   position: absolute;
+//   width: 24px;
+//   height: 18px;
+//   background-image: url("/img/logo-mobile-header-menu.svg");
+//   left: -1px;
+//   top: -3px;
+//   cursor: pointer;
+// }
+
+// .main-navigation--opened {
+//   .main-nav__list {
+//     display: block;
+//     z-index: 11;
+//   }
+
+//   .main-navigation__toggle::before {
+//     content: "";
+//     position: absolute;
+//     transform: rotate(45deg);
+//     width: 24px;
+//     height: 2px;
+//     left: -1px;
+//     top: 3px;
+//     background-color: #000000;
+//     cursor: pointer;
+//   }
+
+//   .main-navigation__toggle::after {
+//     content: "";
+//     position: absolute;
+//     transform: rotate(-45deg);
+//     width: 24px;
+//     height: 2px;
+//     background-color: #000000;
+//     left: -1px;
+//     top: 3px;
+//     cursor: pointer;
+//   }
+// }
+
+
+// }
 
 @media (min-width: @tablet-width) {
   .page-header__main-navigation {
@@ -193,9 +302,6 @@
     border: none;
   }
 
-  // .site-list {
-
-  // }
 
   .main-navigation__toggle {
     display: none;
@@ -216,6 +322,10 @@
     background: transparent;
 
   }
+.nav-link--border-bottom {
+  border-bottom: 2px solid #FFFFFF;
+
+}
 
   .site-list__item .nav-link {
     color: #ffffff;

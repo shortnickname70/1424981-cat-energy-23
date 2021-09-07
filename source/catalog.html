@@ -20,18 +20,19 @@
 
 <body class="page__body ">
 
-  <header class="page-header page-header--desktop-background container">
-    <a class="page-header__logo-cat" href="index.html">
-      <svg width="34" height="38">
-        <use xlink:href="img/sprite.svg#icon-cat-header"></use>
-      </svg>
-    </a>
-    <a class="page-header__logo-text" href="index.html">
-      <svg width="101" height="18">
-        <use xlink:href="img/sprite.svg#icon-text-header"></use>
-      </svg>
-    </a>
-
+  <header class="page-header page-header--background ">
+    <div class="page-header__logos ">
+      <a class="page-header__logo-cat" href="index.html">
+        <svg width="34" height="38">
+          <use xlink:href="img/sprite.svg#icon-cat-header"></use>
+        </svg>
+      </a>
+      <a class="page-header__logo-text" href="index.html">
+        <svg width="101" height="18">
+          <use xlink:href="img/sprite.svg#icon-text-header"></use>
+        </svg>
+      </a>
+    </div>
     <nav class="page-header__main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -42,7 +43,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="nav-link--border-bottom-catalog" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -56,9 +57,9 @@
     </nav>
   </header>
   <main class="page__catalog">
-    <h1 class="page__catalog-title page-title ">
-      <div class="container">Каталог продукции</div>
-    </h1>
+    <div class="page__catalog-title page-title ">
+      <span class="container">Каталог продукции</span>
+    </div>
     <ul class="catalog__list">
       <li class="catalog__card">
         <div class="catalog__item">
@@ -199,12 +200,6 @@
         <div class="catalog__item">
           <a href="" class="catalog__item-link">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/img-tablet-catalog-rice500g-webp.webp 1x, img/img-tablet-catalog-rice500g-@2x-webp.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/img-tablet-catalog-rice500g-webp.webp 1x, img/img-tablet-catalog-rice500g-@2x-webp.webp 2x">
-              <source type="image/webp"
-                srcset="img/img-mobile-catalog-rice500g-webp.webp 1x, img/img-mobile-catalog-rice500g-@2x-webp.webp 2x">
               <source media="(min-width: 1440px)"
                 srcset="img/img-tablet-catalog-rice500g.png 1x, img/img-tablet-catalog-rice500g-@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -225,11 +220,11 @@
 
       <li class="catalog__card">
         <!-- <div class="catalog__item catalog__item--view-more"> -->
-          <article class="catalog__view-more ">
-            <p class="view-more__items">Показать еще 100500 товаров</p>
-            <p class="view-more__more-tastes">На самом деле вкусов гораздо больше!</p>
-            <a href="about:blank" class="view-more__button" >показать все</a>
-          </article>
+        <article class="catalog__view-more ">
+          <p class="view-more__items">Показать еще 100500 товаров</p>
+          <p class="view-more__more-tastes">На самом деле вкусов гораздо больше!</p>
+          <a href="about:blank" class="view-more__button">показать все</a>
+        </article>
         <!-- </div> -->
       </li>
     </ul>
@@ -308,26 +303,26 @@
         <ul class="socials__list">
 
           <li class="socials__item">
-            <a href="vkontakte.ru">
-            <svg class="socials-vk" width="23" height="16">
-              <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
-            </svg>
-          </a>
+            <a class="socials__link" href="vkontakte.ru">
+              <svg class="socials-vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="socials__item">
-            <a href="instagram.com">
-            <svg class="socials-insta" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
-            </svg>
-          </a>
+            <a class="socials__link" href="instagram.com">
+              <svg class="socials-insta" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="socials__item">
-            <a href="facebook.com">
-            <svg class="socials-fb" width="22" height="22">
-              <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
-            </svg>
+            <a class="socials__link" href="facebook.com">
+              <svg class="socials-fb" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>

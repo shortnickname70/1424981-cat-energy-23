@@ -20,48 +20,48 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header--desktop-background container">
-    <a class="page-header__logo-cat" href="index.html">
-      <svg width="34" height="38">
-        <use xlink:href="img/sprite.svg#icon-cat-header"></use>
-      </svg>
-    </a>
-    <a class="page-header__logo-text" href="index.html">
-      <svg width="101" height="18">
-        <use xlink:href="img/sprite.svg#icon-text-header"></use>
-      </svg>
-    </a>
-
-    <nav class="page-header__main-navigation">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" >
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <header class="page-header page-header--background ">
+    <div class="page-header__logos ">
+          <a class="page-header__logo-cat" href="index.html">
+            <svg width="34" height="38">
+              <use xlink:href="img/sprite.svg#icon-cat-header"></use>
+            </svg>
+          </a>
+          <a class="page-header__logo-text" href="index.html">
+            <svg width="101" height="18">
+              <use xlink:href="img/sprite.svg#icon-text-header"></use>
+            </svg>
+          </a>
+    </div>
+        <nav class="page-header__main-navigation">
+    <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a  href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a  href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a  class="nav-link--border-bottom-form" href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
   <main class="page__form">
-
-    <h1 class="page__form-title page-title">
-      <div class="container-form"> Подбор программы
-      </div>
-    </h1>
+    <div class="page__form-title page-title">
+      <span class="container-form"> Подбор программы
+      </span>
+    </div>
     <div class="form">
       <form action="https://echo.htmlacademy.ru/" method="post">
         <div class="container-form">
@@ -233,26 +233,26 @@
         <ul class="socials__list">
 
           <li class="socials__item">
-            <a href="vkontakte.ru">
-            <svg class="socials-vk" width="23" height="16">
-              <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
-            </svg>
-          </a>
+            <a class="socials__link" href="vkontakte.ru">
+              <svg class="socials-vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="socials__item">
-            <a href="instagram.com">
-            <svg class="socials-insta" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
-            </svg>
-          </a>
+            <a class="socials__link" href="instagram.com">
+              <svg class="socials-insta" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="socials__item">
-            <a href="facebook.com">
-            <svg class="socials-fb" width="22" height="22">
-              <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
-            </svg>
+            <a class="socials__link" href="facebook.com">
+              <svg class="socials-fb" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
