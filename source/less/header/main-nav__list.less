@@ -9,7 +9,7 @@
   min-width: 320px;
 }
 
-.site-list__item {
+.main-nav__list-item {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
@@ -28,26 +28,26 @@
   border-bottom: 1px solid #E6E6E6;
 }
 
-.site-list__item a {
+.main-nav__list-item a {
   text-decoration: none;
   color: #000000;
 }
 
-.nav-link--border-bottom,
-.nav-link--border-bottom-form,
-.nav-link--border-bottom-catalog {
+.main-nav-link--border-bottom,
+.main-nav-link--border-bottom-form,
+.main-nav-link--border-bottom-catalog {
   border-bottom: 2px solid #68B738;
 
 }
-.site-list__item a:hover {
+.main-nav__list-item a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.site-list__item a:focus {
+.main-nav__list-item a:focus {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.site-list__item a:active {
+.main-nav__list-item a:active {
   color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid #68B738;
 }
@@ -179,7 +179,7 @@
 //   min-width: 320px;
 // }
 
-// .site-list__item {
+// .main-nav__list-item{
 //   font-family: "Oswald";
 //   font-style: normal;
 //   font-weight: 500;
@@ -268,11 +268,9 @@
     width: 100%;
   }
 
-  .main-navigation--opened {
-    .main-nav__list {
-      display: flex;
-    }
-  }
+
+
+  .main-navigation--closed, .main-navigation--opened {
 
   .main-nav__list {
     position: static;
@@ -280,7 +278,7 @@
     justify-content: space-between;
   }
 
-  .site-list__item {
+  .main-nav__list-item {
     display: block;
     font-size: 18px;
     line-height: 24px;
@@ -304,35 +302,36 @@
 
   }
 
-  .site-list__item {
+  .main-nav__list-item {
     background: transparent;
 
   }
-.nav-link--border-bottom {
+.main-nav-link--border-bottom {
   border-bottom: 2px solid #FFFFFF;
 
 }
 
-  .site-list__item .nav-link {
+  .main-nav__list-item .main-nav-link{
     color: #ffffff;
   }
 
-  .site-list__item .nav-link:hover {
+  .main-nav__list-item .main-nav-link:hover {
     color: rgba(255, 255, 255, 0.7);
   }
 
-  .site-list__item .nav-link:focus {
+  .main-nav__list-item .main-nav-link:focus {
     color: rgba(255, 255, 255, 0.5);
   }
 
-  .site-list__item .nav-link:active {
+  .main-nav__list-item .main-nav-link:active {
     border-bottom: 2px solid #FFFFFF;
     color: #ffffff;
   }
 
-  .site-list__item a {
+  .main-nav__list-item a {
     background: transparent;
     font-size: 20px;
     line-height: 30px;
   }
+}
 }

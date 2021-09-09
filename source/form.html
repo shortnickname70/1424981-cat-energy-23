@@ -20,42 +20,42 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header--background ">
+  <header class="page-header page-header-has--background ">
     <div class="page-header__logos ">
-          <a class="page-header__logo-cat" href="index.html">
-            <svg width="34" height="38">
-              <use xlink:href="img/sprite.svg#icon-cat-header"></use>
-            </svg>
-          </a>
-          <a class="page-header__logo-text" href="index.html">
-            <svg width="101" height="18">
-              <use xlink:href="img/sprite.svg#icon-text-header"></use>
-            </svg>
-          </a>
+      <a class="page-header__logo-cat" href="index.html">
+        <svg width="34" height="38">
+          <use xlink:href="img/sprite.svg#icon-cat-header"></use>
+        </svg>
+      </a>
+      <a class="page-header__logo-text" href="index.html">
+        <svg width="101" height="18">
+          <use xlink:href="img/sprite.svg#icon-text-header"></use>
+        </svg>
+      </a>
     </div>
-        <nav class="page-header__main-navigation">
-    <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a  href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a  href="catalog.html">
-                  Каталог продукции
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a  class="nav-link--border-bottom-form" href="form.html">
-                  Подбор программы
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+    <nav class="page-header__main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__list-item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav-link--border-bottom-form" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <main class="page__form">
     <div class="page__form-title page-title">
@@ -71,7 +71,8 @@
               <ul class="form__questionary-input-list">
                 <li class="form__questionary-input-item">
                   <label for="name-field" class="form__questionary-label">имя:*</label>
-                  <input type="text" minlength="2" name="name" id="name-field" placeholder="Барсик" class="form__questionary-input">
+                  <input type="text" minlength="2" name="name" id="name-field" placeholder="Барсик"
+                    class="form__questionary-input">
                 </li>
                 <li class="form__questionary-input-item">
                   <label for="weight-field" class="form__questionary-label">Вес (кг):*</label>
@@ -98,7 +99,7 @@
 
               <li class="form__radio-item">
                 <input type="radio" class="form__radio-input" name="radio" id="pumping" disabled checked>
-                <label for="pumping" class="form__radio-label" tabindex="2" >Набор массы</label>
+                <label for="pumping" class="form__radio-label" tabindex="2">Набор массы</label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -128,12 +129,12 @@
               <li class="form__feedback-input-item input-email-style">
                 <label for="email-field" class="form__feedback-label ">E-mail:*</label>
                 <input type="email" name="email-field" id="email-field" placeholder="kuklachev@gmail.com"
-                  class="form__feedback-input" >
+                  class="form__feedback-input">
               </li>
               <li class="form__feedback-input-item input-phone-style">
                 <label for="phone-field" class="form__feedback-label ">Телефон:*</label>
                 <input type="tel" name="phone-field" id="phone-field" placeholder="8 (960) 900-60-90"
-                pattern="[0-9]{11}" class="form__feedback-input ">
+                  pattern="[0-9]{11}" class="form__feedback-input ">
               </li>
             </ul>
           </div>
@@ -221,46 +222,49 @@
       </div>
     </div>
   </main>
-  <div class="footer-wrapper">
-    <footer class="footer container">
-      <a href="index.html">
-        <svg class="footer__logo" width="128" height="24">
-          <use xlink:href="img/sprite.svg#icon-footer-text"></use>
-        </svg>
-      </a>
 
-      <div class="footer__socials">
-        <ul class="socials__list">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content ">
+        <a href="index.html">
+          <svg class="footer__logo" width="128" height="24">
+            <use xlink:href="img/sprite.svg#icon-footer-text"></use>
+          </svg>
+        </a>
 
-          <li class="socials__item">
-            <a class="socials__link" href="vkontakte.ru">
-              <svg class="socials-vk" width="23" height="16">
-                <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
-              </svg>
-            </a>
-          </li>
+        <div class="footer__socials">
+          <ul class="socials__list">
 
-          <li class="socials__item">
-            <a class="socials__link" href="instagram.com">
-              <svg class="socials-insta" width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
-              </svg>
-            </a>
-          </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://vk.com/" target="_blank">
+                <svg class="socials-vk" width="23" height="16">
+                  <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="socials__item">
-            <a class="socials__link" href="facebook.com">
-              <svg class="socials-fb" width="22" height="22">
-                <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.instagram.com/" target="_blank">
+                <svg class="socials-insta" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.facebook.com/" target="_blank">
+                <svg class="socials-fb" width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
+        </a>
+
       </div>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
-      </a>
-
-    </footer>
-  </div>
+    </div>
+  </footer>
   <script src="js/menu-management.min.js"></script>
 </body>

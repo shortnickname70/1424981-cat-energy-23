@@ -1,16 +1,16 @@
 // Начните писать стили здесь
-.pumping {
+.slimming {
   background: #F2F2F2;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   min-height: 266px;
-  padding-top: 24px;
+  padding-top: 21px;
   padding-left: 20px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
 }
 
-.pumping__header {
+.slimming__header {
   font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
@@ -22,18 +22,18 @@
   margin-bottom: 29px;
 }
 
-.pumping__icon {
+.slimming__icon {
   display: block;
-  background-image: url("../img/img-mobile-cat-walk-svg.svg");
+  background-image: url("../img/img-mobile-cat-sit-svg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 67px;
-  height: 50px;
-  margin-left: -5px;
-  margin-right: 11px;
+  width: 50px;
+  height: 53px;
+  margin-right: 19px;
+
 }
 
-.pumping__text {
+.slimming__text {
   font-family: "Arial";
   font-style: normal;
   font-weight: normal;
@@ -46,9 +46,10 @@
   padding-bottom: 23px;
   margin-top: 0;
   margin-bottom: 19px;
+
 }
 
-.pumping__link {
+.slimming__link {
   font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
@@ -60,53 +61,56 @@
   text-decoration: none;
   margin-bottom: 22px;
   display: flex;
+
 }
 
-.pumping__link:hover .arrow-right{
+.slimming__link:hover .slimming-pumping-arrow-right{
   width: 32px;
   height: 12px;
   background-image: url("../img/icon-arrow-hover.svg");
 }
 
-.pumping__link:focus .arrow-right{
+.slimming__link:focus .slimming-pumping-arrow-right{
   width: 32px;
   height: 12px;
   background-image: url("../img/icon-arrow-hover.svg");
  opacity: 0.5;
 }
 
-.pumping__link:focus {
+.slimming__link:focus {
   color: rgba(107, 49, 49, 0.5);
  }
 
+
 @media (min-width: @tablet-width) {
-  .pumping {
+  .slimming {
     display: block;
     background: #F2F2F2;
-    width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     min-height: 266px;
     padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 57px;
+    width: 100%;
   }
-  .pumping__icon {
-  display: block;
-  background-image: url("../img/img-mobile-cat-walk-svg.svg");
-  width: 268px;
-  height: 200px;
-  margin-right: 28px;
-  float: right;
-}
 
-  .pumping__header {
+  .slimming__icon {
+    display: block;
+    background-image: url("../img/img-mobile-cat-sit-svg.svg");
+    width: 200px;
+    height: 211px;
+    margin-right: 62px;
+    float: right;
+  }
+
+  .slimming__header {
     margin-bottom: 24px;
     margin-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
-  .pumping__text {
+  .slimming__text {
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
@@ -115,7 +119,7 @@
     padding-bottom: 0;
   }
 
-  .pumping__link {
+  .slimming__link {
     font-family: "Oswald";
     font-style: normal;
     font-weight: normal;
@@ -125,8 +129,7 @@
 }
 
 @media (min-width: @desktop-width) {
-
-  .pumping {
+  .slimming {
     width: 570px;
     background: #F2F2F2;
     margin: 0;
@@ -135,24 +138,25 @@
     height: 374px;
 
   }
-  .pumping__icon {
-    display: block;
-    background-image: url("../img/img-mobile-cat-walk-svg.svg");
-    width: 134px;
-    height: 100px;
-    margin-right: 47px;
-    float: left;
-    margin-top: -30px;
-  }
 
-  .pumping__header {
+  .slimming__icon {
+  display: block;
+  background-image: url("../img/img-mobile-cat-sit-svg.svg");
+  width: 100px;
+  height: 106px;
+  margin-right: 62px;
+  float: left;
+  margin-top: -36px;
+}
+
+  .slimming__header {
     margin-bottom: 0;
     margin-left: 0;
     text-align: start;
     margin-bottom: 73px;
-  }
+}
 
-  .pumping__text {
+  .slimming__text {
     max-width: 570px;
     font-size: 16px;
     line-height: 24px;

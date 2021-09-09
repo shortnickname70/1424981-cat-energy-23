@@ -26,7 +26,7 @@
   position: absolute;
 }
 
-.promo__descriptions-wrapper {
+.promo__info-wrapper {
   min-height: 302px;
   width: 280px;
   margin: 0 auto;
@@ -34,7 +34,7 @@
 
 }
 
-.promo__descriptions {
+.promo__info {
   z-index: 10;
   position: relative;
 }
@@ -121,7 +121,7 @@ text-align: center;
 @media (min-width: @tablet-width) {
 
 
-  .promo__descriptions-wrapper {
+  .promo__info-wrapper {
     background-image: none;
     background-color: #FFFFFF;
     min-height: 183px;
@@ -234,7 +234,8 @@ text-align: center;
   .promo__background-cat {
     display: block;
     background-image: url("../img/img-desktop-cat-tongue.png");
-
+    background-size: cover;
+    background-position: center right;
     width: 50%;
     height: 694px;
     background-repeat: no-repeat;
@@ -257,7 +258,7 @@ text-align: center;
     margin-left: 0;
   }
 
-  .promo__descriptions-wrapper {
+  .promo__info-wrapper {
     position: relative;
     background-color: transparent;
     width: 1220px;
@@ -267,7 +268,7 @@ text-align: center;
     display: none;
   }
 
-  .promo__descriptions-wrapper::after {
+  .promo__info-wrapper::after {
     content: "";
     position: absolute;
     background-image: url("../img/img-desktop-index-product.png");
