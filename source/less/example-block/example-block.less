@@ -380,6 +380,7 @@
 
   .example {
     display: flex;
+    position: relative;
     flex-direction: row;
     min-height: 598px;
     flex-wrap: wrap;
@@ -495,4 +496,13 @@
     margin-left: 24px;
     margin-right: 19px;
   }
+   .example__slider-right-background {
+    background: red;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 428px;
+    bottom: 0;
+    left: calc(100% - 1045px);
+   }
 }

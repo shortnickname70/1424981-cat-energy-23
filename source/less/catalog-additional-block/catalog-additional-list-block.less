@@ -3,7 +3,11 @@
 .catalog__additional-items {
   margin-top: 25px;
 }
-
+.catalog__additional-items--wrapper {
+  width: 280px;
+    margin: 0 auto;
+    padding: 0;
+}
 .catalog__additional-title-wrapper {
   width: 280px;
   margin: 0 auto;
@@ -33,7 +37,7 @@
 @media (min-width: @tablet-width) {
 
   .catalog__additional-title-wrapper {
-    border-top: 2px solid #a2a5a1;
+    border-top: 2px solid #68B738;
     width: 100%;
   }
 
@@ -54,13 +58,13 @@
 
   }
 
-
-
   .catalog__additional-items {
     margin-top: 0;
 
   }
-
+  .catalog__additional-items--wrapper {
+    min-width: 708px;
+  }
   .additional-items__list {
     border: 1px solid #CDCDCD;
     margin-bottom: 69px;
@@ -74,8 +78,9 @@
     flex-wrap: wrap;
 
   }
-.additional-items--wrapper {
+.catalog__additional-items--wrapper {
   display: flex;
+  min-width: 1220px;
 }
   .additional-items__list {
     border: none;
