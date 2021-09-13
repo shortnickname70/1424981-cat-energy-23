@@ -18,8 +18,7 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 5px -1px 29px;
 }
 
 .pumping__icon {
@@ -62,22 +61,22 @@
   display: flex;
 }
 
-.pumping__link:hover .slimming-pumping-arrow-right{
+.pumping__link:hover .slimming-pumping-arrow-right {
   width: 32px;
   height: 12px;
   background-image: url("../img/icon-arrow-hover.svg");
 }
 
-.pumping__link:focus .slimming-pumping-arrow-right{
+.pumping__link:focus .slimming-pumping-arrow-right {
   width: 32px;
   height: 12px;
   background-image: url("../img/icon-arrow-hover.svg");
- opacity: 0.5;
+  opacity: 0.5;
 }
 
 .pumping__link:focus {
   color: rgba(107, 49, 49, 0.5);
- }
+}
 
 @media (min-width: @tablet-width) {
   .pumping {
@@ -88,18 +87,21 @@
     min-height: 266px;
     padding-top: 77px;
     padding-left: 52px;
-    padding-bottom: 57px;
+    padding-bottom: 36px;
   }
+
   .pumping__icon {
-  display: block;
-  background-image: url("../img/img-mobile-cat-walk-svg.svg");
-  width: 268px;
-  height: 200px;
-  margin-right: 28px;
-  float: right;
-}
+    display: block;
+    background-image: url("../img/img-mobile-cat-walk-svg.svg");
+    width: 268px;
+    height: 200px;
+    margin-right: 28px;
+    margin-top: 14px;
+    float: right;
+  }
 
   .pumping__header {
+    margin-top: 0;
     margin-bottom: 24px;
     margin-left: 0;
     font-size: 36px;
@@ -135,6 +137,7 @@
     height: 374px;
 
   }
+
   .pumping__icon {
     display: block;
     background-image: url("../img/img-mobile-cat-walk-svg.svg");
@@ -143,6 +146,7 @@
     margin-right: 47px;
     float: left;
     margin-top: -30px;
+    margin-left: -19px;
   }
 
   .pumping__header {

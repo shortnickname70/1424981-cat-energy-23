@@ -3,7 +3,7 @@
 .features {
 
   box-sizing: border-box;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .features__heading {
@@ -33,11 +33,12 @@
 
 .features__item {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .features__icon {
   margin-right: 20px;
+  margin-top: -3px;
   min-width: 60px;
   height: 60px;
   background-color: #68B738;
@@ -49,22 +50,26 @@
 
 .features__description {
   margin: 0;
+  margin-top: 1px;
 }
+.features__description:first-child {
 
+  margin-top: 0px;
+}
 
 @media (min-width: @tablet-width) {
 
   .features {
 
     box-sizing: border-box;
-    border-bottom: 1px solid #E6E6E6;
-    margin-bottom: 0;
+    margin-bottom: 28px;
   }
 
   .features__list {
     display: grid;
-    grid-template-columns: 354px 354px;
-    grid-template-rows: 280px 280px;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 259px 259px;
+    grid-gap: 57px 60px;
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
@@ -84,13 +89,13 @@
 
   .features__item:nth-child(1) {
     background-image: url("../img/img-tablet-number1.png");
-    background-size: 82px 226px;
+    background-size: 73px 227px;
     background-repeat: no-repeat;
-    background-position: 118px 0;
+    background-position: 125px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-tablet-number1-@2x.png");
-      background-size: 82px 226px;
+      background-size: 73px 227px;
       background-repeat: no-repeat;
     }
 
@@ -98,26 +103,26 @@
 
   .features__item:nth-child(2) {
     background-image: url("../img/img-tablet-number2.png");
-    background-size: 107px 226px;
+    background-size: 111px 226px;
     background-repeat: no-repeat;
-    background-position: 118px 0;
+    background-position: 121px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-tablet-number2-@2x.png");
-      background-size: 107px 226px;
+      background-size: 111px 226px;
       background-repeat: no-repeat;
     }
   }
 
   .features__item:nth-child(3) {
     background-image: url("../img/img-tablet-number3.png");
-    background-size: 107px 226px;
+    background-size: 120px 230px;
     background-repeat: no-repeat;
-    background-position: 118px 0;
+    background-position: 119px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-tablet-number3-@2x.png");
-      background-size: 107px 226px;
+      background-size: 120px 230px;
       background-repeat: no-repeat;
     }
   }
@@ -126,7 +131,7 @@
     background-image: url("../img/img-tablet-number4.png");
     background-size: 123px 226px;
     background-repeat: no-repeat;
-    background-position: 118px 0;
+    background-position: 122px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-tablet-number4-@2x.png");
@@ -144,19 +149,21 @@
     height: 80px;
     width: 80px;
     margin-right: 0;
+    margin-top: 0;
     margin-bottom: 31px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features {
-    margin-bottom: 69px;
+    margin-bottom: 30px;
     border: none;
   }
 
   .features__list {
     display: grid;
-    grid-template-columns: 305px 305px 305px 305px;
+    grid-gap: 81px;
+    grid-template-columns: 244px 244px 244px 244px;
     grid-template-rows: 280px;
     font-size: 16px;
     line-height: 24px;
@@ -165,7 +172,7 @@
 
   .features__heading {
 
-    margin-bottom: 32px;
+    margin-bottom: 71px;
   }
 
   .features__item {
@@ -173,5 +180,8 @@
     margin-bottom: 0;
     box-sizing: border-box;
     padding: 0;
+  }
+  .features__description {
+    letter-spacing: -0.3px;
   }
 }

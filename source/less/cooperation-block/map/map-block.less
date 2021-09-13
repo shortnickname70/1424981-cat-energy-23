@@ -15,8 +15,8 @@
   background-image: url("../img/icon-mobile-map-marker.svg");
   width: 57px;
   height: 53px;
-  top: 25%;
-  left: calc(100% - 60%);
+  top: 38%;
+  left: calc(100% - 58%);
   z-index: 10;
 }
 
@@ -38,8 +38,8 @@
     background-image: url("../img/icon-tablet-map-marker.svg");
     width: 113px;
     height: 106px;
-    top: 25%;
-    left: calc(100% - 60%);
+    top: 37%;
+    left: calc(100% - 57%);
     z-index: 10;
   }
 }
@@ -57,5 +57,14 @@
     background-repeat: no-repeat;
 
   }
-
+  .location__wrapper::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-tablet-map-marker.svg");
+    width: 113px;
+    height: 106px;
+    top: 33%;
+    left: calc(100% - 37%);
+    z-index: 10;
+  }
 }

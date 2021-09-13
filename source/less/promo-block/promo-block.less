@@ -85,7 +85,7 @@
   height: 270px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 41px;
+  bottom: 43px;
   z-index: 10;
   background-repeat: no-repeat;
 
@@ -96,13 +96,16 @@
   }
 
 }
+
 .promo__button {
-text-align: center;
+  text-align: center;
 
 }
 
 .promo__button-link {
-  padding: 8px 44px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 44px;
   width: 280px;
   height: 40px;
   font-family: "Oswald";
@@ -113,13 +116,15 @@ text-align: center;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color:#FFFFFF;
+  color: #FFFFFF;
   border: 0;
   box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
-
+  .promo {
+    margin-bottom: 0;
+  }
 
   .promo__info-wrapper {
     background-image: none;
@@ -155,12 +160,11 @@ text-align: center;
   }
 
   .promo__lower-half {
-    min-height: 610px;
+    min-height: 607px;
     position: relative;
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    // background-image: url("../img/img-tablet-index-product.png");
     min-width: 609px;
 
   }
@@ -173,7 +177,6 @@ text-align: center;
     height: 609px;
     left: 50%;
     transform: translateX(-50%);
-    top: 10px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -189,35 +192,35 @@ text-align: center;
 
 
 
-.promo__button {
-  text-align: unset ;
-  width: 708px;
-  margin: 0 auto;
+  .promo__button {
+    text-align: unset;
+    width: 708px;
+    margin: 0 auto;
   }
 
-.promo__button-link {
+  .promo__button-link {
     width: 244px;
     height: 54px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 91px;
-    margin-top: 49px;
+    margin-left: 90px;
+    margin-top: 27px;
     position: absolute;
 
-}
+  }
 }
 
 @media (min-width: @desktop-width) {
 
   .promo {
     min-height: 474px;
-    margin-bottom: 82px;
+    margin-bottom: 60px;
   }
 
   .promo__title {
     padding-left: 80px;
-    padding-top: 0;
+    padding-top: 46px;
   }
 
   .promo__background-color {
@@ -274,8 +277,8 @@ text-align: center;
     background-image: url("../img/img-desktop-index-product.png");
     width: 552px;
     height: 499px;
-    left: 430px;
-    top: -90px;
+    left: 447px;
+    top: -37px;
     z-index: 6;
     background-repeat: no-repeat;
 
@@ -289,11 +292,11 @@ text-align: center;
   .promo__button {
     width: 1220px;
     margin: 0 auto;
-    }
+  }
 
   .promo__button-link {
-
-      margin-top: 52px;
+    margin-left: 80px;
+    margin-top: 32px;
 
   }
 }
