@@ -1,7 +1,7 @@
 // Начните писать стили здесь
 
 .catalog__additional-items {
-  margin-top: 25px;
+  margin-top: 41px;
 }
 .catalog__additional-items--wrapper {
   width: 280px;
@@ -9,8 +9,10 @@
     padding: 0;
 }
 .catalog__additional-title-wrapper {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
+  border-top: 2px solid #68B738;
+
 }
 
 .catalog__additional-title {
@@ -22,7 +24,17 @@
   color: #000000;
   position: relative;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 18px;
+
+  width: 268px;
+  box-sizing: border-box;
+  z-index: 2;
+  top: -17px;
+  left: calc((100% - 320px)/2);
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 22px;
+
 }
 
 .additional-items__list {
@@ -48,13 +60,14 @@
     line-height: 36px;
     color: #000000;
     margin: 0;
-    margin-bottom: 79px;
+    margin-bottom: 53px;
     z-index: 2;
     top: -27px;
     left: calc((100% - 708px) / 2);
     background-color: white;
     margin-left: 0;
     padding-left: 37px;
+    padding-top: 2px;
 
   }
 
@@ -67,7 +80,7 @@
   }
   .additional-items__list {
     border: 1px solid #CDCDCD;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 }
 
@@ -76,7 +89,7 @@
   .catalog__additional-items {
     display: flex;
     flex-wrap: wrap;
-
+    margin-bottom: 19px;
   }
 .catalog__additional-items--wrapper {
   display: flex;
@@ -87,16 +100,18 @@
     max-width: 895px;
     margin-right: 80px;
   }
-
+  .catalog__additional-title-wrapper {
+    margin-top: -42px;
+  }
   .catalog__additional-title {
     font-size: 36px;
     line-height: 36px;
     color: #000000;
     position: relative;
     margin: 0;
-    margin-bottom: 81px;
+    margin-bottom: 53px;
     min-width: 0;
     left: calc((100% - 1290px) / 2);
-    padding-left: 40px;
+    padding-left: 35px;
   }
 }
