@@ -1,14 +1,13 @@
 // Начните писать стили здесь
 
 .features {
-
   box-sizing: border-box;
   margin-bottom: 19px;
 }
 
 .features__heading {
   display: block;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -21,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -41,7 +40,7 @@
   margin-top: -3px;
   min-width: 60px;
   height: 60px;
-  background-color: #68B738;
+  background-color: #68b738;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,15 +51,13 @@
   margin: 0;
   margin-top: 1px;
 }
-.features__description:first-child {
 
+.features__description:first-child {
   margin-top: 0px;
 }
 
 @media (min-width: @tablet-width) {
-
   .features {
-
     box-sizing: border-box;
     margin-bottom: 28px;
   }
@@ -81,7 +78,6 @@
     margin-bottom: 72px;
   }
 
-
   .features__item {
     display: block;
     margin-bottom: 0;
@@ -98,7 +94,6 @@
       background-size: 73px 227px;
       background-repeat: no-repeat;
     }
-
   }
 
   .features__item:nth-child(2) {
@@ -140,7 +135,6 @@
     }
   }
 
-
   .features__description {
     max-width: 245px;
   }
@@ -171,7 +165,6 @@
   }
 
   .features__heading {
-
     margin-bottom: 71px;
   }
 
@@ -181,6 +174,7 @@
     box-sizing: border-box;
     padding: 0;
   }
+
   .features__description {
     letter-spacing: -0.3px;
   }
