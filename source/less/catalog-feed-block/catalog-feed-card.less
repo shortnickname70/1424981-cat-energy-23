@@ -6,11 +6,6 @@
   padding-bottom: 24px;
 }
 
-.catalog__card:last-child {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
@@ -20,10 +15,6 @@
   margin: 0 auto;
 }
 
-.catalog__item:last-child {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 .catalog__item-link {
   align-content: center;
@@ -48,7 +39,7 @@
 }
 
 .catalog__descriptions--title {
-  font-family: "Oswald", "Arial";
+  font-family:"Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -77,13 +68,13 @@
   line-height: 20px;
 }
 
+
 @media (min-width: @tablet-width) {
   .catalog__card {
     border: none;
     padding-top: 0;
     padding-bottom: 0;
     width: 324px;
-    height: 430px;
     background-color: #f2f2f2;
     margin: 0 auto;
     margin-bottom: 141px;
@@ -95,7 +86,7 @@
     height: auto;
     width: auto;
     position: absolute;
-    bottom: 298px;
+    bottom: calc(100% - 82px);
   }
 
   .catalog__item {
@@ -111,6 +102,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-top: 161px;
   }
 
   .catalog__card:nth-child(7) {
@@ -139,7 +131,6 @@
     max-width: 156px;
     text-align: center;
     margin-bottom: 13px;
-    margin-top: 161px;
     margin-left: 48px;
   }
 
@@ -155,6 +146,7 @@
   .catalog__button {
     margin-left: 0;
     margin-top: 31px;
+    margin-bottom: 39px;
   }
 }
 
@@ -164,11 +156,18 @@
     padding-top: 0;
     padding-bottom: 0;
     width: 245px;
-    height: 431px;
     background-color: #f2f2f2;
     margin: 0;
     margin-bottom: 143px;
   }
+
+  .catalog__card:nth-child(5),
+  .catalog__card:nth-child(6),
+  .catalog__card:nth-child(7),
+  .catalog__card:nth-child(8) {
+    margin-bottom: 100px;
+  }
+
 
   .catalog__item {
     display: flex;
@@ -178,6 +177,7 @@
     padding: 0;
     background-color: #f2f2f2;
     margin-bottom: 0;
+    padding-top: 161px;
   }
 
   .catalog__item:nth-child(4n) {
@@ -190,7 +190,8 @@
   }
 
   .catalog__item-link {
-    bottom: 306px;
+    bottom: calc(100% - 82px);
+
   }
 
   .catalog__text {
@@ -209,7 +210,6 @@
     max-width: 156px;
     text-align: center;
     margin-bottom: 17px;
-    margin-top: 165px;
     margin-left: 8px;
   }
 

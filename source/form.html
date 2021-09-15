@@ -7,8 +7,10 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/menu-management.js" as="script">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">  <link rel="stylesheet" href="css/style.min.css">
   <link href="source/css/style.css" rel="stylesheet">
   <link rel="icon" href="../source/img/favicons/favicon-16-ico.ico">
   <link rel="icon" href="../source/img/favicons/favicon-152-ico.ico">
@@ -22,12 +24,12 @@
 
   <header class="page-header page-header-has--background ">
     <div class="page-header__logos ">
-      <a class="page-header__logo-cat" href="index.html">
+      <a class="page-header__logo-cat" href="index.html" aria-label="Logotype Cat Energy">
         <svg width="34" height="38">
           <use xlink:href="img/sprite.svg#icon-cat-header"></use>
         </svg>
       </a>
-      <a class="page-header__logo-text" href="index.html">
+      <a class="page-header__logo-text" href="index.html" aria-label="Logotype Cat Energy">
         <svg width="101" height="18">
           <use xlink:href="img/sprite.svg#icon-text-header"></use>
         </svg>
@@ -89,8 +91,17 @@
             <ul class="form__radio">
 
               <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio" id="slimming" checked>
-                <label for="slimming" class="form__radio-label" tabindex="2">Похудение </label>
+                <input type="radio" class="form__radio-input" name="radio-1" id="slimming" checked>
+                <label for="slimming" class="form__radio-label" tabindex="10">Похудение </label>
+                <div class="form__radio-check-field" tabindex="2">
+                </div>
+                <div class="form__radio-check-field-checked">
+                </div>
+              </li>
+
+              <li class="form__radio-item">
+                <input type="radio" class="form__radio-input" name="radio-2" id="pumping" disabled >
+                <label for="pumping" class="form__radio-label" tabindex="10">Набор массы</label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -98,17 +109,8 @@
               </li>
 
               <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio" id="pumping" disabled checked>
-                <label for="pumping" class="form__radio-label" tabindex="2">Набор массы</label>
-                <div class="form__radio-check-field">
-                </div>
-                <div class="form__radio-check-field-checked">
-                </div>
-              </li>
-
-              <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio" id="unknown">
-                <label for="unknown" class="form__radio-label" tabindex="2">Не знаю (Нужен ваш совет)</label>
+                <input type="radio" class="form__radio-input" name="radio-3" id="unknown">
+                <label for="unknown" class="form__radio-label" tabindex="10">Не знаю (Нужен ваш совет)</label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -226,7 +228,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content ">
-        <a href="index.html">
+        <a href="index.html" class="footer__logo-link" aria-label="Logotype Cat Energy">
           <svg class="footer__logo" width="128" height="24">
             <use xlink:href="img/sprite.svg#icon-footer-text"></use>
           </svg>
@@ -236,7 +238,7 @@
           <ul class="socials__list">
 
             <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/" target="_blank">
+              <a class="socials__link" href="https://vk.com/" target="_blank" aria-label="go to vkontakte">
                 <svg class="socials-vk" width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
                 </svg>
@@ -244,7 +246,7 @@
             </li>
 
             <li class="socials__item">
-              <a class="socials__link" href="https://www.instagram.com/" target="_blank">
+              <a class="socials__link" href="https://www.instagram.com/" target="_blank" aria-label="go to instagram">
                 <svg class="socials-insta" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
                 </svg>
@@ -252,7 +254,7 @@
             </li>
 
             <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/" target="_blank">
+              <a class="socials__link" href="https://www.facebook.com/" target="_blank" aria-label="go to facebook">
                 <svg class="socials-fb" width="22" height="22">
                   <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
                 </svg>
@@ -260,7 +262,7 @@
             </li>
           </ul>
         </div>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright" target="_blank" aria-label="Logotype Htmlacademy">
         </a>
 
       </div>
