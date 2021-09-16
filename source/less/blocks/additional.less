@@ -1,0 +1,250 @@
+// Начните писать стили здесь
+.additional__items {
+  margin-top: 41px;
+}
+
+.additional__items-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.additional__title-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 2px solid #68b738;
+}
+
+.additional__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+  margin: 0;
+  margin-bottom: 18px;
+  width: 268px;
+  box-sizing: border-box;
+  z-index: 2;
+  top: -17px;
+  left: calc((100% - 320px)/2);
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 22px;
+}
+
+.additional__items-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+//additional-card
+
+.additional__items-item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 19px;
+  padding-top: 12px;
+}
+
+.additional__items-item:first-child {
+  border-top: 1px solid #ebebeb;
+}
+
+.additional__items-name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  min-width: 100%;
+}
+
+.additional__items-value {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  min-width: 126px;
+  display: block;
+  margin-right: 115px;
+  margin-bottom: 15px;
+}
+
+.additional__items-price {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  min-width: 39px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__title-wrapper {
+    border-top: 2px solid #68b738;
+    width: 100%;
+  }
+
+  .additional__title {
+    width: 411px;
+    box-sizing: border-box;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 53px;
+    z-index: 2;
+    top: -27px;
+    left: calc((100% - 708px) / 2);
+    background-color: #ffffff;
+    margin-left: 0;
+    padding-left: 37px;
+    padding-top: 2px;
+  }
+
+  .additional__items {
+    margin-top: 0;
+  }
+
+  .additional__items-wrapper {
+    min-width: 708px;
+  }
+
+  .additional__items-list {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 67px;
+  }
+
+//additional-card
+
+.additional__items-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 38px 28px 38px;
+  justify-content: flex-start;
+}
+
+.additional__items-button {
+  width: 632px;
+  padding: 10px 26px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.additional__items-name {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+  min-width: 163px;
+  margin-right: 244px;
+}
+
+.additional__items-value {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  min-width: 132px;
+  margin-right: 49px;
+  margin-top: 3px;
+  text-align: end;
+}
+
+.additional__items-price {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  min-width: 44px;
+  margin-top: 2px;
+}
+
+}
+
+@media (min-width: @desktop-width) {
+  .additional__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+  }
+
+  .additional__items-wrapper {
+    display: flex;
+    min-width: 1220px;
+  }
+
+  .additional__items-list {
+    border: none;
+    max-width: 895px;
+    margin-right: 80px;
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    position: relative;
+    margin: 0;
+    margin-bottom: 53px;
+    min-width: 0;
+    left: calc((100% - 1290px) / 2);
+    padding-left: 35px;
+  }
+
+//additional-card
+.additional__items-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  min-height: 72px;
+  box-sizing: border-box;
+}
+
+.additional__items-name {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0;
+  min-width: 161px;
+  margin-right: 163px;
+}
+
+.additional__items-value {
+  margin-right: 112px;
+  text-align: start;
+}
+
+.additional__items-price {
+  text-align: start;
+  margin-right: 38px;
+}
+
+.additional__items-button {
+  width: 244px;
+  padding: 10px 26px;
+  margin: 0;
+}
+}

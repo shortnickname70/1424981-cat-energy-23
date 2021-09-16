@@ -1,0 +1,377 @@
+// Начните писать стили здесь
+
+.slimming-pumping {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+//slimming-block
+
+.slimming-pumping__slimming {
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  min-height: 266px;
+  padding-top: 21px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slimming-pumping__slimming-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 9px 0 29px 2px;
+}
+
+.slimming-pumping__slimming-icon {
+  display: block;
+  background-image: url("../img/img-mobile-cat-sit-svg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 53px;
+  margin-right: 19px;
+}
+
+.slimming-pumping__slimming-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  max-width: 227px;
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.slimming-pumping__slimming-link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 22px;
+  display: flex;
+}
+
+.slimming-pumping__slimming-link:hover .slimming-pumping__arrow-right {
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
+}
+
+.slimming-pumping__slimming-link:focus .slimming-pumping__arrow-right {
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
+  opacity: 0.5;
+}
+
+.slimming-pumping__slimming-link:focus {
+  color: rgba(107, 49, 49, 0.5);
+}
+
+.slimming-pumping__arrow-right {
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/icon-mobile-arrow.svg");
+  background-color: transparent;
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
+//pumping-block
+
+.slimming-pumping__pumping {
+  background: #f2f2f2;
+  margin-bottom: 27px;
+  min-height: 266px;
+  padding-top: 24px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slimming-pumping__pumping-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 5px -1px 29px;
+}
+
+.slimming-pumping__pumping-icon {
+  display: block;
+  background-image: url("../img/img-mobile-cat-walk-svg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67px;
+  height: 50px;
+  margin-left: -5px;
+  margin-right: 11px;
+}
+
+.slimming-pumping__pumping-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  max-width: 227px;
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.slimming-pumping__pumping-link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 22px;
+  display: flex;
+}
+
+.slimming-pumping__pumping-link:hover .slimming-pumping__arrow-right {
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
+}
+
+.slimming-pumping__pumping-link:focus .slimming-pumping__arrow-right {
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/icon-arrow-hover.svg");
+  opacity: 0.5;
+}
+
+.slimming-pumping__pumping-link:focus {
+  color: rgba(107, 49, 49, 0.5);
+}
+
+@media (min-width: @tablet-width) {
+  .slimming-pumping {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 708px;
+  }
+
+  //slimming-block
+  .slimming-pumping__slimming {
+    display: block;
+    background: #f2f2f2;
+    margin-bottom: 30px;
+    min-height: 266px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 35px;
+    width: 100%;
+  }
+
+  .slimming-pumping__slimming-icon {
+    display: block;
+    background-image: url("../img/img-mobile-cat-sit-svg.svg");
+    width: 200px;
+    height: 211px;
+    margin-right: 62px;
+    float: right;
+  }
+
+  .slimming-pumping__slimming-header {
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .slimming-pumping__slimming-text {
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .slimming-pumping__slimming-link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  //pumping-block
+
+  .slimming-pumping__pumping {
+    display: block;
+    background: #f2f2f2;
+    width: 100%;
+    margin-bottom: 45px;
+    min-height: 266px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 36px;
+  }
+
+  .slimming-pumping__pumping-icon {
+    display: block;
+    background-image: url("../img/img-mobile-cat-walk-svg.svg");
+    width: 268px;
+    height: 200px;
+    margin-right: 28px;
+    margin-top: 14px;
+    float: right;
+  }
+
+  .slimming-pumping__pumping-header {
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .slimming-pumping__pumping-text {
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .slimming-pumping__pumping-link {
+    font-family:"Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slimming-pumping__arrow-right {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: @desktop-width) {
+  .slimming-pumping {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 71px;
+    min-width: 1220px;
+  }
+
+  //slimming-block
+  .slimming-pumping__slimming {
+    width: 570px;
+    background: #f2f2f2;
+    margin: 0;
+    min-height: 266px;
+    padding: 77px 51px 59px 52px;
+  }
+
+  .slimming-pumping__slimming-icon {
+    display: block;
+    background-image: url("../img/img-mobile-cat-sit-svg.svg");
+    width: 100px;
+    height: 106px;
+    margin-right: 62px;
+    float: left;
+    margin-top: -36px;
+  }
+
+  .slimming-pumping__slimming-header {
+    margin-left: 0;
+    text-align: start;
+    margin-bottom: 73px;
+  }
+
+  .slimming-pumping__slimming-text {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 27px;
+  }
+
+  //pumping-block
+
+  .slimming-pumping__pumping {
+    width: 570px;
+    background: #f2f2f2;
+    margin: 0;
+    min-height: 266px;
+    padding: 77px 51px 59px 52px;
+  }
+
+  .slimming-pumping__pumping-icon {
+    display: block;
+    background-image: url("../img/img-mobile-cat-walk-svg.svg");
+    width: 134px;
+    height: 100px;
+    margin-right: 47px;
+    float: left;
+    margin-top: -30px;
+    margin-left: -19px;
+  }
+
+  .slimming-pumping__pumping-header {
+    margin-left: 0;
+    text-align: start;
+    margin-bottom: 73px;
+  }
+
+  .slimming-pumping__pumping-text {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 27px;
+  }
+
+  .slimming-pumping-arrow-right {
+    margin-top: 9px;
+    margin-left: 28px;
+  }
+}
