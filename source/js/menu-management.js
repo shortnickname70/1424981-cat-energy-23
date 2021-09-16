@@ -1,5 +1,5 @@
-const burgerButton = document.querySelector('.main-navigation__toggle');
-const mainNav = document.querySelector('.page-header__main-navigation');
+const burgerButton = document.querySelector('.main-nav__toggle');
+const mainNav = document.querySelector('.main-nav');
 
 // mainNav.classList.remove('.page-header__main-navigation');
 

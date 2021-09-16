@@ -53,12 +53,12 @@
   border-bottom: 2px solid #68b738;
 }
 
-.page-header__main-navigation {
+.main-nav {
   width: 100%;
   position: relative;
 }
 
-.main-navigation__toggle {
+.main-nav__toggle {
   position: absolute;
   top: -44px;
   right: 20px;
@@ -70,7 +70,7 @@
   border: none;
 }
 
-.main-navigation__toggle::before {
+.main-nav__toggle::before {
   content: "";
   position: absolute;
   transform: rotate(45deg);
@@ -82,7 +82,7 @@
   cursor: pointer;
 }
 
-.main-navigation__toggle::after {
+.main-nav__toggle::after {
   content: "";
   position: absolute;
   transform: rotate(-45deg);
@@ -100,12 +100,12 @@
     display: none;
   }
 
-  .main-navigation__toggle::after,
-  .main-navigation__toggle::before {
+  .main-nav__toggle::after,
+  .main-nav__toggle::before {
     display: none;
   }
 
-  .main-navigation__toggle {
+  .main-nav__toggle {
     background-image: url("/img/logo-mobile-header-menu.svg");
   }
 }
@@ -121,7 +121,7 @@
     z-index: 20;
   }
 
-  .main-navigation__toggle {
+  .main-nav__toggle {
     position: absolute;
     top: -41px;
     right: 20px;
@@ -133,7 +133,7 @@
     border: none;
   }
 
-  .main-navigation__toggle::before {
+  .main-nav__toggle::before {
     content: "";
     position: absolute;
     transform: rotate(45deg);
@@ -145,7 +145,7 @@
     cursor: pointer;
   }
 
-  .main-navigation__toggle::after {
+  .main-nav__toggle::after {
     content: "";
     position: absolute;
     transform: rotate(-45deg);
@@ -253,7 +253,7 @@
 // }
 
 @media (min-width: @tablet-width) {
-  .page-header__main-navigation {
+  .main-nav {
     width: 100%;
     padding-bottom: 6px;
   }
@@ -276,14 +276,14 @@
       border: none;
     }
 
-    .main-navigation__toggle {
+    .main-nav__toggle {
       display: none;
     }
   }
 
 
   @media (min-width: @desktop-width) {
-    .page-header__main-navigation {
+    .main-nav {
       background: transparent;
       z-index: 5;
     }
