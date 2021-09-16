@@ -53,10 +53,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 auto;
   margin-top: 37px;
   margin-bottom: 39px;
   width: 280px;
-  margin: 0 auto;
   padding: 0;
 }
 
@@ -149,24 +149,24 @@
 }
 
 .form__radio-input {
-  height: 0px;
-  width: 0px;
+  height: 0;
+  width: 0;
   position: absolute;
 }
 
 .form__radio-input:focus ~ .form__radio-label {
-  outline: 2px solid black;
+  outline: 2px solid #000000;
 }
 
-.form__radio-input:checked~.form__radio-check-field-checked {
+.form__radio-input:checked ~ .form__radio-check-field-checked {
   visibility: visible;
 }
 
-.form__radio-input:disabled~div {
+.form__radio-input:disabled ~ div {
   opacity: 0.5;
 }
 
-.form__radio-input:disabled~label {
+.form__radio-input:disabled ~ label {
   opacity: 0.4;
 }
 
@@ -186,7 +186,7 @@
   cursor: pointer;
 }
 
-.form__radio-label:hover~.form__radio-check-field {
+.form__radio-label:hover ~ .form__radio-check-field {
   border: 1px solid #bababa;
 }
 
@@ -241,7 +241,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   resize: none;
   padding: 9px 12px 9px 15px;
   margin-top: 47px;
@@ -272,24 +272,24 @@
 
 .form__extra-input {
   position: absolute;
-  height: 0px;
-  width: 0px;
+  height: 0;
+  width: 0;
 }
 
 .form__extra-input:focus ~ .form__extra-label {
-  outline: 2px solid black;
+  outline: 2px solid #000000;
 }
 
-.form__extra-input:checked~.checkbox-on-icon {
+.form__extra-input:checked ~ .checkbox-on-icon {
   visibility: visible;
 }
 
 
-.form__extra-input:disabled~div {
+.form__extra-input:disabled ~ div {
   opacity: 0.5;
 }
 
-.form__extra-input:disabled~label {
+.form__extra-input:disabled ~ label {
   opacity: 0.4;
 }
 
@@ -309,7 +309,7 @@
   cursor: pointer;
 }
 
-.form__extra-label:hover~.form__extra-check-field {
+.form__extra-label:hover ~ .form__extra-check-field {
   border: 1px solid #bababa;
 }
 
@@ -320,7 +320,6 @@
   height: 30px;
   cursor: pointer;
   position: absolute;
-
 }
 
 .checkbox-on-icon {
@@ -692,7 +691,6 @@
     white-space: nowrap;
     margin-right: 20px;
     padding-top: 13px;
-
   }
 
   .form__feedback-label--phone {
@@ -839,5 +837,4 @@
     margin-right: 17px;
     padding-top: 13px;
   }
-
 }
