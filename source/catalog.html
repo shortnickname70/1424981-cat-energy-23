@@ -23,7 +23,7 @@
 
 <body >
 
-  <header class="page-header page-header-has--background ">
+  <header class="page-header page-header--has-background ">
     <div class="page-header__logos ">
       <a class="page-header__logo-cat" href="index.html" aria-label="Logotype Cat Energy">
         <svg width="34" height="38">
@@ -36,8 +36,8 @@
         </svg>
       </a>
     </div>
-    <nav class="page-header__main-navigation">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="main-nav__list-item">
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="main-nav__list-item">
-            <a class="main-nav-link--border-bottom-catalog" href="catalog.html">
+            <a class="main-nav__border-bottom-catalog" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -59,11 +59,11 @@
       </div>
     </nav>
   </header>
-  <main class="page__catalog">
-    <div class="catalog-feed__list-title page-title ">
+  <main class="catalog">
+    <div class="catalog__title page-title ">
       <span class="container">Каталог продукции</span>
     </div>
-    <ul class="catalog-feed__list">
+    <ul class="catalog__feed-list">
       <li class="catalog__card">
         <div class="catalog__item">
           <a href="" class="catalog__item-link">
@@ -81,7 +81,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title">Cat Energy PRO 500 г</a>
+            <a href="" class="catalog__descriptions-title">Cat Energy PRO 500 г</a>
             <p class="catalog__text"> <span class="text-start">Масса </span><span class="text-end">500 г</span> </p>
             <p class="catalog__text"><span> Вкус</span> <span>Курица </span></p>
             <p class="catalog__text"><span> Цена </span><span>700 Р</span> </p>
@@ -110,7 +110,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title"> Cat Energy PRO 1000 г</a>
+            <a href="" class="catalog__descriptions-title"> Cat Energy PRO 1000 г</a>
             <p class="catalog__text"><span> Масса</span> <span>1000 г</span> </p>
             <p class="catalog__text"> <span>Вкус</span> <span>Курица </span></p>
             <p class="catalog__text"> <span>Цена</span><span> 1000 Р</span> </p>
@@ -136,7 +136,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title"> Cat Energy PRO 500 г</a>
+            <a href="" class="catalog__descriptions-title"> Cat Energy PRO 500 г</a>
             <p class="catalog__text"> <span>Масса</span> <span>500 г </span></p>
             <p class="catalog__text"> <span>Вкус</span><span>Рыба </span></p>
             <p class="catalog__text"> <span>Цена</span> <span>700 Р </span></p>
@@ -162,7 +162,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title"> Cat Energy PRO 1000 г</a>
+            <a href="" class="catalog__descriptions-title"> Cat Energy PRO 1000 г</a>
             <p class="catalog__text"> <span> Масса</span> <span>1000 г</span> </p>
             <p class="catalog__text"> <span> Вкус</span> <span>Рыба</span> </p>
             <p class="catalog__text"> <span> Цена</span> <span> 1000 Р</span> </p>
@@ -188,7 +188,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title"> Cat Energy slim 500 г</a>
+            <a href="" class="catalog__descriptions-title"> Cat Energy slim 500 г</a>
             <p class="catalog__text"> <span>Масса </span><span>500 г</span> </p>
             <p class="catalog__text"> <span>Вкус </span><span>Гречка</span> </p>
             <p class="catalog__text"> <span>Цена </span><span>400 Р </span></p>
@@ -214,7 +214,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title"> Cat Energy slim 1000 г</a>
+            <a href="" class="catalog__descriptions-title"> Cat Energy slim 1000 г</a>
             <p class="catalog__text"> <span>Масса</span> <span>1000 г</span> </p>
             <p class="catalog__text"> <span>Вкус </span><span>Гречка</span> </p>
             <p class="catalog__text"><span> Цена </span><span>700 Р</span> </p>
@@ -240,7 +240,7 @@
             </picture>
           </a>
           <div class="catalog__descriptions">
-            <a href="" class="catalog__descriptions--title"> Cat Energy slim 500 г</a>
+            <a href="" class="catalog__descriptions-title"> Cat Energy slim 500 г</a>
             <p class="catalog__text"> <span>Масса</span> <span>500 г </span></p>
             <p class="catalog__text"> <span>Вкус</span> <span>Рис</span> </p>
             <p class="catalog__text"> <span>Цена</span> <span>500 Р </span></p>
@@ -262,36 +262,36 @@
       <div class="catalog__additional-title-wrapper ">
         <p class="catalog__additional-title">Дополнительные товары </p>
       </div>
-      <div class="catalog__additional-items--wrapper">
-        <ul class="additional-items__list">
-          <li class="additional-items__item">
+      <div class="catalog__additional-items-wrapper">
+        <ul class="catalog__additional-items-list">
+          <li class="catalog__additional-items-item">
             <p class="additional-items-name"> Сахарозаменитель</p>
             <p class="additional-items-value"> 1 упаковка (100 г)</p>
             <p class="additional-items-price"> 200 Р.</p>
-            <button class="additional-items__button button button-color" type="button">Заказать</button>
+            <button class="catalog__additional-items-button button button-color" type="button">Заказать</button>
           </li>
 
-          <li class="additional-items__item">
+          <li class="catalog__additional-items-item">
             <p class="additional-items-name"> питьевая вода</p>
             <p class="additional-items-value"> 5 литров</p>
             <p class="additional-items-price"> 50 Р.</p>
-            <button class="additional-items__button button button-color" type="button">Заказать</button>
+            <button class="catalog__additional-items-button button button-color" type="button">Заказать</button>
 
           </li>
 
-          <li class="additional-items__item">
+          <li class="catalog__additional-items-item">
             <p class="additional-items-name"> молоко</p>
             <p class="additional-items-value"> 1 литр</p>
             <p class="additional-items-price"> 100 Р.</p>
-            <button class="additional-items__button button button-color" type="button">Заказать</button>
+            <button class="catalog__additional-items-button button button-color" type="button">Заказать</button>
 
           </li>
 
-          <li class="additional-items__item">
+          <li class="catalog__additional-items-item">
             <p class="additional-items-name"> витамины</p>
             <p class="additional-items-value"> 1 упаковка (30 г)</p>
             <p class="additional-items-price"> 300 Р.</p>
-            <button class="additional-items__button button button-color" type="button">Заказать</button>
+            <button class="catalog__additional-items-button button button-color" type="button">Заказать</button>
 
           </li>
         </ul>
@@ -308,11 +308,11 @@
       <div class="container">
         <div class="cooperation__wrapper cooperation__wrapper-background">
           <p class="cooperation__invite ">приглашаем<br> к сотрудничеству дилеров!</p>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation--spb">Санкт-Петербург
+          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__spb">Санкт-Петербург
             </span></p>
         </div>
       </div>
-      <div class="location__wrapper">
+      <div class="map-wrapper">
         <iframe class="map" allowfullscreen
           title="Офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630297740808!5m2!1sru!2sru"
@@ -331,26 +331,26 @@
         </a>
 
         <div class="footer__socials">
-          <ul class="socials__list">
+          <ul class="footer__socials-list">
 
-            <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/" target="_blank" aria-label="go to vkontakte">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="https://vk.com/" target="_blank" aria-label="go to vkontakte">
                 <svg class="socials-vk" width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-footer-vk"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="socials__item">
-              <a class="socials__link" href="https://www.instagram.com/" target="_blank" aria-label="go to instagram">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="https://www.instagram.com/" target="_blank" aria-label="go to instagram">
                 <svg class="socials-insta" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-footer-insta"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/" target="_blank" aria-label="go to facebook">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="https://www.facebook.com/" target="_blank" aria-label="go to facebook">
                 <svg class="socials-fb" width="22" height="22">
                   <use xlink:href="img/sprite.svg#icon-footer-fb"></use>
                 </svg>
@@ -358,6 +358,7 @@
             </li>
           </ul>
         </div>
+
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright" target="_blank" aria-label="Logotype Htmlacademy">
         </a>
 
