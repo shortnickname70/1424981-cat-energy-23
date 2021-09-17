@@ -67,7 +67,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .form__questionary-input-item {
@@ -180,7 +180,7 @@
   text-transform: uppercase;
   color: #222222;
   padding-left: 45px;
-  padding-top: 6px;
+  padding-top: 5px;
   padding-bottom: 20px;
   z-index: 5;
   cursor: pointer;
@@ -224,7 +224,7 @@
 }
 
 .form__comments {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .form__comments-header {
@@ -243,7 +243,7 @@
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
   resize: none;
-  padding: 9px 12px 9px 15px;
+  padding: 8px 12px 9px 15px;
   margin-top: 47px;
 }
 
@@ -321,6 +321,13 @@
   cursor: pointer;
   position: absolute;
 }
+ .form__extra-input-item:nth-child(1) .form__extra-check-field {
+margin-top: 3px;
+}
+
+.form__extra-input-item:nth-child(3) .form__extra-check-field {
+  margin-top: -1px;
+  }
 
 .checkbox-on-icon {
   position: absolute;
@@ -329,8 +336,8 @@
   background-size: cover;
   width: 18px;
   height: 14px;
-  top: 8px;
-  left: 8px;
+  top: 10px;
+  left: 6px;
   visibility: hidden;
 }
 
@@ -349,7 +356,7 @@
 .form__button-style {
   box-sizing: border-box;
   margin-bottom: 21px;
-  padding: 13px 45px;
+  padding: 10px 45px;
 }
 
 //form-feedback
@@ -370,7 +377,7 @@
   text-transform: uppercase;
   color: #444444;
   margin-top: 69px;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .form__feedback-input-item {
@@ -390,8 +397,8 @@
   background-repeat: no-repeat;
   width: 19px;
   height: 14px;
-  right: 16px;
-  top: 16px;
+  right: 19px;
+  top: 19px;
   z-index: 5;
 }
 
@@ -406,8 +413,8 @@
   background-repeat: no-repeat;
   width: 20px;
   height: 21px;
-  right: 12px;
-  top: 13px;
+  right: 18px;
+  top: 17px;
   z-index: 5;
 }
 
@@ -441,7 +448,7 @@
 .form__feedback-label {
   white-space: nowrap;
   margin-right: 11px;
-  padding-top: 13px;
+  padding-top: 12px;
   cursor: pointer;
 }
 
@@ -466,7 +473,7 @@
     max-width: 259px;
     top: -23px;
     left: calc((100% - 702px) / 2);
-    padding-left: 39px;
+    padding-left: 37px;
     padding-right: 38px;
   }
 
@@ -513,7 +520,7 @@
     color: #444444;
     margin-right: 20px;
     white-space: nowrap;
-    padding-top: 13px;
+    padding-top: 12px;
     cursor: pointer;
   }
 
@@ -521,7 +528,7 @@
     width: 100%;
     height: 52px;
     margin-bottom: 20px;
-    padding-left: 19px;
+    padding-left: 17px;
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
@@ -540,7 +547,7 @@
     border-bottom: none;
     min-height: 196px;
     padding-top: 24px;
-    margin-bottom: 98px;
+    margin-bottom: 96px;
     border: 1px solid #e7e7e7;
   }
 
@@ -604,7 +611,7 @@
     padding: 0;
     margin: 0;
     margin-top: 69px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 
   .form__extra-input-item {
@@ -631,6 +638,10 @@
     height: 40px;
     cursor: pointer;
     position: absolute;
+  }
+
+  .form__extra-input-item:nth-child(1) .form__extra-check-field {
+    margin-top: 0px;
   }
 
   .checkbox-on-icon {
@@ -671,7 +682,7 @@
   .form__feedback-input-list {
     font-size: 20px;
     line-height: 30px;
-    margin: 84px 0 89px;
+    margin: 87px 0 88px;
   }
 
   .form__feedback-input-item {
@@ -684,7 +695,7 @@
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
-    padding: 19px 47px 15px 18px;
+    padding: 17px 47px 15px 18px;
   }
 
   .form__feedback-label {
@@ -694,7 +705,8 @@
   }
 
   .form__feedback-label--phone {
-    margin-right: 14px;
+    margin-right: 16px;
+    margin-left: -2px;
   }
 }
 
@@ -755,7 +767,7 @@
 
   .form__questionary-input {
     width: 100%;
-    padding-left: 19px;
+    padding-left: 17px;
     box-sizing: border-box;
     margin-bottom: 20px;
   }
@@ -815,6 +827,9 @@
   .form__feedback-input {
     box-sizing: border-box;
   }
+  .form__feedback-input-item:nth-child(1) .form__feedback-input {
+    padding: 15px 47px 15px 22px;
+    }
 
   .form__feedback-input-list {
     font-size: 20px;
@@ -837,4 +852,19 @@
     margin-right: 17px;
     padding-top: 13px;
   }
+
+  .input-phone-style::before {
+    background: url(../img/icon-mobile-form-phone.svg);
+    width: 20px;
+    height: 21px;
+    right: 14px;
+    top: 15px;
+}
+.input-email-style::before {
+    background: url(../img/icon-mobile-form-email.svg);
+    width: 19px;
+    height: 14px;
+    right: 18px;
+    top: 18px;
+}
 }
