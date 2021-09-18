@@ -121,6 +121,7 @@
   white-space: nowrap;
   padding-top: 13px;
   cursor: pointer;
+  display: block;
 }
 
 .form__radio {
@@ -152,10 +153,7 @@
   height: 0;
   width: 0;
   position: absolute;
-}
-
-.form__radio-input:focus ~ .form__radio-label {
-  outline: 2px solid #000000;
+  visibility: hidden;
 }
 
 .form__radio-input:checked ~ .form__radio-check-field-checked {
@@ -274,6 +272,7 @@
   position: absolute;
   height: 0;
   width: 0;
+  visibility: hidden;
 }
 
 .form__extra-input:focus ~ .form__extra-label {
@@ -307,6 +306,7 @@
   padding-top: 6px;
   padding-bottom: 15px;
   cursor: pointer;
+  display: block;
 }
 
 .form__extra-label:hover ~ .form__extra-check-field {
@@ -321,13 +321,14 @@
   cursor: pointer;
   position: absolute;
 }
- .form__extra-input-item:nth-child(1) .form__extra-check-field {
-margin-top: 3px;
+
+.form__extra-input-item:nth-child(1) .form__extra-check-field {
+  margin-top: 3px;
 }
 
 .form__extra-input-item:nth-child(3) .form__extra-check-field {
   margin-top: -1px;
-  }
+}
 
 .checkbox-on-icon {
   position: absolute;
@@ -450,6 +451,7 @@ margin-top: 3px;
   margin-right: 11px;
   padding-top: 12px;
   cursor: pointer;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -641,7 +643,7 @@ margin-top: 3px;
   }
 
   .form__extra-input-item:nth-child(1) .form__extra-check-field {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .checkbox-on-icon {
@@ -827,9 +829,10 @@ margin-top: 3px;
   .form__feedback-input {
     box-sizing: border-box;
   }
+
   .form__feedback-input-item:nth-child(1) .form__feedback-input {
     padding: 15px 47px 15px 22px;
-    }
+  }
 
   .form__feedback-input-list {
     font-size: 20px;
@@ -854,17 +857,18 @@ margin-top: 3px;
   }
 
   .input-phone-style::before {
-    background: url(../img/icon-mobile-form-phone.svg);
+    background: url("../img/icon-mobile-form-phone.svg");
     width: 20px;
     height: 21px;
     right: 14px;
     top: 15px;
-}
-.input-email-style::before {
-    background: url(../img/icon-mobile-form-email.svg);
+  }
+
+  .input-email-style::before {
+    background: url("../img/icon-mobile-form-email.svg");
     width: 19px;
     height: 14px;
     right: 18px;
     top: 18px;
-}
+  }
 }

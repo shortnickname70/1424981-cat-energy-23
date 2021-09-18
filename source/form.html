@@ -10,7 +10,8 @@
   <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="source/css/style.css" rel="stylesheet">
   <link rel="icon" href="../source/img/favicons/favicon-16-ico.ico">
   <link rel="icon" href="../source/img/favicons/favicon-152-ico.ico">
@@ -65,7 +66,6 @@
     </div>
     <div class="form">
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <!-- <div class="container-form"> -->
           <div class="form__cat-value">
             <div class="form__questionary">
               <p class="form__questionary-header">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
@@ -90,17 +90,8 @@
             <ul class="form__radio">
 
               <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio-1" id="slimming" checked>
-                <label for="slimming" class="form__radio-label" tabindex="10">Похудение </label>
-                <div class="form__radio-check-field" tabindex="2">
-                </div>
-                <div class="form__radio-check-field-checked">
-                </div>
-              </li>
-
-              <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio-2" id="pumping" disabled >
-                <label for="pumping" class="form__radio-label" tabindex="10">Набор массы</label>
+                <input type="radio" class="form__radio-input" name="radio" id="slimming" checked>
+                <label for="slimming" class="form__radio-label" tabindex="0">Похудение </label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -108,8 +99,17 @@
               </li>
 
               <li class="form__radio-item">
-                <input type="radio" class="form__radio-input" name="radio-3" id="unknown">
-                <label for="unknown" class="form__radio-label" tabindex="10">Не знаю (Нужен ваш совет)</label>
+                <input type="radio" class="form__radio-input" name="radio" id="pumping" disabled >
+                <label for="pumping" class="form__radio-label" tabindex="0">Набор массы</label>
+                <div class="form__radio-check-field">
+                </div>
+                <div class="form__radio-check-field-checked">
+                </div>
+              </li>
+
+              <li class="form__radio-item">
+                <input type="radio" class="form__radio-input" name="radio" id="unknown">
+                <label for="unknown" class="form__radio-label" tabindex="0">Не знаю (Нужен ваш совет)</label>
                 <div class="form__radio-check-field">
                 </div>
                 <div class="form__radio-check-field-checked">
@@ -118,7 +118,6 @@
 
             </ul>
           </div>
-        <!-- </div> -->
 
 
         <div class="form__feedback">
@@ -159,7 +158,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="sweetener" id="sweetener" class="form__extra-input" checked>
-                <label for="sweetener" class="form__extra-label" tabindex="2">сахарозаменитель</label>
+                <label for="sweetener" class="form__extra-label" tabindex="0">сахарозаменитель</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -168,7 +167,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="water" id="water" class="form__extra-input">
-                <label for="water" class="form__extra-label" tabindex="2">питьевая вода</label>
+                <label for="water" class="form__extra-label" tabindex="0">питьевая вода</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -177,7 +176,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="milk" id="milk" class="form__extra-input">
-                <label for="milk" class="form__extra-label" tabindex="2">молоко</label>
+                <label for="milk" class="form__extra-label" tabindex="0">молоко</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
@@ -186,7 +185,7 @@
 
               <li class="form__extra-input-item">
                 <input type="checkbox" name="vitamins" id="vitamins" class="form__extra-input" disabled checked>
-                <label for="vitamins" class="form__extra-label" tabindex="2">витамины</label>
+                <label for="vitamins" class="form__extra-label" tabindex="0">витамины</label>
                 <div class="form__extra-check-field">
                 </div>
                 <div class="checkbox-on-icon">
