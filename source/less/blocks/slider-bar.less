@@ -1,0 +1,83 @@
+// Начните писать стили здесь
+.slider-bar {
+  border: 1px solid #cdcdcd;
+  width: 84px;
+  background: #ffffff;
+  border-radius: 6px;
+  height: 14px;
+  position: relative;
+  box-sizing: border-box;
+  top: 3px;
+}
+
+.slider-bar::after {
+  background: #68b738;
+  box-sizing: border-box;
+  width: 35px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  left: 6px;
+  bottom: 3px;
+  border-radius: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .slider-bar {
+    width: 428px;
+    background: #cdcdcd;
+    border-radius: 6px;
+    height: 6px;
+    position: relative;
+    top: -11px;
+  }
+
+  .slider-bar::after {
+    display: none;
+  }
+
+  .slider-bar__toggle {
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    content: "";
+    left: 200px;
+    bottom: -15px;
+    border-radius: 34px;
+    z-index: 3;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.16));
+    cursor: pointer;
+  }
+
+  .slider-bar__toggle:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  .slider-bar__toggle:active {
+    border: 1px solid #68b738;
+  }
+
+  .slider-bar__toggle-mini {
+    cursor: pointer;
+    background: #68b738;
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    content: "";
+    left: 12px;
+    bottom: 12px;
+    border-radius: 8px;
+    z-index: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider-bar {
+    margin-left: 24px;
+    margin-right: 19px;
+  }
+}
