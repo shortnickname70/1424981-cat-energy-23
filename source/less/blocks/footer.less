@@ -18,18 +18,36 @@
 }
 
 .footer__logo {
-  margin: 39px 76px 28px 76px;
+  margin: 38px 76px 28px 76px;
 }
 
 .footer__copyright {
   display: flex;
   justify-content: space-between;
-  background-image: url("../img/logo-mobile-htmlacademy-svg.svg");
   width: 281px;
   min-height: 78px;
-  background-repeat: no-repeat;
-  background-position: 0 20px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  align-items: center;
 }
+
+.footer__copyright:hover .footer__htmlacademy {
+  color: #68b738;
+}
+
+.footer__copyright:focus {
+  opacity: 0.5;
+}
+
+.footer__copyright:focus .footer__htmlacademy {
+  color: #68b738;
+  opacity: 0.5;
+}
+
 
 //footer-socials
 
@@ -93,7 +111,6 @@
   }
 
   .footer__copyright {
-    background-image: url("../img/logo-tablet-htmlacademy-svg.svg");
     width: 163px;
     min-height: 34px;
     margin-bottom: 5px;

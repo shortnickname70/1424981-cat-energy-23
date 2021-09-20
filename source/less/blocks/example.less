@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.example-value {
+.example__value {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -117,7 +117,7 @@
   box-sizing: border-box;
 }
 
-.example__slider__value {
+.example__slider-value {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -132,11 +132,11 @@
   box-sizing: border-box;
 }
 
-.example__slider__value:hover {
+.example__slider-value:hover {
   border-bottom: 1px solid #000000;
 }
 
-.example__slider__value:active {
+.example__slider-value:active {
   border-bottom: none;
 }
 
@@ -188,7 +188,7 @@
     align-items: center;
   }
 
-  .example-value {
+  .example__value {
     font-size: 30px;
     line-height: 37px;
     text-align: center;
@@ -217,7 +217,7 @@
     padding-top: 10px;
   }
 
-  .example__days-description__time {
+  .example__days-description--time {
     width: 142px;
     left: 10px;
   }
@@ -267,7 +267,7 @@
     padding: 0 69px 70px 67px;
   }
 
-  .example__slider__value {
+  .example__slider-value {
     display: block;
     margin: 0;
     font-size: 20px;
@@ -305,13 +305,11 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    // min-height: 596px;
     min-height: 100px;
     flex-wrap: wrap;
     min-width: 1220px;
     padding: 0;
     margin: 0 auto;
-    // background-color: transparent;
     background: linear-gradient(to right, rgba(242, 242, 242, 1) 70.57%, rgba(234, 234, 234, 1) 0%);
   }
 
@@ -369,6 +367,7 @@
   .example__weight-description {
     background-color: #f2f2f2;
     height: 27px;
+    padding-top: 8px;
   }
 
   .example__expenses {
@@ -384,10 +383,11 @@
   .example__mod {
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
-    padding-top: 14px;
+    padding-top: 13px;
     border-radius: 3px;
     flex-wrap: nowrap;
     width: 162px;
+    height: 70px;
     position: relative;
     align-items: center;
     margin-bottom: 55px;
@@ -422,14 +422,4 @@
       background-size: 690px auto;
     }
   }
-
-  //  .example__slider-right-background {
-  //   background: red;
-  //   width: 100%;
-  //   position: absolute;
-  //   z-index: 1;
-  //   height: 428px;
-  //   bottom: 0;
-  //   left: calc(100% - 1045px);
-  //  }
 }
